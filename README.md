@@ -1,4 +1,4 @@
-## <p align="center"> Data Science Portfolio </p>
+<h1 align="center"> Data Science Portfolio </h1>
 
 ## About Me [(_Curriculum_)](/files/SergioJunior_CV_English.pdf)
 
