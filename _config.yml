@@ -1,6 +1,9 @@
 theme: jekyll-theme-minimal
 
 title: Data Science Projects
-description: I've created this portfolio to showcase my work to potential employers
+description: |
+  I've created this portfolio to showcase my work to potential employers.  
+  
+  Having a degree in Computer Engineering by CEFET-MG, I’ve worked as a chatbot developer for a large part of my professional career. Being an interdisciplinary field, it allowed me to explore related fields, such as data analysis, UX writing, product and agile management. Due to my undergraduate thesis and my interest in working alongside business units, I’ve grown closer to Data Science, and now I’m looking for an opportunity to start working in this area. I have a lot of experience with Python, having developed Machine Learning models using neural networks, decision trees, logistic and linear regression. I’ve also worked with git and CI/CD pipelines as part of the development of .NET APIs. I believe that working as a Data Scientist will bring me the professional satisfaction that I look for and allow me to grow with the company.
 
 google_analytics: G-9JQ1TWPGPR
