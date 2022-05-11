@@ -2,9 +2,9 @@
 
 ## About Me
 <a href="/files/SergioJunior_CV_English.pdf">
-  <img src="/images/pdf.jpg" alt="Curriculum" width="40" height="40" />
+  <img src="https://github.com/juniorsergio/Portfolio/blob/master/images/pdf.jpg" alt="Curriculum" width="40" height="40" />
 </a> <a href="https://www.linkedin.com/in/juniorsergio/">
-  <img src="/images/linkedin.png" alt="Linkedin" width="40" height="40" />
+  <img src="https://github.com/juniorsergio/Portfolio/blob/master/images/linkedin.png" alt="Linkedin" width="40" height="40" />
 </a> 
 
 Having a degree in Computer Engineering by CEFET-MG, I’ve worked as a chatbot developer for a large part of my professional career. Being an interdisciplinary field, it allowed me to explore related fields, such as data analysis, UX writing, product and agile management. Due to my undergraduate thesis and my interest in working alongside business units, I’ve grown closer to Data Science, and now I’m looking for an opportunity to start working in this area. I have a lot of experience with Python, having developed Machine Learning models using neural networks, decision trees, logistic and linear regression. I’ve also worked with git and CI/CD pipelines as part of the development of .NET APIs. This portfolio was created with the intention of showcase my work, specially for potential employers.
