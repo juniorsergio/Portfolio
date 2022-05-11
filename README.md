@@ -1,37 +1,7 @@
-## Welcome to GitHub Pages
+## [_Curriculum_](/files/SergioJunior_CV_English.pdf)
 
-You can use the [editor on GitHub](https://github.com/juniorsergio/Portfolio/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Having a degree in Computer Engineering by CEFET-MG, I’ve worked as a chatbot developer for a large part of my professional career. Being an interdisciplinary field, it allowed me to explore related fields, such as data analysis, UX writing, product and agile management. Due to my undergraduate thesis and my interest in working alongside business units, I’ve grown closer to Data Science, and now I’m looking for an opportunity to start working in this area. I have a lot of experience with Python, having developed Machine Learning models using neural networks, decision trees, logistic and linear regression. I’ve also worked with git and CI/CD pipelines as part of the development of .NET APIs. This portfolio was created with the intention of showcase my work, specially for potential employers.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## [Data Exploration: Breaking Bad Episodes Rating](https://github.com/juniorsergio/DataExploration/tree/master/Breaking%20Bad%20-%20Rating%20analysis)
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/juniorsergio/Portfolio/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+The purpose of this project was to investigate if there could be any relationship between a writer of an episode and its IMDB rating. More specifically, the hyphotesis was that since VInce Gilligan is the crator of the series, his episodes would probably have the highest ratings. In order to do that, this [dataset](https://www.kaggle.com/varpit94/breaking-bad-tv-show-all-seasons-episodes-data) (available at Kaggle by [Arpit Verma](https://www.kaggle.com/varpit94)) was used since it had the two necessary informations: the episode's writer and its rating. The result of the analysis was that higher/lower ratings don't appear to have a strong relationship with the episode's writer.
