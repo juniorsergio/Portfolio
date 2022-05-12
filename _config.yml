@@ -1,6 +1,9 @@
 theme: jekyll-theme-minimal
 
 title: Sergio Junior
+author:
+  name: Sergio Junior
+  email: sergio.junior55@hotmail.com
 logo: /images/photo.jpg
 description: Data Science portfolio to showcase some projects I've developed over time
 
