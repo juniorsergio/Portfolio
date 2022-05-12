@@ -24,8 +24,6 @@
         {% if site.logo %}
           <img src="{{site.logo | relative_url}}" alt="Logo" />
         {% endif %}
-
-        <p>{{ site.description | default: site.github.project_tagline }}</p>
         
         <p> Curriculum <a href="https://github.com/juniorsergio/portfolio/raw/master/files/SergioJunior_CV_English.pdf">
           <img style="vertical-align:middle" src="https://raw.githubusercontent.com/juniorsergio/Portfolio/master/images/pdf.png" alt="Curriculum" height="40" width="40" />
@@ -38,6 +36,8 @@
         <p> GitHub <a href="https://github.com/juniorsergio/">
           <img style="vertical-align:middle" src="https://raw.githubusercontent.com/juniorsergio/Portfolio/master/images/github.png" alt="GitHub" height="40" width="40" />
         </a> </p>
+
+        <p>{{ site.description | default: site.github.project_tagline }}</p>
 
         {% if site.github.is_project_page %}
         <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
