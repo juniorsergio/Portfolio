@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sergio Junior</title>
 
 {% seo title=false %}
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
-    {% include head-custom.html %}
+    
+    {% include head-custom-google-analytics.html %}
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
   </head>
+  
   <body>
     <div class="wrapper">
       <header>
@@ -22,6 +26,18 @@
         {% endif %}
 
         <p>{{ site.description | default: site.github.project_tagline }}</p>
+        
+        Curriculum <a href="https://github.com/juniorsergio/portfolio/raw/master/files/SergioJunior_CV_English.pdf">
+          <img src="https://raw.githubusercontent.com/juniorsergio/Portfolio/master/images/pdf.png" alt="Curriculum" height="40" width="40" />
+        </a>
+        
+        LinkedIn <a href="https://www.linkedin.com/in/juniorsergio/">
+          <img src="https://raw.githubusercontent.com/juniorsergio/Portfolio/master/images/linkedin.png" alt="LinkedIn" height="40" width="40" />
+        </a>
+        
+        GitHub <a href="https://github.com/juniorsergio/">
+          <img src="https://raw.githubusercontent.com/juniorsergio/Portfolio/master/images/github.png" alt="GitHub" height="40" width="40" />
+        </a>
 
         {% if site.github.is_project_page %}
         <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
