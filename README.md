@@ -1,12 +1,10 @@
 <h1 align="center"> Data Science Portfolio </h1>
 
 ## About Me
-[![Curriculum](/images/pdf.jpg)](https://github.com/juniorsergio/Portfolio/blob/master/files/SergioJunior_CV_English.pdf) [![LinkedIn](/images/linkedin.png)](https://www.linkedin.com/in/juniorsergio/)
-
 <a href="https://github.com/juniorsergio/Portfolio/blob/master/files/SergioJunior_CV_English.pdf">
-  <img src="https://github.com/juniorsergio/Portfolio/blob/master/images/pdf.jpg" alt="Curriculum" height="40" width="40" />
+  <img src="https://raw.githubusercontent.com/juniorsergio/Portfolio/master/images/pdf.jpg" alt="Curriculum" height="40" width="40" />
 </a> <a href="https://www.linkedin.com/in/juniorsergio/">
-  <img src="https://github.com/juniorsergio/Portfolio/blob/master/images/linkedin.png" alt="LinkedIn" height="40" width="40" />
+  <img src="https://raw.githubusercontent.com/juniorsergio/Portfolio/master/images/linkedin.png" alt="LinkedIn" height="40" width="40" />
 </a> 
 
 
