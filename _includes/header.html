@@ -1,0 +1,16 @@
+<header>
+
+  <h1 align="center"><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+  <h1 align="center">Data Science Portfolio</h1>
+
+  {% if site.logo %}
+    <p align="center"><img src="/assets/images/photo.jpg" alt="Logo" width="220" height="220"></p>
+  {% endif %}
+
+  {% include language.html %}
+
+  {% include contacts.html %}
+
+  <p>{{ site.description | default: site.github.project_tagline }}</p>
+
+</header>

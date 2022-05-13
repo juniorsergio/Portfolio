@@ -2,11 +2,13 @@ theme: jekyll-theme-minimal
 
 title: Sergio Junior
 logo: /images/photo.jpg
-description: Data Science portfolio to showcase some projects I've developed over time
 email: sergio.junior55@hotmail.com
+description: Data Science portfolio to showcase some projects I've developed over time
+
+lang: en_US
+curriculum: SergioJunior_CV_English
+localization: Belo Horizonte, MG, Brazil
 
 google_analytics: G-L5DKNEFTBC
 
-github:
-  is_project_page: false
-  is_user_page: false
+google_analytics: G-L5DKNEFTBC
