@@ -1,0 +1,59 @@
+header {
+    float: left;
+    position: fixed;   
+
+    width: 20%;
+    height: 90vh;
+    
+    justify-content: center;
+    align-items: center;
+    
+    gap: 10px;
+    padding: 8px;
+    
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+h1 {
+    font-size: 26px;
+    text-align: center;
+}
+
+.languageSelector {
+    background: none;
+    border: 2px solid var(--linkHover);
+    border-radius: 15px;
+
+    margin: 0 8px;
+    padding: 10px;
+       
+    color: var(--link);
+    font-weight : bold;
+
+    cursor: pointer;
+}
+
+.languageSelector:hover {
+    color: var(--linkHover);
+    border: 5px solid;
+}
+
+.languageSelector:disabled {
+    color: white;
+    border: none;
+    cursor: auto;
+}
+
+.profilePicture {
+    height: 200px;
+    width: 200px;
+    
+    border: 3px solid var(--border);
+    border-radius: 9999px;
+}
+
+.localization, .email {
+    display: flex;
+    align-items: center;
+}
