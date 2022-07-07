@@ -20,33 +20,6 @@ h1 {
     text-align: center;
 }
 
-.languageSelector {
-    background: none;
-
-    box-sizing: border-box;
-    width: 100px;
-    height: 40px;
-
-    border: 2px solid var(--linkHover);
-    border-radius: 15px;
-       
-    color: var(--link);
-    font-weight: bold;
-
-    cursor: pointer;
-}
-
-.languageSelector:hover {
-    color: var(--linkHover);
-    border: 5px solid;
-}
-
-.languageSelector:disabled {
-    color: white;
-    border: none;
-    cursor: auto;
-}
-
 .profilePicture {
     height: 200px;
     width: 200px;

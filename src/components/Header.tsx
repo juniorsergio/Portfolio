@@ -4,7 +4,9 @@ import { useTranslation } from "react-i18next";
 import photo from '../assets/images/photo.jpg'
 import enCV from '../assets/files/SergioJunior_CV_English.pdf'
 import ptBRCV from '../assets/files/SergioJunior_CV.pdf'
+
 import '../styles/Header.css'
+import '../styles/App.css'
 
 export function Header(){
     const { t, i18n } = useTranslation()
@@ -21,15 +23,15 @@ export function Header(){
             </h1>
 
             <h1>
-                Data Science Portfolio
+                {t('header.title')}
             </h1>
 
             <img src={photo} alt="Photo" className='profilePicture' />
 
-            <div>
-                <button onClick={() => changeLanguage('ptBR')} className='languageSelector' disabled={!isEnglish}>Português</button>
-                <button onClick={() => changeLanguage('en')} className='languageSelector' disabled={isEnglish}>English</button>
-            </div>
+            <ul className='languageSelector'>
+                <li className={!isEnglish ? 'active' : ''} onClick={() => changeLanguage('ptBR')}>Português</li>
+                <li className={isEnglish ? 'active' : ''}  onClick={() => changeLanguage('en')}>English</li>
+            </ul>
 
             <div className='social'>
                 <a href={enCV} hidden={!isEnglish}> <FilePdf size={40} /> </a>
