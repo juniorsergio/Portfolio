@@ -1,0 +1,31 @@
+.app {
+    width: 70vw;
+}
+
+header, main {
+    background-color: var(--backgroundSolid);
+    border: 3px solid var(--border);
+    border-radius: 50px;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+@media print, screen and (max-width: 1080px) {
+    .app {
+        width: 90vw;
+    }
+
+    header, main {
+        float: none;
+        position: static;
+        transform: none;
+        
+        width: auto;
+        margin: 8px 0;
+    }
+
+    header {
+        height: 90vh;
+    }
+}
