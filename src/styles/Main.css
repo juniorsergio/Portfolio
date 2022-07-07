@@ -8,6 +8,46 @@ main {
     margin: 8px 0;
 }
 
+ul.tabs {
+    width: 100%;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border: 1px solid var(--border);
+    border-radius: 15px;
+  }
+  
+  ul.tabs li {
+    flex: auto;
+    padding: 1rem;
+
+    list-style: none;
+    text-align: center;
+
+    cursor: pointer;
+    transition: all 0.7s;
+
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+  }
+  
+  ul.tabs li:nth-child(2) {
+    border-radius: 0;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  ul.tabs li:hover {
+    background: rgba(50, 224, 196, 0.15);
+  }
+  
+  ul.tabs li.activeTab {
+    background: var(--border);
+  }
+
 article {
     display: flex;
     flex-direction: column;
