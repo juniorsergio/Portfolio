@@ -7,7 +7,6 @@ import credit_risk from '../assets/images/credit_risk.png'
 import breaking_bad from '../assets/images/breaking_bad.png'
 
 import '../styles/DataScience.css'
-import '../styles/App.css'
 
 export function DataScience(){
     const { t, i18n } = useTranslation()
