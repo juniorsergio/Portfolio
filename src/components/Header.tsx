@@ -6,7 +6,6 @@ import enCV from '../assets/files/SergioJunior_CV_English.pdf'
 import ptBRCV from '../assets/files/SergioJunior_CV.pdf'
 
 import '../styles/Header.css'
-import '../styles/App.css'
 
 export function Header(){
     const { t, i18n } = useTranslation()

@@ -5,7 +5,6 @@ import { AboutMe } from './AboutMe'
 import { DataScience } from "./DataScience"
 
 import '../styles/Main.css'
-import '../styles/App.css'
 
 export function Main(){
     const { t, i18n } = useTranslation()

@@ -20,7 +20,7 @@ header, main {
         float: none;
         position: static;
         transform: none;
-        
+
         width: auto;
         margin: 8px 0;
     }
@@ -31,7 +31,7 @@ header, main {
 }
 
 ul {
-    width: 80%;
+    width: auto;
     margin: 0 auto;
     padding: 0;
 
