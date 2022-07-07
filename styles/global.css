@@ -1,0 +1,38 @@
+:root {
+    --backgroundLight: DarkSlateGrey;
+    --backgroundSolid: #2A4141;
+    --border: DarkSlateBlue;
+    --link: #26BCFF;
+    --linkHover: #0099FF;
+}
+
+* {  
+    margin: 0;
+}
+
+body {
+    background-image: linear-gradient(330deg, var(--backgroundLight), black 50%, var(--backgroundLight));
+    background-attachment: fixed;
+
+    font: 15px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+
+    color: white;
+    text-shadow: 1px 1px black;
+
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    color: var(--link);
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: var(--linkHover);
+}
+
+img {
+    max-width: 90%;
+}
