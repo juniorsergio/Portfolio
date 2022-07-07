@@ -1,5 +1,5 @@
-import { Section } from './components/Main'
-import { Sideinfo } from './components/Header'
+import { Header } from './components/Header'
+import { Main } from './components/Main'
 
 import "./i18n"
 
@@ -8,10 +8,10 @@ import './styles/App.css'
 function App() {
   return (
     <div className="app">
-        <Sideinfo />
-        <Section />
+        <Header />
+        <Main />
     </div>
   )
 }
 
-export default App;
+export default App;           

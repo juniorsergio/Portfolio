@@ -7,11 +7,11 @@ import credit_risk from '../assets/images/credit_risk.png'
 import breaking_bad from '../assets/images/breaking_bad.png'
 import '../styles/Main.css'
 
-export function Section(){
+export function Main(){
     const { t, i18n } = useTranslation()
 
     return (
-        <main>          
+        <main>
             <article>
                 <h2> {t('main.about.title')} </h2>
                 <p> {t('main.about.text')} </p>

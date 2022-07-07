@@ -6,7 +6,7 @@ import enCV from '../assets/files/SergioJunior_CV_English.pdf'
 import ptBRCV from '../assets/files/SergioJunior_CV.pdf'
 import '../styles/Header.css'
 
-export function Sideinfo(){
+export function Header(){
     const { t, i18n } = useTranslation()
     const isEnglish = (i18n.language == 'en')
   
