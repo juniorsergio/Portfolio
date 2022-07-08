@@ -11,8 +11,8 @@ export function Main(){
     const [ activeTab, setActiveTab ] = useState('aboutMe')
 
     function handleNavigationTab (tab: string) {
-        setActiveTab(tab);
-      };
+        setActiveTab(tab)
+    }
 
     return (
         <main>

@@ -26,7 +26,7 @@ export function DataScience(){
 
     return (
         <div className='dataScience'>
-            {projects.map((project: Project, i: number) => (
+            {projects.map((project, i) => (
                 <article id={project.id}>
                     <h2>
                         <a href={project.projectLink}>
