@@ -33,10 +33,10 @@ export function Header(){
             </ul>
 
             <div className='social'>
-                <a href={enCV} hidden={!isEnglish}> <FilePdf size={40} /> </a>
-                <a href={ptBRCV} hidden={isEnglish}> <FilePdf size={40} /> </a>
-                <a href={t('header.linkedin')}> <LinkedinLogo size={40} /></a>
-                <a href="https://github.com/juniorsergio/"> <GithubLogo size={40} /> </a>
+                <a href={enCV} hidden={!isEnglish} title='Curriculum'> <FilePdf size={40} /> </a>
+                <a href={ptBRCV} hidden={isEnglish} title='Curriculum'> <FilePdf size={40} /> </a>
+                <a href={t('header.linkedin')} title='LinkedIn'> <LinkedinLogo size={40} /></a>
+                <a href="https://github.com/juniorsergio/" title='GitHub'> <GithubLogo size={40} /> </a>
             </div>
 
             <div className='localization'>
