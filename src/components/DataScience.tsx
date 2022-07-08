@@ -8,11 +8,6 @@ import breaking_bad from '../assets/images/breaking_bad.png'
 
 import '../styles/DataScience.css'
 
-interface Projects {
-    map(arg0: (project: Project, i: number) => JSX.Element): import("react").ReactNode
-    project: Project
-}
-
 interface Project {
     id: string,
     title: string,
@@ -25,9 +20,9 @@ interface Project {
 
 export function DataScience(){
     const { t, i18n } = useTranslation()
-    
+
     const projectImages = [ tesouro_direto, credit_risk, breaking_bad ]
-    const projects: Projects = t('main.projects', {returnObjects: true})
+    const projects: Project[] = t('main.projects', {returnObjects: true})
 
     return (
         <div className='dataScience'>

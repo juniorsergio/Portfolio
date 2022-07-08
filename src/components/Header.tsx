@@ -17,13 +17,9 @@ export function Header(){
 
     return (
         <header>
-            <h1>
-                Sergio Junior
-            </h1>
+            <h1> Sergio Junior </h1>
 
-            <h1>
-                {t('header.title')}
-            </h1>
+            <h1> {t('header.title')} </h1>
 
             <img src={photo} alt="Photo" className='profilePicture' />
 
