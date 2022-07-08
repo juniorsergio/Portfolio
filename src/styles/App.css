@@ -22,11 +22,8 @@ header, main {
         transform: none;
 
         width: auto;
+        min-height: auto;
         margin: 8px 0;
-    }
-
-    header {
-        height: 90vh;
     }
 }
 
@@ -53,13 +50,14 @@ ul li {
 
     cursor: pointer;
     transition: all 0.7s;
+}
 
+ul li:first-child {
     border-bottom-left-radius: 15px;
     border-top-left-radius: 15px;
 }
 
-ul li:nth-child(2) {
-    border-radius: 0;
+ul li:last-child {
     border-bottom-right-radius: 15px;
     border-top-right-radius: 15px;
 }

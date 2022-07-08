@@ -13,7 +13,7 @@
 body {
     background-image: linear-gradient(330deg, var(--backgroundLight), black 50%, var(--backgroundLight));
     background-attachment: fixed;
-    background-repeat: repeat;
+    background-size: 120%;
 
     font: 15px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
