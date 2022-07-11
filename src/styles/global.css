@@ -1,9 +1,9 @@
 :root {
-    --backgroundLight: DarkSlateGrey;
-    --backgroundSolid: #2A4141;
-    --border: DarkSlateBlue;
-    --link: #26BCFF;
-    --linkHover: #0099FF;
+    --greenLight: DarkSlateGrey;
+    --greenDark: #2A4141;
+    --purpleHighlight: DarkSlateBlue;
+    --blueLink: #26BCFF;
+    --blueLinkHover: #0099FF;
 }
 
 * {  
@@ -11,7 +11,7 @@
 }
 
 body {
-    background-image: linear-gradient(330deg, var(--backgroundLight), black 50%, var(--backgroundLight));
+    background-image: linear-gradient(330deg, var(--greenLight), black 50%, var(--greenLight));
     background-attachment: fixed;
     background-size: 120%;
 
@@ -26,12 +26,12 @@ body {
 }
 
 a {
-    color: var(--link);
+    color: var(--blueLink);
     text-decoration: none;
 }
 
 a:hover {
-    color: var(--linkHover);
+    color: var(--blueLinkHover);
 }
 
 img {

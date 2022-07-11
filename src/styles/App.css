@@ -3,8 +3,8 @@
 }
 
 header, main {
-    background-color: var(--backgroundSolid);
-    border: 3px solid var(--border);
+    background-color: var(--greenDark);
+    border: 3px solid var(--purpleHighlight);
     border-radius: 50px;
     
     display: flex;
@@ -36,7 +36,7 @@ ul {
     align-items: center;
     justify-content: space-between;
 
-    border: 1px solid var(--border);
+    border: 1px solid var(--purpleHighlight);
     border-radius: 15px;
 }
   
@@ -63,10 +63,10 @@ ul li:last-child {
 }
 
 ul li:hover {
-    background: rgba(50, 224, 196, 0.15);
+    background: var(--greenLight);
 }
 
 ul li.active {
-    background: var(--border);
+    background: var(--purpleHighlight);
     cursor: auto;
 }
