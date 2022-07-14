@@ -1,7 +1,7 @@
 :root {
-    --greenLight: DarkSlateGrey;
+    --greenLight: #2F4F4F;
     --greenDark: #2A4141;
-    --purpleHighlight: DarkSlateBlue;
+    --purpleHighlight: #483D8B;
     --blueLink: #26BCFF;
     --blueLinkHover: #0099FF;
 }
