@@ -95,8 +95,8 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
 `,qm=ka.header`
     float: left;
     position: fixed;   
-
-    width: 22vw;
+ 
+    width: 20vw;
     height: 90vh;
     margin: 5vh 0;
     
@@ -105,15 +105,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     
     gap: 0.625rem;
     padding: 0.625rem;
-
-    @media print, screen and (max-width: 1080px) {
-        float: none;
-        position: static;
-
-        width: auto;
-        margin: 0.625rem 0;
-    }
-
+    
     img {
         height: 12.5rem;
         width: 12.5rem;
@@ -159,20 +151,12 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
 `;function xv(){const{t:e}=Go(),t=[yv,kv,wv],n=e("main.projects",{returnObjects:!0});return v(Sv,{children:n.map((r,i)=>$("article",{children:[v("h2",{children:$("a",{href:r.projectLink,children:[v(Vc,{})," ",r.title]})}),v("h3",{hidden:!r.subtitle,children:$("a",{href:r.subtitleLink,children:[v(Vc,{})," ",r.subtitle]})}),v("p",{children:v(vv,{content:r.text})}),$("figure",{children:[v("img",{src:t[i],alt:r.id}),$("figcaption",{children:[" ",r.figcaption," "]})]})]},r.id))})}const Lv=ka.main`
     float: right;
 
-    width: 47vw;
+    width: 70%;
     min-height: 95vh;
 
     padding: 1.25rem;
     gap: 1.25rem;
     margin: 2.5vh 0;
-
-    @media print, screen and (max-width: 1080px) {
-        float: none;
-        width: auto;
-        
-        min-height: auto;
-        margin: 0.625rem 0;
-    }
     
     article {
         display: grid;
@@ -210,20 +194,28 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     .wrapper {
         width: 70vw;
         margin: 0 auto;
-    }
 
-    header, main {
-        background-color: var(--green-dark);
-        border: 0.2rem solid var(--purple);
-        border-radius: 3rem;
-        
-        display: flex;
-        flex-direction: column;
+        header, main {
+            background-color: var(--green-dark);
+            border: 0.2rem solid var(--purple);
+            border-radius: 3rem;
+            
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     @media print, screen and (max-width: 1080px) {
         .wrapper {
-            width: 90vw;
+            width: 95vw;
+
+            header, main {
+                position: relative;
+                min-height: auto;
+                width: auto;
+                float: none;
+                margin: 0.625rem;
+            }
         }
     }
     
