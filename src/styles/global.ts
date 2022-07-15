@@ -28,20 +28,28 @@ export const GlobalStyle = createGlobalStyle`
     .wrapper {
         width: 70vw;
         margin: 0 auto;
-    }
 
-    header, main {
-        background-color: var(--green-dark);
-        border: 0.2rem solid var(--purple);
-        border-radius: 3rem;
-        
-        display: flex;
-        flex-direction: column;
+        header, main {
+            background-color: var(--green-dark);
+            border: 0.2rem solid var(--purple);
+            border-radius: 3rem;
+            
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     @media print, screen and (max-width: 1080px) {
         .wrapper {
-            width: 90vw;
+            width: 95vw;
+
+            header, main {
+                position: relative;
+                min-height: auto;
+                width: auto;
+                float: none;
+                margin: 0.625rem;
+            }
         }
     }
     
