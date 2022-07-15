@@ -18,7 +18,7 @@ export const GlobalStyle = createGlobalStyle`
         background-image: linear-gradient(330deg, var(--green), black 50%, var(--green));
         background-attachment: fixed;
 
-        font: 0.8rem/1.5 "Poppins", sans-serif;
+        font: 0.9rem/1.5 "Poppins", sans-serif;
         -webkit-font-smoothing: antialiased;
 
         color: white;
