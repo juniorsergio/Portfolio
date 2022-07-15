@@ -107,8 +107,8 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     padding: 1.25rem;
     
     img {
-        height: 12.5rem;
-        width: 12.5rem;
+        height: 14rem;
+        width: 14rem;
         
         border: 0.2rem solid var(--purple);
         border-radius: 100%;
