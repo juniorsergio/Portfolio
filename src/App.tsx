@@ -1,14 +1,14 @@
 import { Header } from './components/Header'
 import { Main } from './components/Main'
 
-import { GlobalStyle } from './styles/global';
+import { GlobalStyle, Wrapper } from './styles/global';
 
 export function App() {
   return (
-    <div className='wrapper'>
+    <Wrapper>
         <Header />
         <Main />
         <GlobalStyle />
-    </div>
+    </Wrapper>
   )
 }      

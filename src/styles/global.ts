@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
     :root {
@@ -23,35 +23,7 @@ export const GlobalStyle = createGlobalStyle`
 
         color: white;
         text-shadow: 1px 1px black;
-    }
-
-    .wrapper {
-        width: 70vw;
-        margin: 0 auto;
-
-        header, main {
-            background-color: var(--green-dark);
-            border: 0.2rem solid var(--purple);
-            border-radius: 3rem;
-            
-            display: flex;
-            flex-direction: column;
-        }
-    }
-
-    @media print, screen and (max-width: 1080px) {
-        .wrapper {
-            width: 95vw;
-
-            header, main {
-                position: relative;
-                min-height: auto;
-                width: auto;
-                float: none;
-                margin: 0.625rem;
-            }
-        }
-    }
+    }   
     
     a {
         color: var(--blue);
@@ -59,6 +31,32 @@ export const GlobalStyle = createGlobalStyle`
 
         &:hover {
             filter: brightness(0.9)
+        }
+    }
+`
+
+export const Wrapper = styled.div`
+    width: 70vw;
+    margin: 0 auto;
+
+    header, main {
+        background-color: var(--green-dark);
+        border: 0.2rem solid var(--purple);
+        border-radius: 3rem;
+        
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media print, screen and (max-width: 1080px) {
+        width: 95vw;
+
+        header, main {
+            position: relative;
+            min-height: auto;
+            width: auto;
+            float: none;
+            margin: 0.625rem;
         }
     }
 `
