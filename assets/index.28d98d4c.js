@@ -212,8 +212,20 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         flex-direction: column;
     }
 
-    @media print, screen and (max-width: 1080px) {
-        width: 95vw;
+    @media (max-width: 1080px) {
+        width: 90vw;
+
+        header {
+            width: 30vw;
+        }
+
+        main {
+            width: 65%;
+        }
+    }
+
+    @media (max-width: 720px) {
+        width: auto;
 
         header, main {
             position: relative;
