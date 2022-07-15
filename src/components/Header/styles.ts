@@ -16,11 +16,6 @@ export const Container = styled.header`
     top: 50%;
     transform: translate(0, -50%);
 
-    h1 {
-        font-size: 26px;
-        text-align: center;
-    }
-
     img {
         height: 200px;
         width: 200px;

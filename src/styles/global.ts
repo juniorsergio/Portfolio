@@ -16,19 +16,15 @@ export const GlobalStyle = createGlobalStyle`
         background-image: linear-gradient(330deg, var(--green), black 50%, var(--green));
         background-attachment: fixed;
         background-size: 120%;
+        
+        width: 70vw;
+        margin: 0 auto;
 
         font: 15px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
         -webkit-font-smoothing: antialiased;
 
         color: white;
         text-shadow: 1px 1px black;
-
-        display: flex;
-        justify-content: center;
-    }
-
-    .app {
-        width: 70vw;
     }
 
     header, main {
@@ -41,8 +37,11 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     @media print, screen and (max-width: 1080px) {
-        .app {
+        body {
             width: 90vw;
+
+            display: flex;
+            justify-content: center;
         }
 
         header, main {
@@ -56,6 +55,25 @@ export const GlobalStyle = createGlobalStyle`
         }
     }
 
+    h1 {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    p {
+        text-align: justify;
+    }
+
+    img {
+        max-width: 90%;
+    }
+
     a {
         color: var(--blue);
         text-decoration: none;
@@ -64,9 +82,4 @@ export const GlobalStyle = createGlobalStyle`
             filter: brightness(0.9)
         }
     }
-
-    img {
-        max-width: 90%;
-    }
-
 `
