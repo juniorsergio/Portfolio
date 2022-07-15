@@ -5,6 +5,11 @@ export const Container = styled.div`
     flex-direction: column;
     gap: 1.25rem;
 
+    article + article {
+        border-top: 2px solid var(--purple);
+        padding-top: 1rem;
+    }
+
     figure {
         background: var(--green);
         margin: 0 auto;
