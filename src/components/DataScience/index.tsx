@@ -6,7 +6,7 @@ import tesouro_direto from '../../assets/images/tesouro_direto.png'
 import credit_risk from '../../assets/images/credit_risk.png'
 import breaking_bad from '../../assets/images/breaking_bad.png'
 
-import '../../styles/DataScience.css'
+import { Container } from './styles'
 
 interface Project {
     id: string,
@@ -25,7 +25,7 @@ export function DataScience(){
     const projects: Project[] = t('main.projects', {returnObjects: true})
 
     return (
-        <div className='dataScience'>
+        <Container>
             {projects.map((project, i) => (
                 <article id={project.id}>
                     <h2>
@@ -44,12 +44,12 @@ export function DataScience(){
                         <Markup content={project.text} />                        
                     </p>
 
-                    <figure className="projectImage">
+                    <figure>
                         <img src={projectImages[i]} alt={project.id} />
                         <figcaption> {project.figcaption} </figcaption>
                     </figure>
                 </article>
             ))}
-        </div>
+        </Container>
     )
 }
