@@ -1,5 +1,6 @@
 import { Envelope, FilePdf, GithubLogo, LinkedinLogo, MapPin } from 'phosphor-react'
 import { useTranslation } from "react-i18next";
+import { useState } from 'react';
 
 import photo from '../assets/images/photo.jpg'
 import enCV from '../assets/files/SergioJunior_CV_English.pdf'
@@ -9,10 +10,11 @@ import '../styles/Header.css'
 
 export function Header(){
     const { t, i18n } = useTranslation()
-    const isEnglish = (i18n.language == 'en')
+    const [ isEnglish, setIsEnglish ] = useState(i18n.language === 'en')
   
     const changeLanguage = (lng: string) => {
         i18n.changeLanguage(lng)
+        setIsEnglish(lng === 'en')
     };
 
     return (
@@ -29,8 +31,7 @@ export function Header(){
             </ul>
 
             <div className='social'>
-                <a href={enCV} hidden={!isEnglish} title='Curriculum'> <FilePdf size={40} /> </a>
-                <a href={ptBRCV} hidden={isEnglish} title='Curriculum'> <FilePdf size={40} /> </a>
+                <a href={isEnglish ? enCV : ptBRCV} title='Curriculum'> <FilePdf size={40} /> </a>
                 <a href={t('header.linkedin')} title='LinkedIn'> <LinkedinLogo size={40} /></a>
                 <a href="https://github.com/juniorsergio/" title='GitHub'> <GithubLogo size={40} /> </a>
             </div>

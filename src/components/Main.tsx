@@ -1,17 +1,25 @@
 import { useTranslation } from "react-i18next"
 
-import { useState } from 'react'
+import { MouseEventHandler, useState } from 'react'
 import { AboutMe } from './AboutMe'
 import { DataScience } from "./DataScience"
 
 import '../styles/Main.css'
 
 export function Main(){
-    const { t, i18n } = useTranslation()
+    const { t } = useTranslation()
     const [ activeTab, setActiveTab ] = useState('aboutMe')
 
     function handleNavigationTab (tab: string) {
         setActiveTab(tab)
+    }
+
+    function renderSwitchTab() {
+        switch(activeTab){
+            case 'aboutMe': return <AboutMe />
+            case 'dataScience': return <DataScience />
+            default: return <AboutMe />
+        }
     }
 
     return (
@@ -27,7 +35,7 @@ export function Main(){
                 </ul>
             </nav>
 
-            {activeTab === 'aboutMe' ? <AboutMe /> : <DataScience />}
+            {renderSwitchTab()}
         </main>
     )
 }

@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next"
 
 export function AboutMe(){
-    const { t, i18n } = useTranslation()
+    const { t } = useTranslation()
 
     return (
         <article className="aboutMe">

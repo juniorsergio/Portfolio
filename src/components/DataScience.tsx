@@ -19,7 +19,7 @@ interface Project {
 }
 
 export function DataScience(){
-    const { t, i18n } = useTranslation()
+    const { t } = useTranslation()
 
     const projectImages = [ tesouro_direto, credit_risk, breaking_bad ]
     const projects: Project[] = t('main.projects', {returnObjects: true})
