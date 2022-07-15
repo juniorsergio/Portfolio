@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 export const List = styled.ul`
     display: flex;
-
-    border: 0.1rem solid var(--purple);
-    border-radius: 3rem;
+    min-width: 80%;
   
     li {
+        border: 0.1rem solid var(--purple);
+        
         flex: auto;
         padding: 0.5rem;
 
