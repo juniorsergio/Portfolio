@@ -143,17 +143,17 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
 
     figure {
         background: var(--green);
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        margin: 0 auto;
         
-        padding: 0.625rem;
-        gap: 0.625rem;
+        padding: 1rem 1.5rem;
         border-radius: 3rem;
 
         img {
             max-width: 95%;
+        }
+
+        figcaption {
+            text-align: center;
         }
     }
 `;function xv(){const{t:e}=Go(),t=[yv,kv,wv],n=e("main.projects",{returnObjects:!0});return v(Sv,{children:n.map((r,i)=>$("article",{children:[v("h2",{children:$("a",{href:r.projectLink,children:[v(Vc,{})," ",r.title]})}),v("h3",{hidden:!r.subtitle,children:$("a",{href:r.subtitleLink,children:[v(Vc,{})," ",r.subtitle]})}),v("p",{children:v(vv,{content:r.text})}),$("figure",{children:[v("img",{src:t[i],alt:r.id}),$("figcaption",{children:[" ",r.figcaption," "]})]})]},r.id))})}const Lv=ka.main`
