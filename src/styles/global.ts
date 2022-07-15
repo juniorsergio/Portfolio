@@ -48,8 +48,20 @@ export const Wrapper = styled.div`
         flex-direction: column;
     }
 
-    @media print, screen and (max-width: 1080px) {
-        width: 95vw;
+    @media (max-width: 1080px) {
+        width: 90vw;
+
+        header {
+            width: 30vw;
+        }
+
+        main {
+            width: 65%;
+        }
+    }
+
+    @media (max-width: 720px) {
+        width: auto;
 
         header, main {
             position: relative;
