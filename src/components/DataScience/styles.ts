@@ -7,17 +7,17 @@ export const Container = styled.div`
 
     figure {
         background: var(--green);
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        margin: 0 auto;
         
-        padding: 0.625rem;
-        gap: 0.625rem;
+        padding: 1rem 1.5rem;
         border-radius: 3rem;
 
         img {
             max-width: 95%;
+        }
+
+        figcaption {
+            text-align: center;
         }
     }
 `
