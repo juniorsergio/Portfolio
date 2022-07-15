@@ -117,6 +117,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     .localization, .email {
         display: flex;
         align-items: center;
+        gap: 0.2rem;
     }
 `;function ev(){const{t:e,i18n:t}=Yo(),[n,r]=G.exports.useState(t.language==="en"),i=o=>{t.changeLanguage(o),r(o==="en")};return $(qm,{children:[v("h1",{children:" Sergio Junior "}),$("h1",{children:[" ",e("header.title")," "]}),v("img",{src:q0,alt:"Profile picture"}),$(Jp,{children:[v("li",{className:n?"":"active",onClick:()=>i("ptBR"),children:"Portugu\xEAs"}),v("li",{className:n?"active":"",onClick:()=>i("en"),children:"English"})]}),$("div",{className:"social",children:[$("a",{href:n?em:tm,title:"Curriculum",children:[" ",v(V0,{size:"2.5rem"})," "]}),$("a",{href:e("header.linkedin"),title:"LinkedIn",children:[" ",v(Z0,{size:"2.5rem"})]}),$("a",{href:"https://github.com/juniorsergio/",title:"GitHub",children:[" ",v(Q0,{size:"2.5rem"})," "]})]}),$("div",{className:"localization",children:[v(J0,{size:20}),e("header.localization")]}),$("div",{className:"email",children:[v(B0,{size:20}),v("a",{href:"mailto:sergio.junior55@hotmail.com",children:"sergio.junior55@hotmail.com"})]})]})}const tv=Sr.article`
     flex: auto;
