@@ -2,11 +2,11 @@ import { Envelope, FilePdf, GithubLogo, LinkedinLogo, MapPin } from 'phosphor-re
 import { useTranslation } from "react-i18next";
 import { useState } from 'react';
 
-import photo from '../assets/images/photo.jpg'
-import enCV from '../assets/files/SergioJunior_CV_English.pdf'
-import ptBRCV from '../assets/files/SergioJunior_CV.pdf'
+import photo from '../../assets/images/photo.jpg'
+import enCV from '../../assets/files/SergioJunior_CV_English.pdf'
+import ptBRCV from '../../assets/files/SergioJunior_CV.pdf'
 
-import '../styles/Header.css'
+import '../../styles/Header.css'
 
 export function Header(){
     const { t, i18n } = useTranslation()

@@ -2,11 +2,11 @@ import { Markup } from 'interweave'
 import { Link } from 'phosphor-react'
 import { useTranslation } from "react-i18next"
 
-import tesouro_direto from '../assets/images/tesouro_direto.png'
-import credit_risk from '../assets/images/credit_risk.png'
-import breaking_bad from '../assets/images/breaking_bad.png'
+import tesouro_direto from '../../assets/images/tesouro_direto.png'
+import credit_risk from '../../assets/images/credit_risk.png'
+import breaking_bad from '../../assets/images/breaking_bad.png'
 
-import '../styles/DataScience.css'
+import '../../styles/DataScience.css'
 
 interface Project {
     id: string,

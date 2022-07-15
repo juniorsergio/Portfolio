@@ -1,10 +1,10 @@
 import { useTranslation } from "react-i18next"
 
-import { MouseEventHandler, useState } from 'react'
-import { AboutMe } from './AboutMe'
-import { DataScience } from "./DataScience"
+import { useState } from 'react'
+import { AboutMe } from '../AboutMe'
+import { DataScience } from "../DataScience"
 
-import '../styles/Main.css'
+import '../../styles/Main.css'
 
 export function Main(){
     const { t } = useTranslation()
