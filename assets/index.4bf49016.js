@@ -61,7 +61,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     min-width: 80%;
   
     li {
-        border: 0.1rem solid var(--purple);
+        border: 1.5px solid var(--purple);
         
         flex: auto;
         padding: 0.5rem;
@@ -74,13 +74,13 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         transition: all 0.2s;
     
         &:first-child {
-            border-bottom-left-radius: 3rem;
-            border-top-left-radius: 3rem;
+            border-bottom-left-radius: 50px;
+            border-top-left-radius: 50px;
         }
 
         &:last-child {
-            border-bottom-right-radius: 3rem;
-            border-top-right-radius: 3rem;
+            border-bottom-right-radius: 50px;
+            border-top-right-radius: 50px;
         }
 
         &:hover {
@@ -110,7 +110,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         height: 12.5rem;
         width: 12.5rem;
         
-        border: 0.2rem solid var(--purple);
+        border: 3px solid var(--purple);
         border-radius: 100%;
     }
 
@@ -118,7 +118,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         display: flex;
         align-items: center;
     }
-`;function ev(){const{t:e,i18n:t}=Yo(),[n,r]=G.exports.useState(t.language==="en"),i=o=>{t.changeLanguage(o),r(o==="en")};return $(qm,{children:[v("h1",{children:" Sergio Junior "}),$("h1",{children:[" ",e("header.title")," "]}),v("img",{src:q0,alt:"Profile picture"}),$(Jp,{children:[v("li",{className:n?"":"active",onClick:()=>i("ptBR"),children:"Portugu\xEAs"}),v("li",{className:n?"active":"",onClick:()=>i("en"),children:"English"})]}),$("div",{className:"social",children:[$("a",{href:n?em:tm,title:"Curriculum",children:[" ",v(V0,{size:40})," "]}),$("a",{href:e("header.linkedin"),title:"LinkedIn",children:[" ",v(Z0,{size:40})]}),$("a",{href:"https://github.com/juniorsergio/",title:"GitHub",children:[" ",v(Q0,{size:40})," "]})]}),$("div",{className:"localization",children:[v(J0,{size:20}),e("header.localization")]}),$("div",{className:"email",children:[v(B0,{size:20}),v("a",{href:"mailto:sergio.junior55@hotmail.com",children:"sergio.junior55@hotmail.com"})]})]})}function rf(){const{t:e}=Yo();return v("article",{className:"aboutMe",children:$("p",{children:[" ",e("main.about.text")," "]})})}const J=1,qp=1<<1,eh=1<<2,Ce=1<<3,qs=1<<4,Bi=1<<5,_t=1<<6,el={a:{content:J|Ce,self:!1,type:J|Ce|Bi|_t},address:{invalid:["h1","h2","h3","h4","h5","h6","address","article","aside","section","div","header","footer"],self:!1},audio:{children:["track","source"]},br:{type:J|Ce,void:!0},body:{content:J|qp|eh|Ce|qs|Bi|_t},button:{content:Ce,type:J|Ce|Bi|_t},caption:{content:J,parent:["table"]},col:{parent:["colgroup"],void:!0},colgroup:{children:["col"],parent:["table"]},details:{children:["summary"],type:J|Bi|_t},dd:{content:J,parent:["dl"]},dl:{children:["dt","dd"],type:J},dt:{content:J,invalid:["footer","header"],parent:["dl"]},figcaption:{content:J,parent:["figure"]},footer:{invalid:["footer","header"]},header:{invalid:["footer","header"]},hr:{type:J,void:!0},img:{void:!0},li:{content:J,parent:["ul","ol","menu"]},main:{self:!1},ol:{children:["li"],type:J},picture:{children:["source","img"],type:J|Ce|qs},rb:{parent:["ruby","rtc"]},rp:{parent:["ruby","rtc"]},rt:{content:Ce,parent:["ruby","rtc"]},rtc:{content:Ce,parent:["ruby"]},ruby:{children:["rb","rp","rt","rtc"]},source:{parent:["audio","video","picture"],void:!0},summary:{content:Ce,parent:["details"]},table:{children:["caption","colgroup","thead","tbody","tfoot","tr"],type:J},tbody:{parent:["table"],children:["tr"]},td:{content:J,parent:["tr"]},tfoot:{parent:["table"],children:["tr"]},th:{content:J,parent:["tr"]},thead:{parent:["table"],children:["tr"]},tr:{parent:["table","tbody","thead","tfoot"],children:["th","td"]},track:{parent:["audio","video"],void:!0},ul:{children:["li"],type:J},video:{children:["track","source"]},wbr:{type:J|Ce,void:!0}};function bn(e){return t=>{el[t]={...e,...el[t]}}}["address","main","div","figure","p","pre"].forEach(bn({content:J,type:J|_t}));["abbr","b","bdi","bdo","cite","code","data","dfn","em","i","kbd","mark","q","ruby","samp","strong","sub","sup","time","u","var"].forEach(bn({content:Ce,type:J|Ce|_t}));["p","pre"].forEach(bn({content:Ce,type:J|_t}));["s","small","span","del","ins"].forEach(bn({content:Ce,type:J|Ce}));["article","aside","footer","header","nav","section","blockquote"].forEach(bn({content:J,type:J|qp|_t}));["h1","h2","h3","h4","h5","h6"].forEach(bn({content:Ce,type:J|eh|_t}));["audio","canvas","iframe","img","video"].forEach(bn({type:J|Ce|qs|_t}));const tl=Object.freeze(el),tv=["applet","base","body","command","embed","frame","frameset","head","html","link","meta","noscript","object","script","style","title"],nv=Object.keys(tl).filter(e=>e!=="canvas"&&e!=="iframe"),oe=1,rv=2,Dr=3,Un=4,th=5,of=Object.freeze({alt:oe,cite:oe,class:oe,colspan:Dr,controls:Un,datetime:oe,default:Un,disabled:Un,dir:oe,height:oe,href:oe,id:oe,kind:oe,label:oe,lang:oe,loading:oe,loop:Un,media:oe,muted:Un,poster:oe,rel:oe,role:oe,rowspan:Dr,scope:oe,sizes:oe,span:Dr,start:Dr,style:th,src:oe,srclang:oe,srcset:oe,target:oe,title:oe,type:oe,width:oe}),iv=Object.freeze({class:"className",colspan:"colSpan",datetime:"dateTime",rowspan:"rowSpan",srclang:"srcLang",srcset:"srcSet"});function Ao(){return Ao=Object.assign||function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},Ao.apply(this,arguments)}function nh({attributes:e={},className:t,children:n=null,selfClose:r=!1,tagName:i}){const o=i;return r?qe.createElement(o,Ao({className:t},e)):qe.createElement(o,Ao({className:t},e),n)}class ov{attribute(t,n){return n}node(t,n){return n}}/*!
+`;function ev(){const{t:e,i18n:t}=Yo(),[n,r]=G.exports.useState(t.language==="en"),i=o=>{t.changeLanguage(o),r(o==="en")};return $(qm,{children:[v("h1",{children:" Sergio Junior "}),$("h1",{children:[" ",e("header.title")," "]}),v("img",{src:q0,alt:"Profile picture"}),$(Jp,{children:[v("li",{className:n?"":"active",onClick:()=>i("ptBR"),children:"Portugu\xEAs"}),v("li",{className:n?"active":"",onClick:()=>i("en"),children:"English"})]}),$("div",{className:"social",children:[$("a",{href:n?em:tm,title:"Curriculum",children:[" ",v(V0,{size:"2.5rem"})," "]}),$("a",{href:e("header.linkedin"),title:"LinkedIn",children:[" ",v(Z0,{size:"2.5rem"})]}),$("a",{href:"https://github.com/juniorsergio/",title:"GitHub",children:[" ",v(Q0,{size:"2.5rem"})," "]})]}),$("div",{className:"localization",children:[v(J0,{size:20}),e("header.localization")]}),$("div",{className:"email",children:[v(B0,{size:20}),v("a",{href:"mailto:sergio.junior55@hotmail.com",children:"sergio.junior55@hotmail.com"})]})]})}function rf(){const{t:e}=Yo();return v("article",{className:"aboutMe",children:$("p",{children:[" ",e("main.about.text")," "]})})}const J=1,qp=1<<1,eh=1<<2,Ce=1<<3,qs=1<<4,Bi=1<<5,_t=1<<6,el={a:{content:J|Ce,self:!1,type:J|Ce|Bi|_t},address:{invalid:["h1","h2","h3","h4","h5","h6","address","article","aside","section","div","header","footer"],self:!1},audio:{children:["track","source"]},br:{type:J|Ce,void:!0},body:{content:J|qp|eh|Ce|qs|Bi|_t},button:{content:Ce,type:J|Ce|Bi|_t},caption:{content:J,parent:["table"]},col:{parent:["colgroup"],void:!0},colgroup:{children:["col"],parent:["table"]},details:{children:["summary"],type:J|Bi|_t},dd:{content:J,parent:["dl"]},dl:{children:["dt","dd"],type:J},dt:{content:J,invalid:["footer","header"],parent:["dl"]},figcaption:{content:J,parent:["figure"]},footer:{invalid:["footer","header"]},header:{invalid:["footer","header"]},hr:{type:J,void:!0},img:{void:!0},li:{content:J,parent:["ul","ol","menu"]},main:{self:!1},ol:{children:["li"],type:J},picture:{children:["source","img"],type:J|Ce|qs},rb:{parent:["ruby","rtc"]},rp:{parent:["ruby","rtc"]},rt:{content:Ce,parent:["ruby","rtc"]},rtc:{content:Ce,parent:["ruby"]},ruby:{children:["rb","rp","rt","rtc"]},source:{parent:["audio","video","picture"],void:!0},summary:{content:Ce,parent:["details"]},table:{children:["caption","colgroup","thead","tbody","tfoot","tr"],type:J},tbody:{parent:["table"],children:["tr"]},td:{content:J,parent:["tr"]},tfoot:{parent:["table"],children:["tr"]},th:{content:J,parent:["tr"]},thead:{parent:["table"],children:["tr"]},tr:{parent:["table","tbody","thead","tfoot"],children:["th","td"]},track:{parent:["audio","video"],void:!0},ul:{children:["li"],type:J},video:{children:["track","source"]},wbr:{type:J|Ce,void:!0}};function bn(e){return t=>{el[t]={...e,...el[t]}}}["address","main","div","figure","p","pre"].forEach(bn({content:J,type:J|_t}));["abbr","b","bdi","bdo","cite","code","data","dfn","em","i","kbd","mark","q","ruby","samp","strong","sub","sup","time","u","var"].forEach(bn({content:Ce,type:J|Ce|_t}));["p","pre"].forEach(bn({content:Ce,type:J|_t}));["s","small","span","del","ins"].forEach(bn({content:Ce,type:J|Ce}));["article","aside","footer","header","nav","section","blockquote"].forEach(bn({content:J,type:J|qp|_t}));["h1","h2","h3","h4","h5","h6"].forEach(bn({content:Ce,type:J|eh|_t}));["audio","canvas","iframe","img","video"].forEach(bn({type:J|Ce|qs|_t}));const tl=Object.freeze(el),tv=["applet","base","body","command","embed","frame","frameset","head","html","link","meta","noscript","object","script","style","title"],nv=Object.keys(tl).filter(e=>e!=="canvas"&&e!=="iframe"),oe=1,rv=2,Dr=3,Un=4,th=5,of=Object.freeze({alt:oe,cite:oe,class:oe,colspan:Dr,controls:Un,datetime:oe,default:Un,disabled:Un,dir:oe,height:oe,href:oe,id:oe,kind:oe,label:oe,lang:oe,loading:oe,loop:Un,media:oe,muted:Un,poster:oe,rel:oe,role:oe,rowspan:Dr,scope:oe,sizes:oe,span:Dr,start:Dr,style:th,src:oe,srclang:oe,srcset:oe,target:oe,title:oe,type:oe,width:oe}),iv=Object.freeze({class:"className",colspan:"colSpan",datetime:"dateTime",rowspan:"rowSpan",srclang:"srcLang",srcset:"srcSet"});function Ao(){return Ao=Object.assign||function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},Ao.apply(this,arguments)}function nh({attributes:e={},className:t,children:n=null,selfClose:r=!1,tagName:i}){const o=i;return r?qe.createElement(o,Ao({className:t},e)):qe.createElement(o,Ao({className:t},e),n)}class ov{attribute(t,n){return n}node(t,n){return n}}/*!
  * escape-html
  * Copyright(c) 2012-2013 TJ Holowaychuk
  * Copyright(c) 2015 Andreas Lubbe
@@ -138,7 +138,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         margin: 0 auto;
         
         padding: 1rem 1.5rem;
-        border-radius: 3rem;
+        border-radius: 50px;
 
         img {
             max-width: 95%;
@@ -205,8 +205,8 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
 
     header, main {
         background-color: var(--green-dark);
-        border: 0.2rem solid var(--purple);
-        border-radius: 3rem;
+        border: 3px solid var(--purple);
+        border-radius: 50px;
         
         display: flex;
         flex-direction: column;
