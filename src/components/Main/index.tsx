@@ -28,10 +28,10 @@ export function Main(){
             <nav>
                 <List>
                     <li className={activeTab === 'aboutMe' ? 'active' : ''} onClick={() => handleNavigationTab('aboutMe')}>
-                        <h3>{t('main.tabs.aboutMe')}</h3>
+                        <h2>{t('main.tabs.aboutMe')}</h2>
                     </li>
                     <li className={activeTab === 'dataScience' ? 'active' : ''} onClick={() => handleNavigationTab('dataScience')}>
-                        <h3>{t('main.tabs.dataScience')}</h3>
+                        <h2>{t('main.tabs.dataScience')}</h2>
                     </li>
                 </List>
             </nav>

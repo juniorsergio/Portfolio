@@ -1,37 +1,30 @@
 import styled from "styled-components";
 
 export const List = styled.ul`
-    width: auto;
-    margin: 0 auto;
-    padding: 0;
-
     display: flex;
-    align-items: center;
-    justify-content: space-between;
 
-    border: 1px solid var(--purple);
-    border-radius: 15px;
+    border: 0.1rem solid var(--purple);
+    border-radius: 3rem;
   
     li {
         flex: auto;
-        padding: 8px;
+        padding: 0.5rem;
 
         list-style: none;
         text-align: center;
         font-weight: bold;
 
         cursor: pointer;
-        transition: all 0.7s;
+        transition: all 0.2s;
     
-
         &:first-child {
-            border-bottom-left-radius: 15px;
-            border-top-left-radius: 15px;
+            border-bottom-left-radius: 3rem;
+            border-top-left-radius: 3rem;
         }
 
         &:last-child {
-            border-bottom-right-radius: 15px;
-            border-top-right-radius: 15px;
+            border-bottom-right-radius: 3rem;
+            border-top-right-radius: 3rem;
         }
 
         &:hover {

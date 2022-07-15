@@ -3,7 +3,7 @@ import { Main } from './components/Main'
 
 import { GlobalStyle } from './styles/global';
 
-function App() {
+export function App() {
   return (
     <>
         <Header />
@@ -11,6 +11,4 @@ function App() {
         <GlobalStyle />
     </>
   )
-}
-
-export default App;           
+}      

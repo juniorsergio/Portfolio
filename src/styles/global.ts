@@ -10,6 +10,8 @@ export const GlobalStyle = createGlobalStyle`
 
     * {  
         margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
 
     body {
@@ -19,7 +21,7 @@ export const GlobalStyle = createGlobalStyle`
         width: 70vw;
         margin: 0 auto;
 
-        font: 15px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font: 0.9rem/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
         -webkit-font-smoothing: antialiased;
 
         color: white;
@@ -28,8 +30,8 @@ export const GlobalStyle = createGlobalStyle`
 
     header, main {
         background-color: var(--green-dark);
-        border: 3px solid var(--purple);
-        border-radius: 50px;
+        border: 0.2rem solid var(--purple);
+        border-radius: 3rem;
         
         display: flex;
         flex-direction: column;
@@ -38,21 +40,12 @@ export const GlobalStyle = createGlobalStyle`
     @media print, screen and (max-width: 1080px) {
         body {
             width: 90vw;
-
-            display: flex;
-            justify-content: center;
         }
     }
-
-    h1 {
-        font-size: 26px;
-        text-align: center;
-    }
-
+    
     article {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
+        display: grid;
+        gap: 0.625rem;
     }
 
     p {

@@ -4,32 +4,29 @@ export const Container = styled.header`
     float: left;
     position: fixed;   
 
-    width: 20%;
+    width: 22vw;
     height: 90vh;
+    margin: 5vh 0;
     
     justify-content: center;
     align-items: center;
     
-    gap: 10px;
-    padding: 8px;
-    
-    top: 50%;
-    transform: translate(0, -50%);
+    gap: 0.625rem;
+    padding: 0.625rem;
 
     @media print, screen and (max-width: 1080px) {
         float: none;
         position: static;
-        transform: none;
 
         width: auto;
-        margin: 8px 0;
+        margin: 0.5rem 0;
     }
 
     img {
-        height: 200px;
-        width: 200px;
+        height: 12.5rem;
+        width: 12.5rem;
         
-        border: 3px solid var(--purple);
+        border: 0.2rem solid var(--purple);
         border-radius: 100%;
     }
 
