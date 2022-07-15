@@ -19,7 +19,7 @@ export const Container = styled.header`
         position: static;
 
         width: auto;
-        margin: 0.5rem 0;
+        margin: 0.625rem 0;
     }
 
     img {

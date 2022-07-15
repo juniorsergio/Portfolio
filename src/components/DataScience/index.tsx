@@ -27,7 +27,7 @@ export function DataScience(){
     return (
         <Container>
             {projects.map((project, i) => (
-                <article id={project.id}>
+                <article key={project.id}>
                     <h2>
                         <a href={project.projectLink}>
                             <Link /> {project.title}

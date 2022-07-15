@@ -6,6 +6,18 @@ export const Container = styled.div`
     gap: 1.25rem;
 
     figure {
-        text-align: center;
+        background: var(--green);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        padding: 0.625rem;
+        gap: 0.625rem;
+        border-radius: 3rem;
+
+        img {
+            max-width: 95%;
+        }
     }
 `

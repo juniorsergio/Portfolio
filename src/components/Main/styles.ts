@@ -15,6 +15,15 @@ export const Container = styled.main`
         width: auto;
         
         min-height: auto;
-        margin: 0.5rem 0;
+        margin: 0.625rem 0;
+    }
+    
+    article {
+        display: grid;
+        gap: 0.625rem;
+    }
+
+    p {
+        text-align: justify;
     }
 `

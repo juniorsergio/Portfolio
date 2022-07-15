@@ -17,15 +17,17 @@ export const GlobalStyle = createGlobalStyle`
     body {
         background-image: linear-gradient(330deg, var(--green), black 50%, var(--green));
         background-attachment: fixed;
-        
-        width: 70vw;
-        margin: 0 auto;
 
         font: 0.9rem/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
         -webkit-font-smoothing: antialiased;
 
         color: white;
         text-shadow: 1px 1px black;
+    }
+
+    .wrapper {
+        width: 70vw;
+        margin: 0 auto;
     }
 
     header, main {
@@ -38,24 +40,11 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     @media print, screen and (max-width: 1080px) {
-        body {
+        .wrapper {
             width: 90vw;
         }
     }
     
-    article {
-        display: grid;
-        gap: 0.625rem;
-    }
-
-    p {
-        text-align: justify;
-    }
-
-    img {
-        max-width: 90%;
-    }
-
     a {
         color: var(--blue);
         text-decoration: none;
