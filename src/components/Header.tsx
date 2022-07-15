@@ -2,12 +2,12 @@ import { Envelope, FilePdf, GithubLogo, LinkedinLogo, MapPin } from 'phosphor-re
 import { useTranslation } from "react-i18next";
 import { useState } from 'react';
 
-import photo from '../../assets/images/photo.jpg'
-import enCV from '../../assets/files/SergioJunior_CV_English.pdf'
-import ptBRCV from '../../assets/files/SergioJunior_CV.pdf'
+import photo from '../assets/images/photo.jpg'
+import enCV from '../assets/files/SergioJunior_CV_English.pdf'
+import ptBRCV from '../assets/files/SergioJunior_CV.pdf'
 
-import { List } from '../../styles/lists';
-import { Container } from './styles';
+import { List } from '../styles/lists';
+import { Container } from '../styles/Header';
 
 export function Header(){
     const { t, i18n } = useTranslation()
@@ -32,9 +32,9 @@ export function Header(){
             </List>
 
             <div className='social'>
-                <a href={isEnglish ? enCV : ptBRCV} title='Curriculum'> <FilePdf size={40} /> </a>
-                <a href={t('header.linkedin')} title='LinkedIn'> <LinkedinLogo size={40} /></a>
-                <a href="https://github.com/juniorsergio/" title='GitHub'> <GithubLogo size={40} /> </a>
+                <a href={isEnglish ? enCV : ptBRCV} title='Curriculum'> <FilePdf size={'2.5rem'} /> </a>
+                <a href={t('header.linkedin')} title='LinkedIn'> <LinkedinLogo size={'2.5rem'} /></a>
+                <a href="https://github.com/juniorsergio/" title='GitHub'> <GithubLogo size={'2.5rem'} /> </a>
             </div>
 
             <div className='localization'>

@@ -41,8 +41,8 @@ export const Wrapper = styled.div`
 
     header, main {
         background-color: var(--green-dark);
-        border: 0.2rem solid var(--purple);
-        border-radius: 3rem;
+        border: 3px solid var(--purple);
+        border-radius: 50px;
         
         display: flex;
         flex-direction: column;

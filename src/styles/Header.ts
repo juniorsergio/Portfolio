@@ -18,7 +18,7 @@ export const Container = styled.header`
         height: 12.5rem;
         width: 12.5rem;
         
-        border: 0.2rem solid var(--purple);
+        border: 3px solid var(--purple);
         border-radius: 100%;
     }
 

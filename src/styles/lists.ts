@@ -5,7 +5,7 @@ export const List = styled.ul`
     min-width: 80%;
   
     li {
-        border: 0.1rem solid var(--purple);
+        border: 1.5px solid var(--purple);
         
         flex: auto;
         padding: 0.5rem;
@@ -18,13 +18,13 @@ export const List = styled.ul`
         transition: all 0.2s;
     
         &:first-child {
-            border-bottom-left-radius: 3rem;
-            border-top-left-radius: 3rem;
+            border-bottom-left-radius: 50px;
+            border-top-left-radius: 50px;
         }
 
         &:last-child {
-            border-bottom-right-radius: 3rem;
-            border-top-right-radius: 3rem;
+            border-bottom-right-radius: 50px;
+            border-top-right-radius: 50px;
         }
 
         &:hover {

@@ -10,7 +10,7 @@ export const Container = styled.div`
         margin: 0 auto;
         
         padding: 1rem 1.5rem;
-        border-radius: 3rem;
+        border-radius: 50px;
 
         img {
             max-width: 95%;
