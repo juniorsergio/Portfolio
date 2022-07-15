@@ -66,6 +66,7 @@ export const Wrapper = styled.div`
         header, main {
             position: relative;
             min-height: auto;
+            height: auto;
             width: auto;
             float: none;
             margin: 0.625rem;
