@@ -6,8 +6,8 @@ import photo from '../../assets/images/photo.jpg'
 import enCV from '../../assets/files/SergioJunior_CV_English.pdf'
 import ptBRCV from '../../assets/files/SergioJunior_CV.pdf'
 
-import '../../styles/Header.css'
 import { List } from '../../styles/lists';
+import { Container } from './styles';
 
 export function Header(){
     const { t, i18n } = useTranslation()
@@ -19,12 +19,12 @@ export function Header(){
     };
 
     return (
-        <header>
+        <Container>
             <h1> Sergio Junior </h1>
 
             <h1> {t('header.title')} </h1>
 
-            <img src={photo} alt="Profile picture" className='profilePicture' />
+            <img src={photo} alt="Profile picture" />
 
             <List>
                 <li className={!isEnglish ? 'active' : ''} onClick={() => changeLanguage('ptBR')}>Português</li>
@@ -48,6 +48,6 @@ export function Header(){
                     sergio.junior55@hotmail.com
                 </a>
             </div>
-        </header>
+        </Container>
     )
 }

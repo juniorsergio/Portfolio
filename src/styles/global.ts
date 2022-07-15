@@ -15,7 +15,6 @@ export const GlobalStyle = createGlobalStyle`
     body {
         background-image: linear-gradient(330deg, var(--green), black 50%, var(--green));
         background-attachment: fixed;
-        background-size: 120%;
         
         width: 70vw;
         margin: 0 auto;
@@ -42,16 +41,6 @@ export const GlobalStyle = createGlobalStyle`
 
             display: flex;
             justify-content: center;
-        }
-
-        header, main {
-            float: none;
-            position: static;
-            transform: none;
-
-            width: auto;
-            min-height: auto;
-            margin: 8px 0;
         }
     }
 

@@ -4,8 +4,8 @@ import { useState } from 'react'
 import { AboutMe } from '../AboutMe'
 import { DataScience } from "../DataScience"
 
-import '../../styles/Main.css'
 import { List } from "../../styles/lists"
+import { Container } from "./styles"
 
 export function Main(){
     const { t } = useTranslation()
@@ -24,7 +24,7 @@ export function Main(){
     }
 
     return (
-        <main>
+        <Container>
             <nav>
                 <List>
                     <li className={activeTab === 'aboutMe' ? 'active' : ''} onClick={() => handleNavigationTab('aboutMe')}>
@@ -37,6 +37,6 @@ export function Main(){
             </nav>
 
             {renderSwitchTab()}
-        </main>
+        </Container>
     )
 }

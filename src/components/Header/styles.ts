@@ -16,6 +16,15 @@ export const Container = styled.header`
     top: 50%;
     transform: translate(0, -50%);
 
+    @media print, screen and (max-width: 1080px) {
+        float: none;
+        position: static;
+        transform: none;
+
+        width: auto;
+        margin: 8px 0;
+    }
+
     img {
         height: 200px;
         width: 200px;
