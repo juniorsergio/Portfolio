@@ -23,7 +23,11 @@ export const GlobalStyle = createGlobalStyle`
 
         color: white;
         text-shadow: 1px 1px black;
-    }   
+    }
+
+    h1 {
+        text-align: center;
+    }
     
     a {
         color: var(--blue);
@@ -46,9 +50,10 @@ export const Wrapper = styled.div`
         
         display: flex;
         flex-direction: column;
+        padding: 1.25rem;
     }
 
-    @media (max-width: 1080px) {
+    @media (max-width: 1250px) {
         width: 90vw;
 
         header {
@@ -60,7 +65,7 @@ export const Wrapper = styled.div`
         }
     }
 
-    @media (max-width: 720px) {
+    @media (max-width: 840px) {
         width: auto;
 
         header, main {

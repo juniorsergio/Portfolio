@@ -9,7 +9,8 @@ export const Container = styled.article`
         justify-content: center;
 
         img {
-            max-width: 80%;
+            width: 90%;
+            max-width: 500px;
         }
     }
 `

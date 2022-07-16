@@ -12,13 +12,12 @@ export const Container = styled.header`
     align-items: center;
     
     gap: 0.625rem;
-    padding: 1.25rem;
     
     img {
         height: 14rem;
         width: 14rem;
         
-        border: 0.2rem solid var(--purple);
+        border: 3px solid var(--purple);
         border-radius: 100%;
     }
 

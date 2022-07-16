@@ -20,16 +20,14 @@ export function Header(){
 
     return (
         <Container>
-            <h1> Sergio Junior </h1>
-
-            <h1> {t('header.title')} </h1>
-
-            <img src={photo} alt="Profile picture" />
-
             <List>
                 <li className={!isEnglish ? 'active' : ''} onClick={() => changeLanguage('ptBR')}>Português</li>
                 <li className={isEnglish ? 'active' : ''}  onClick={() => changeLanguage('en')}>English</li>
             </List>
+
+            <img src={photo} alt="Profile picture" />
+            <h1> Sergio Junior </h1>
+            <h1> {t('header.title')} </h1>
 
             <div className='social'>
                 <a href={isEnglish ? enCV : ptBRCV} title='Curriculum'> <FilePdf size={'2.5rem'} /> </a>
