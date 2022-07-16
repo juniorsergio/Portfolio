@@ -15,8 +15,8 @@ export const Container = styled.header`
     padding: 1.25rem;
     
     img {
-        height: 12.5rem;
-        width: 12.5rem;
+        height: 14rem;
+        width: 14rem;
         
         border: 0.2rem solid var(--purple);
         border-radius: 100%;
@@ -25,5 +25,6 @@ export const Container = styled.header`
     .localization, .email {
         display: flex;
         align-items: center;
+        gap: 0.2rem;
     }
 `
