@@ -104,13 +104,12 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     align-items: center;
     
     gap: 0.625rem;
-    padding: 1.25rem;
     
     img {
         height: 14rem;
         width: 14rem;
         
-        border: 0.2rem solid var(--purple);
+        border: 3px solid var(--purple);
         border-radius: 100%;
     }
 
@@ -119,7 +118,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         align-items: center;
         gap: 0.2rem;
     }
-`;function ev(){const{t:e,i18n:t}=Yo(),[n,r]=G.exports.useState(t.language==="en"),i=o=>{t.changeLanguage(o),r(o==="en")};return $(qm,{children:[v("h1",{children:" Sergio Junior "}),$("h1",{children:[" ",e("header.title")," "]}),v("img",{src:q0,alt:"Profile picture"}),$(Jp,{children:[v("li",{className:n?"":"active",onClick:()=>i("ptBR"),children:"Portugu\xEAs"}),v("li",{className:n?"active":"",onClick:()=>i("en"),children:"English"})]}),$("div",{className:"social",children:[$("a",{href:n?em:tm,title:"Curriculum",children:[" ",v(V0,{size:"2.5rem"})," "]}),$("a",{href:e("header.linkedin"),title:"LinkedIn",children:[" ",v(Z0,{size:"2.5rem"})]}),$("a",{href:"https://github.com/juniorsergio/",title:"GitHub",children:[" ",v(Q0,{size:"2.5rem"})," "]})]}),$("div",{className:"localization",children:[v(J0,{size:20}),e("header.localization")]}),$("div",{className:"email",children:[v(B0,{size:20}),v("a",{href:"mailto:sergio.junior55@hotmail.com",children:"sergio.junior55@hotmail.com"})]})]})}const tv=Sr.article`
+`;function ev(){const{t:e,i18n:t}=Yo(),[n,r]=G.exports.useState(t.language==="en"),i=o=>{t.changeLanguage(o),r(o==="en")};return $(qm,{children:[$(Jp,{children:[v("li",{className:n?"":"active",onClick:()=>i("ptBR"),children:"Portugu\xEAs"}),v("li",{className:n?"active":"",onClick:()=>i("en"),children:"English"})]}),v("img",{src:q0,alt:"Profile picture"}),v("h1",{children:" Sergio Junior "}),$("h1",{children:[" ",e("header.title")," "]}),$("div",{className:"social",children:[$("a",{href:n?em:tm,title:"Curriculum",children:[" ",v(V0,{size:"2.5rem"})," "]}),$("a",{href:e("header.linkedin"),title:"LinkedIn",children:[" ",v(Z0,{size:"2.5rem"})]}),$("a",{href:"https://github.com/juniorsergio/",title:"GitHub",children:[" ",v(Q0,{size:"2.5rem"})," "]})]}),$("div",{className:"localization",children:[v(J0,{size:20}),e("header.localization")]}),$("div",{className:"email",children:[v(B0,{size:20}),v("a",{href:"mailto:sergio.junior55@hotmail.com",children:"sergio.junior55@hotmail.com"})]})]})}const tv=Sr.article`
     flex: auto;
     align-items: center;
 
@@ -128,7 +127,8 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         justify-content: center;
 
         img {
-            max-width: 80%;
+            width: 90%;
+            max-width: 500px;
         }
     }
 `;function rf(){const{t:e}=Yo();return $(tv,{children:[$("p",{children:[" ",e("main.about.text")," "]}),v("figure",{children:v("img",{src:"https://static.neris-assets.com/images/personality-types/scenes/analysts_Architect_INTJ_strengths.svg"})})]})}const J=1,qp=1<<1,eh=1<<2,Ce=1<<3,qs=1<<4,Bi=1<<5,_t=1<<6,el={a:{content:J|Ce,self:!1,type:J|Ce|Bi|_t},address:{invalid:["h1","h2","h3","h4","h5","h6","address","article","aside","section","div","header","footer"],self:!1},audio:{children:["track","source"]},br:{type:J|Ce,void:!0},body:{content:J|qp|eh|Ce|qs|Bi|_t},button:{content:Ce,type:J|Ce|Bi|_t},caption:{content:J,parent:["table"]},col:{parent:["colgroup"],void:!0},colgroup:{children:["col"],parent:["table"]},details:{children:["summary"],type:J|Bi|_t},dd:{content:J,parent:["dl"]},dl:{children:["dt","dd"],type:J},dt:{content:J,invalid:["footer","header"],parent:["dl"]},figcaption:{content:J,parent:["figure"]},footer:{invalid:["footer","header"]},header:{invalid:["footer","header"]},hr:{type:J,void:!0},img:{void:!0},li:{content:J,parent:["ul","ol","menu"]},main:{self:!1},ol:{children:["li"],type:J},picture:{children:["source","img"],type:J|Ce|qs},rb:{parent:["ruby","rtc"]},rp:{parent:["ruby","rtc"]},rt:{content:Ce,parent:["ruby","rtc"]},rtc:{content:Ce,parent:["ruby"]},ruby:{children:["rb","rp","rt","rtc"]},source:{parent:["audio","video","picture"],void:!0},summary:{content:Ce,parent:["details"]},table:{children:["caption","colgroup","thead","tbody","tfoot","tr"],type:J},tbody:{parent:["table"],children:["tr"]},td:{content:J,parent:["tr"]},tfoot:{parent:["table"],children:["tr"]},th:{content:J,parent:["tr"]},thead:{parent:["table"],children:["tr"]},tr:{parent:["table","tbody","thead","tfoot"],children:["th","td"]},track:{parent:["audio","video"],void:!0},ul:{children:["li"],type:J},video:{children:["track","source"]},wbr:{type:J|Ce,void:!0}};function bn(e){return t=>{el[t]={...e,...el[t]}}}["address","main","div","figure","p","pre"].forEach(bn({content:J,type:J|_t}));["abbr","b","bdi","bdo","cite","code","data","dfn","em","i","kbd","mark","q","ruby","samp","strong","sub","sup","time","u","var"].forEach(bn({content:Ce,type:J|Ce|_t}));["p","pre"].forEach(bn({content:Ce,type:J|_t}));["s","small","span","del","ins"].forEach(bn({content:Ce,type:J|Ce}));["article","aside","footer","header","nav","section","blockquote"].forEach(bn({content:J,type:J|qp|_t}));["h1","h2","h3","h4","h5","h6"].forEach(bn({content:Ce,type:J|eh|_t}));["audio","canvas","iframe","img","video"].forEach(bn({type:J|Ce|qs|_t}));const tl=Object.freeze(el),nv=["applet","base","body","command","embed","frame","frameset","head","html","link","meta","noscript","object","script","style","title"],rv=Object.keys(tl).filter(e=>e!=="canvas"&&e!=="iframe"),oe=1,iv=2,br=3,Un=4,th=5,of=Object.freeze({alt:oe,cite:oe,class:oe,colspan:br,controls:Un,datetime:oe,default:Un,disabled:Un,dir:oe,height:oe,href:oe,id:oe,kind:oe,label:oe,lang:oe,loading:oe,loop:Un,media:oe,muted:Un,poster:oe,rel:oe,role:oe,rowspan:br,scope:oe,sizes:oe,span:br,start:br,style:th,src:oe,srclang:oe,srcset:oe,target:oe,title:oe,type:oe,width:oe}),ov=Object.freeze({class:"className",colspan:"colSpan",datetime:"dateTime",rowspan:"rowSpan",srclang:"srcLang",srcset:"srcSet"});function Ao(){return Ao=Object.assign||function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},Ao.apply(this,arguments)}function nh({attributes:e={},className:t,children:n=null,selfClose:r=!1,tagName:i}){const o=i;return r?qe.createElement(o,Ao({className:t},e)):qe.createElement(o,Ao({className:t},e),n)}class av{attribute(t,n){return n}node(t,n){return n}}/*!
@@ -172,7 +172,6 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     width: 70%;
     min-height: 95vh;
 
-    padding: 1.25rem;
     gap: 1.25rem;
     margin: 2.5vh 0;
     
@@ -207,7 +206,11 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
 
         color: white;
         text-shadow: 1px 1px black;
-    }   
+    }
+
+    h1 {
+        text-align: center;
+    }
     
     a {
         color: var(--blue);
@@ -228,9 +231,10 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         
         display: flex;
         flex-direction: column;
+        padding: 1.25rem;
     }
 
-    @media (max-width: 1080px) {
+    @media (max-width: 1250px) {
         width: 90vw;
 
         header {
@@ -242,7 +246,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         }
     }
 
-    @media (max-width: 720px) {
+    @media (max-width: 840px) {
         width: auto;
 
         header, main {
