@@ -17,4 +17,14 @@ export const Container = styled.main`
     p {
         text-align: justify;
     }
+
+    .tabCoverImg {
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 90%;
+            max-width: 500px;
+        }
+    }
 `

@@ -8,7 +8,7 @@ export function AboutMe(){
         <Container>
             <p> {t('main.about.text')} </p>
 
-            <figure>
+            <figure className="tabCoverImg">
                 <img
                     src="https://static.neris-assets.com/images/personality-types/scenes/analysts_Architect_INTJ_strengths.svg"
                 />

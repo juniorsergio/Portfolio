@@ -23,6 +23,10 @@ export const GlobalStyle = createGlobalStyle`
 
         color: white;
         text-shadow: 1px 1px black;
+
+        @media (max-width: 840px) {
+            font-size: 0.80rem;
+        }
     }
 
     h1 {
@@ -65,7 +69,7 @@ export const Wrapper = styled.div`
         }
     }
 
-    @media (max-width: 840px) {
+    @media (max-width: 840px), (max-height: 580px) {
         width: auto;
 
         header, main {
