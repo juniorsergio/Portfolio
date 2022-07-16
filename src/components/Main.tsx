@@ -6,6 +6,7 @@ import { DataScience } from "./DataScience"
 
 import { List } from "../styles/lists"
 import { Container } from "../styles/Main"
+import { Frontend } from "./Frontend"
 
 export function Main(){
     const { t } = useTranslation()
@@ -18,6 +19,7 @@ export function Main(){
     function renderSwitchTab() {
         switch(activeTab){
             case 'aboutMe': return <AboutMe />
+            case 'frontend': return <Frontend />
             case 'dataScience': return <DataScience />
             default: return <AboutMe />
         }
@@ -29,6 +31,9 @@ export function Main(){
                 <List>
                     <li className={activeTab === 'aboutMe' ? 'active' : ''} onClick={() => handleNavigationTab('aboutMe')}>
                         <h2>{t('main.tabs.aboutMe')}</h2>
+                    </li>
+                    <li className={activeTab === 'frontend' ? 'active' : ''} onClick={() => handleNavigationTab('frontend')}>
+                        <h2>Front-End</h2>
                     </li>
                     <li className={activeTab === 'dataScience' ? 'active' : ''} onClick={() => handleNavigationTab('dataScience')}>
                         <h2>{t('main.tabs.dataScience')}</h2>

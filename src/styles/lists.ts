@@ -18,11 +18,13 @@ export const List = styled.ul`
         transition: all 0.2s;
     
         &:first-child {
+            padding-left: 1rem;
             border-bottom-left-radius: 50px;
             border-top-left-radius: 50px;
         }
 
         &:last-child {
+            padding-right: 1rem;
             border-bottom-right-radius: 50px;
             border-top-right-radius: 50px;
         }
