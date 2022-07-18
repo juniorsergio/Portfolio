@@ -210,6 +210,12 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
             li {
                 figure {
                     background: var(--green);
+                    transition: filter 0.2s;
+
+                    &.active:hover {
+                        filter: brightness(0.9);
+                        cursor: pointer;
+                    }
 
                     figcaption {
                         padding: 1rem;
@@ -237,7 +243,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
             }
         }
     }
-`;function x2(){const e=["social-media-feed"];function t(n){if(!e[n])return;const r="https://juniorsergio.github.io/"+e[n];window.open(r,"_blank")}return y(S2,{children:M(Yh.Carousel,{swipeable:!0,emulateTouch:!0,infiniteLoop:!0,onClickItem:t,showIndicators:!1,statusFormatter:(n,r)=>`${n} de ${r}`,children:[M("figure",{children:[y("img",{src:w2}),y("figcaption",{children:"Social Media Feed"})]}),M("figure",{children:[y("img",{src:k2}),y("figcaption",{children:"Personal Finance"})]})]})})}function L2(){const{t:e}=La(),[t,n]=V.exports.useState("aboutMe");function r(o){n(o)}function i(){switch(t){case"aboutMe":return y(Uf,{});case"frontend":return y(x2,{});case"dataScience":return y(Py,{});default:return y(Uf,{})}}return M(Oy,{children:[y("nav",{children:M(Uh,{children:[y("li",{className:t==="aboutMe"?"active":"",onClick:()=>r("aboutMe"),children:y("h2",{children:e("main.tabs.aboutMe")})}),y("li",{className:t==="frontend"?"active":"",onClick:()=>r("frontend"),children:y("h2",{children:"Front-End"})}),y("li",{className:t==="dataScience"?"active":"",onClick:()=>r("dataScience"),children:y("h2",{children:e("main.tabs.dataScience")})})]})}),i()]})}const P2=q1`
+`;function x2(){const e=["social-media-feed"];function t(n){if(!e[n])return;const r="https://juniorsergio.github.io/"+e[n];window.open(r,"_blank")}return y(S2,{children:M(Yh.Carousel,{swipeable:!0,emulateTouch:!0,infiniteLoop:!0,onClickItem:t,showIndicators:!1,statusFormatter:(n,r)=>`${n} de ${r}`,children:[M("figure",{className:"active",children:[y("img",{src:w2}),y("figcaption",{children:"Social Media Feed"})]}),M("figure",{children:[y("img",{src:k2}),y("figcaption",{children:"Personal Finance"})]})]})})}function L2(){const{t:e}=La(),[t,n]=V.exports.useState("aboutMe");function r(o){n(o)}function i(){switch(t){case"aboutMe":return y(Uf,{});case"frontend":return y(x2,{});case"dataScience":return y(Py,{});default:return y(Uf,{})}}return M(Oy,{children:[y("nav",{children:M(Uh,{children:[y("li",{className:t==="aboutMe"?"active":"",onClick:()=>r("aboutMe"),children:y("h2",{children:e("main.tabs.aboutMe")})}),y("li",{className:t==="frontend"?"active":"",onClick:()=>r("frontend"),children:y("h2",{children:"Front-End"})}),y("li",{className:t==="dataScience"?"active":"",onClick:()=>r("dataScience"),children:y("h2",{children:e("main.tabs.dataScience")})})]})}),i()]})}const P2=q1`
     :root {
         --green: #2F4F4F;
         --green-dark: #2A4141;
