@@ -21,6 +21,12 @@ export const Container = styled.div`
             li {
                 figure {
                     background: var(--green);
+                    transition: filter 0.2s;
+
+                    &.active:hover {
+                        filter: brightness(0.9);
+                        cursor: pointer;
+                    }
 
                     figcaption {
                         padding: 1rem;
