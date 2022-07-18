@@ -1,17 +1,40 @@
-import { Container } from "../styles/AboutMe";
+import { Carousel } from 'react-responsive-carousel';
+
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Container } from "../styles/Frontend";
 
 export function Frontend(){
     return (
         <Container>
-            <p>
-                Em Breve
-            </p>
+            <Carousel
+                swipeable
+                emulateTouch
+                infiniteLoop
+                showIndicators={false}
+                statusFormatter={(currentItem, total) => {
+                    return `${currentItem} de ${total}`
+                }}              
+            >
+                <a href="https://juniorsergio.github.io/social-media-feed">
+                    <figure>
+                        <img
+                            src="src/assets/images/social-media-feed.png"
+                        />
+                        <figcaption>
+                            Social Media Feed
+                        </figcaption>
+                    </figure>
+                </a>
 
-            <figure className="tabCoverImg">
-                <img
-                    src="https://static.neris-assets.com/images/personality-types/scenes/analysts_Architect_INTJ_friendships.svg"
-                />
-            </figure>
+                <figure>
+                    <img
+                        src="src/assets/images/personal-finance.png"
+                    />
+                    <figcaption>
+                        Personal Finance
+                    </figcaption>
+                </figure>
+            </Carousel>
         </Container>
     )
 }
