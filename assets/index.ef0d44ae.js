@@ -94,11 +94,11 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
             cursor: auto;
         }
     }
-`,ey=qn.header`
+`,ey=qn.aside`
     animation: fadein-scale 1.5s;
 
     float: left;
-    position: fixed;   
+    position: fixed;
  
     width: 20vw;
     height: 90vh;
@@ -151,6 +151,11 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
+    
+    article {
+        display: grid;
+        gap: 0.625rem;
+    }
 
     article + article {
         border-top: 2px solid var(--purple);
@@ -186,11 +191,6 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
 
     gap: 1.25rem;
     margin: 2.5vh 0;
-    
-    article {
-        display: grid;
-        gap: 0.625rem;
-    }
 
     p {
         text-align: justify;
@@ -328,7 +328,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     width: 70vw;
     margin: 0 auto;
 
-    header, main {
+    aside, main {
         background-color: var(--green-dark);
         border: 3px solid var(--purple);
         border-radius: 50px;
@@ -341,7 +341,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     @media (max-width: 1250px) {
         width: 90vw;
 
-        header {
+        aside {
             width: 30vw;
         }
 
@@ -353,7 +353,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     @media (max-width: 840px), (max-height: 580px) {
         width: auto;
 
-        header, main {
+        aside, main {
             position: relative;
             min-height: auto;
             height: auto;
