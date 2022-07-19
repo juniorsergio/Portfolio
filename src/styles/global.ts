@@ -29,7 +29,7 @@ export const GlobalStyle = createGlobalStyle`
         }
     }
 
-    @keyframes fadein {
+    /* @keyframes fadein {
         from {
             opacity: 0;
         }
@@ -48,7 +48,7 @@ export const GlobalStyle = createGlobalStyle`
             opacity: 1;
             transform: scale(1);
         }
-    }
+    } */
 
     h1 {
         text-align: center;

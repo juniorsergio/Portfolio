@@ -5,8 +5,10 @@ import personalFinance from '../assets/images/personal-finance.png'
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Container } from "../styles/Frontend";
+import { useTranslation } from 'react-i18next';
 
 export function Frontend(){
+    const { t, i18n } = useTranslation()
     const carouselSlugs = ['social-media-feed']
     
     function handleClickItem(index: number){
@@ -25,7 +27,7 @@ export function Frontend(){
                 onClickItem={handleClickItem}
                 showIndicators={false}
                 statusFormatter={(currentItem, total) => {
-                    return `${currentItem} de ${total}`
+                    return `${currentItem} ${t('main.frontend.of')} ${total}`
                 }}              
             >
                 <figure className='active'>
@@ -35,12 +37,14 @@ export function Frontend(){
                     </figcaption>
                 </figure>
 
-                <figure>
-                    <img src={personalFinance} />
-                    <figcaption>
-                        Personal Finance
-                    </figcaption>
-                </figure>
+                <div>
+                    <figure className='soon'>
+                        <img src={personalFinance} />
+                        <figcaption>
+                            {t('main.frontend.soon')}
+                        </figcaption>
+                    </figure>
+                </div>
             </Carousel>
         </Container>
     )

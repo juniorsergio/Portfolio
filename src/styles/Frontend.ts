@@ -23,9 +23,18 @@ export const Container = styled.div`
                     background: var(--green);
                     transition: filter 0.2s;
 
+                    &.soon {       
+                        img {
+                            filter: brightness(0.7);
+                        }
+                    }
+
                     &.active:hover {
-                        filter: brightness(0.9);
-                        cursor: pointer;
+                        cursor: pointer; 
+
+                        img {
+                            filter: brightness(0.9);
+                        }
                     }
 
                     figcaption {

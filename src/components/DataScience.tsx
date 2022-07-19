@@ -22,7 +22,7 @@ export function DataScience(){
     const { t } = useTranslation()
 
     const projectImages = [ tesouro_direto, credit_risk, breaking_bad ]
-    const projects: Project[] = t('main.projects', {returnObjects: true})
+    const projects: Project[] = t('main.dataScience', {returnObjects: true})
 
     return (
         <Container>
