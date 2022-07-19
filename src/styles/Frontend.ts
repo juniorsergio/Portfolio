@@ -25,7 +25,7 @@ export const Container = styled.div`
 
                     &.soon {       
                         img {
-                            filter: brightness(0.7);
+                            filter: brightness(0.5);
                         }
                     }
 
