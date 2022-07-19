@@ -6,13 +6,15 @@ export function AboutMe(){
 
     return (
         <Container>
-            <p> {t('main.about.text')} </p>
+            <article>
+                <p> {t('main.about.text')} </p>
 
-            <figure className="tabCoverImg">
-                <img
-                    src="https://static.neris-assets.com/images/personality-types/scenes/analysts_Architect_INTJ_strengths.svg"
-                />
-            </figure>
+                <figure className="tabCoverImg">
+                    <img
+                        src="https://static.neris-assets.com/images/personality-types/scenes/analysts_Architect_INTJ_strengths.svg"
+                    />
+                </figure>
+            </article>
         </Container>
     )
 }

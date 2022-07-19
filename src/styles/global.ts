@@ -29,6 +29,27 @@ export const GlobalStyle = createGlobalStyle`
         }
     }
 
+    @keyframes fadein {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadein-scale {
+        from {
+            opacity: 0;
+            transform-origin: center;
+            transform: scale(0.5);
+        }
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
     h1 {
         text-align: center;
     }

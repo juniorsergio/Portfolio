@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.header`
+    animation: fadein-scale 1.5s;
+
     float: left;
     position: fixed;   
  
