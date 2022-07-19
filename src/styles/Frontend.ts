@@ -23,7 +23,7 @@ export const Container = styled.div`
                     background: var(--green);
                     transition: filter 0.2s;
 
-                    &.soon {       
+                    &.disabled {       
                         img {
                             filter: brightness(0.5);
                         }
@@ -33,7 +33,7 @@ export const Container = styled.div`
                         cursor: pointer; 
 
                         img {
-                            filter: brightness(0.9);
+                            filter: brightness(1.2);
                         }
                     }
 

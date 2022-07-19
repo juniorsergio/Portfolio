@@ -7,15 +7,26 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Container } from "../styles/Frontend";
 import { useTranslation } from 'react-i18next';
 
+interface FrontendProject {
+    id: string,
+    projectLink: string,
+    stacks: string[],
+    description: string,
+    type: string
+}
+
 export function Frontend(){
-    const { t, i18n } = useTranslation()
-    const carouselSlugs = ['social-media-feed']
+    const { t } = useTranslation()
+
+    const projects: FrontendProject[] = t('main.frontend.projects', {returnObjects: true})
+    const projectImages = [ socialMediaFeed, personalFinance ]
+    const carouselSlugs = projects.map(project => project.id)
     
     function handleClickItem(index: number){
-        if (!carouselSlugs[index]) return
-        
-        const link = 'https://juniorsergio.github.io/' + carouselSlugs[index]
-        window.open(link, "_blank")
+        if (projects[index].type === 'active'){       
+            const link = 'https://juniorsergio.github.io/' + carouselSlugs[index]
+            window.open(link, "_blank")
+        }
     }
     
     return (
@@ -30,21 +41,15 @@ export function Frontend(){
                     return `${currentItem} ${t('main.frontend.of')} ${total}`
                 }}              
             >
-                <figure className='active'>
-                    <img src={socialMediaFeed} />
-                    <figcaption>
-                        Social Media Feed
-                    </figcaption>
-                </figure>
 
-                <div>
-                    <figure className='soon'>
-                        <img src={personalFinance} />
+                {projects.map((project, index) => (
+                    <figure className={project.type} key={project.id}>
+                        <img src={projectImages[index]} />
                         <figcaption>
-                            {t('main.frontend.soon')}
+                            {project.description}
                         </figcaption>
                     </figure>
-                </div>
+                ))}
             </Carousel>
         </Container>
     )

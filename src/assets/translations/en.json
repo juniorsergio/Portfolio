@@ -17,7 +17,24 @@
 
         "frontend" : {
             "of": "of",
-            "soon": "Coming soon"
+            "soon": "Coming soon",
+            "stackTitle": "Technologies",
+            "projects": [
+                {
+                    "id": "social-media-feed",
+                    "projectLink": "https://github.com/juniorsergio/social-media-feed",
+                    "stacks": ["react", "typescript", "graphql"],
+                    "description": "Social Media Feed",
+                    "type": "active"
+                },
+                {
+                    "id": "personal-finance",
+                    "projectLink": "",
+                    "stacks": ["react", "typescript"],
+                    "description": "Personal Finance",
+                    "type": "disabled"
+                }
+            ]
         },
 
         "dataScience": [

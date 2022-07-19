@@ -8,7 +8,7 @@ import breaking_bad from '../assets/images/breaking_bad.png'
 
 import { Container } from '../styles/DataScience'
 
-interface Project {
+interface DataScienceProjects {
     id: string,
     title: string,
     projectLink: string,
@@ -22,11 +22,11 @@ export function DataScience(){
     const { t } = useTranslation()
 
     const projectImages = [ tesouro_direto, credit_risk, breaking_bad ]
-    const projects: Project[] = t('main.dataScience', {returnObjects: true})
+    const projects: DataScienceProjects[] = t('main.dataScience', {returnObjects: true})
 
     return (
         <Container>
-            {projects.map((project, i) => (
+            {projects.map((project, index) => (
                 <article key={project.id}>
                     <h2>
                         <a href={project.projectLink}>
@@ -45,7 +45,7 @@ export function DataScience(){
                     </p>
 
                     <figure>
-                        <img src={projectImages[i]} alt={project.id} />
+                        <img src={projectImages[index]} alt={project.id} />
                         <figcaption> {project.figcaption} </figcaption>
                     </figure>
                 </article>
