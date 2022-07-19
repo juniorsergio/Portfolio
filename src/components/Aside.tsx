@@ -7,7 +7,7 @@ import enCV from '../assets/files/SergioJunior_CV_English.pdf'
 import ptBRCV from '../assets/files/SergioJunior_CV.pdf'
 
 import { List } from '../styles/lists';
-import { Container } from '../styles/Header';
+import { Container } from '../styles/Aside';
 
 export function Aside(){
     const { t, i18n } = useTranslation()

@@ -4,7 +4,7 @@ export const Container = styled.aside`
     animation: fadein-scale 1.5s;
 
     float: left;
-    position: fixed;   
+    position: fixed;
  
     width: 20vw;
     height: 90vh;

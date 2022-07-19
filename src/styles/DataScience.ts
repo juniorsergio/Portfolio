@@ -4,6 +4,11 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
+    
+    article {
+        display: grid;
+        gap: 0.625rem;
+    }
 
     article + article {
         border-top: 2px solid var(--purple);
