@@ -1,3 +1,4 @@
+import { Markup } from "interweave"
 import { useTranslation } from "react-i18next"
 import { Container } from "../styles/AboutMe"
 
@@ -7,7 +8,7 @@ export function AboutMe(){
     return (
         <Container>
             <article>
-                <p> {t('main.about.text')} </p>
+                <Markup content={t('main.about.text')} />
 
                 <figure className="tabCoverImg">
                     <img
