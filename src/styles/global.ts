@@ -68,7 +68,7 @@ export const Wrapper = styled.div`
     width: 70vw;
     margin: 0 auto;
 
-    header, main {
+    aside, main {
         background-color: var(--green-dark);
         border: 3px solid var(--purple);
         border-radius: 50px;
@@ -81,7 +81,7 @@ export const Wrapper = styled.div`
     @media (max-width: 1250px) {
         width: 90vw;
 
-        header {
+        aside {
             width: 30vw;
         }
 
@@ -93,7 +93,7 @@ export const Wrapper = styled.div`
     @media (max-width: 840px), (max-height: 580px) {
         width: auto;
 
-        header, main {
+        aside, main {
             position: relative;
             min-height: auto;
             height: auto;

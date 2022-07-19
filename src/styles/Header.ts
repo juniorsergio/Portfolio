@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.header`
+export const Container = styled.aside`
     animation: fadein-scale 1.5s;
 
     float: left;

@@ -1,4 +1,4 @@
-import { Header } from './components/Header'
+import { Aside } from './components/Aside'
 import { Main } from './components/Main'
 
 import { GlobalStyle, Wrapper } from './styles/global';
@@ -6,7 +6,7 @@ import { GlobalStyle, Wrapper } from './styles/global';
 export function App() {
   return (
     <Wrapper>
-        <Header />
+        <Aside />
         <Main />
         <GlobalStyle />
     </Wrapper>

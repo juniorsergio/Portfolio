@@ -9,7 +9,7 @@ import ptBRCV from '../assets/files/SergioJunior_CV.pdf'
 import { List } from '../styles/lists';
 import { Container } from '../styles/Header';
 
-export function Header(){
+export function Aside(){
     const { t, i18n } = useTranslation()
     const [ isEnglish, setIsEnglish ] = useState(i18n.language === 'en')
   
