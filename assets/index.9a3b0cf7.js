@@ -224,7 +224,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
 
                     &.soon {       
                         img {
-                            filter: brightness(0.7);
+                            filter: brightness(0.5);
                         }
                     }
 
@@ -291,7 +291,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         }
     }
 
-    /* @keyframes fadein {
+    @keyframes fadein {
         from {
             opacity: 0;
         }
@@ -310,7 +310,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
             opacity: 1;
             transform: scale(1);
         }
-    } */
+    }
 
     h1 {
         text-align: center;
