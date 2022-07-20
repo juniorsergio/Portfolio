@@ -71,7 +71,7 @@ export const GlobalStyle = createGlobalStyle<Props>`
         font-weight: bold;
 
         &:hover {
-            filter: brightness(0.9)
+            filter: brightness(0.8)
         }
     }
 `

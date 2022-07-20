@@ -2,7 +2,7 @@ export const lightTheme = {
     mainColor: '#ECECEB',
     mainColorDark: '#CECECD',
     purple: '#8079ab',
-    blue: '#285E70',
+    blue: '#104f6b',
     backgroundShadow : '#939393',
     textColor: 'black',
     textShadow: 'var(--main-color-dark)'
