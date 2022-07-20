@@ -12,7 +12,7 @@ export const Container = styled.div`
 
     article + article {
         border-top: 2px solid var(--purple);
-        padding-top: 1rem;
+        padding-top: 1.25rem;
     }
 
     figure {
@@ -20,7 +20,7 @@ export const Container = styled.div`
         margin: 0 auto;
         
         padding: 1rem 1.5rem;
-        border-radius: 14px;
+        border-radius: 15px;
 
         img {
             max-width: 95%;

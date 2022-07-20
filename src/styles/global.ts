@@ -41,7 +41,6 @@ export const GlobalStyle = createGlobalStyle`
     @keyframes fadein-scale {
         from {
             opacity: 0;
-            transform-origin: center top;
             transform: scale(0.5);
         }
         to {

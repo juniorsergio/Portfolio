@@ -40,9 +40,7 @@ export function DataScience(){
                         </a>
                     </h3>
 
-                    <p>
-                        <Markup content={project.text} />                        
-                    </p>
+                    <Markup tagName='p' content={project.text} />
 
                     <figure>
                         <img src={projectImages[index]} alt={project.id} />

@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.aside`
     animation: fadein-scale 1.5s;
+    transform-origin: center top;
 
     float: left;
     position: fixed;
