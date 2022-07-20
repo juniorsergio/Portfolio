@@ -68,7 +68,6 @@ export const GlobalStyle = createGlobalStyle<Props>`
     a {
         color: var(--blue);
         text-decoration: none;
-        font-weight: bold;
 
         &:hover {
             filter: brightness(0.8)
