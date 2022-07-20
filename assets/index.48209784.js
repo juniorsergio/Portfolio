@@ -402,7 +402,6 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     a {
         color: var(--blue);
         text-decoration: none;
-        font-weight: bold;
 
         &:hover {
             filter: brightness(0.8)
