@@ -161,8 +161,9 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: var(--green);
+        background-color: var(--purple);
         transition: 0.2s;
+
         border-radius: 50px;
 
         &:before {
@@ -345,7 +346,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
             }
         }
     }
-`;function N2(){const{t:e}=Fi(),t=e("main.frontend.projects",{returnObjects:!0}),n=t.map(a=>a.id),r=[b2,R2];function i(a){if(t[a].type==="active"){const s="https://juniorsergio.github.io/"+n[a];window.open(s,"_blank")}}function o(a){const s=document.getElementById(t[a].id),l=s==null?void 0:s.offsetHeight;if(l){const u=document.getElementsByClassName("carousel-slider");u[0].style.height=l.toString()+"px"}}return I(T2,{children:[m("p",{children:m($l,{content:e("main.frontend.opening")})}),m(Jh.Carousel,{swipeable:!0,emulateTouch:!0,infiniteLoop:!0,onClickItem:i,onChange:o,showIndicators:!1,showStatus:!1,children:t.map((a,s)=>I("figure",{id:a.id,className:a.type,children:[m("figcaption",{children:m("div",{children:a.stacks.map(l=>m("span",{children:l},l))})}),m("img",{src:r[s]}),I("figcaption",{children:[m("h2",{children:a.title}),m($l,{tagName:"p",content:a.type==="active"?a.description:e("main.frontend.soon")})]})]},a.id))})]})}function j2(){const{t:e}=Fi(),[t,n]=U.exports.useState("aboutMe");function r(o){n(o)}function i(){switch(t){case"aboutMe":return m(Kf,{});case"frontend":return m(N2,{});case"dataScience":return m(Iy,{});default:return m(Kf,{})}}return I(My,{children:[m("nav",{children:I(Zh,{children:[m("li",{className:t==="aboutMe"?"active":"",onClick:()=>r("aboutMe"),children:m("h2",{children:e("main.tabs.aboutMe")})}),m("li",{className:t==="frontend"?"active":"",onClick:()=>r("frontend"),children:m("h2",{children:"Front-End"})}),m("li",{className:t==="dataScience"?"active":"",onClick:()=>r("dataScience"),children:m("h2",{children:e("main.tabs.dataScience")})})]})}),i()]})}const I2={green:"#D0D0D0",greenDark:"#A3A3A3",purple:"#D8A537",blue:"#285E70",backgroundShadow:"#4F5253",textColor:"black",textShadow:"var(--green)"},M2={green:"#2F4F4F",greenDark:"#2A4141",purple:"#483D8B",blue:"#26BCFF",backgroundShadow:"black",textColor:"white",textShadow:"black"},A2=Dv`
+`;function N2(){const{t:e}=Fi(),t=e("main.frontend.projects",{returnObjects:!0}),n=t.map(a=>a.id),r=[b2,R2];function i(a){if(t[a].type==="active"){const s="https://juniorsergio.github.io/"+n[a];window.open(s,"_blank")}}function o(a){const s=document.getElementById(t[a].id),l=s==null?void 0:s.offsetHeight;if(l){const u=document.getElementsByClassName("carousel-slider");u[0].style.height=l.toString()+"px"}}return I(T2,{children:[m("p",{children:m($l,{content:e("main.frontend.opening")})}),m(Jh.Carousel,{swipeable:!0,emulateTouch:!0,infiniteLoop:!0,onClickItem:i,onChange:o,showIndicators:!1,showStatus:!1,children:t.map((a,s)=>I("figure",{id:a.id,className:a.type,children:[m("figcaption",{children:m("div",{children:a.stacks.map(l=>m("span",{children:l},l))})}),m("img",{src:r[s]}),I("figcaption",{children:[m("h2",{children:a.title}),m($l,{tagName:"p",content:a.type==="active"?a.description:e("main.frontend.soon")})]})]},a.id))})]})}function j2(){const{t:e}=Fi(),[t,n]=U.exports.useState("aboutMe");function r(o){n(o)}function i(){switch(t){case"aboutMe":return m(Kf,{});case"frontend":return m(N2,{});case"dataScience":return m(Iy,{});default:return m(Kf,{})}}return I(My,{children:[m("nav",{children:I(Zh,{children:[m("li",{className:t==="aboutMe"?"active":"",onClick:()=>r("aboutMe"),children:m("h2",{children:e("main.tabs.aboutMe")})}),m("li",{className:t==="frontend"?"active":"",onClick:()=>r("frontend"),children:m("h2",{children:"Front-End"})}),m("li",{className:t==="dataScience"?"active":"",onClick:()=>r("dataScience"),children:m("h2",{children:e("main.tabs.dataScience")})})]})}),i()]})}const I2={green:"#ECECEB",greenDark:"#CECECD",purple:"#8079ab",blue:"#285E70",backgroundShadow:"#939393",textColor:"black",textShadow:"var(--green-dark)"},M2={green:"#2F4F4F",greenDark:"#2A4141",purple:"#483D8B",blue:"#26BCFF",backgroundShadow:"black",textColor:"white",textShadow:"black"},A2=Dv`
     :root {
         --green: ${e=>e.theme.green};
         --green-dark: ${e=>e.theme.greenDark};
@@ -367,7 +368,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         -webkit-font-smoothing: antialiased;
 
         color: ${e=>e.theme.textColor};
-        text-shadow: 1px 1px ${e=>e.theme.textShadow};
+        text-shadow: 0.5px 0px ${e=>e.theme.textShadow};
 
         @media (max-width: 840px) {
             font-size: 0.80rem;
