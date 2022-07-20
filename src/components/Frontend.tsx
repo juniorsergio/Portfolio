@@ -1,6 +1,5 @@
 import { Carousel } from 'react-responsive-carousel';
 import { useTranslation } from 'react-i18next';
-import { ReactNode } from 'react';
 
 import socialMediaFeed from '../assets/images/social-media-feed.png'
 import personalFinance from '../assets/images/personal-finance.png'
@@ -25,12 +24,11 @@ export function Frontend(){
     const carouselSlugs = projects.map(project => project.id)
     const projectImages = [ socialMediaFeed, personalFinance ]
     
-    function handleClickItem(index: number, label: ReactNode){
+    function handleClickItem(index: number){
         if (projects[index].type === 'active'){       
             const link = 'https://juniorsergio.github.io/' + carouselSlugs[index]
             window.open(link, "_blank")
         }
-        console.log(label)
     }
 
     function setElementHeight (index: number){
