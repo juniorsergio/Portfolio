@@ -1,6 +1,6 @@
 export const lightTheme = {
     mainColor: '#ECECEB',
-    mainColorDark: '#CECECD',
+    mainColorDark: '#DCDCDB',
     purple: '#8079ab',
     blue: '#104f6b',
     backgroundShadow : '#939393',

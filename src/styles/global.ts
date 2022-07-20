@@ -27,7 +27,7 @@ export const GlobalStyle = createGlobalStyle<Props>`
     }
 
     body {
-        background-image: linear-gradient(330deg, var(--main-color), ${props => props.theme.backgroundShadow} 50%, var(--main-color));
+        background-image: linear-gradient(330deg, var(--main-color), ${props => props.theme.backgroundShadow}, var(--main-color));
         background-attachment: fixed;
 
         font: 0.9rem/1.5 "Poppins", sans-serif;
