@@ -72,7 +72,12 @@ export function Frontend(){
                         <figcaption>
                             <h2>{project.title}</h2>
 
-                            <Markup tagName='p' content={project.type === 'active' ? project.description : t('main.frontend.soon')} />         
+                            <Markup
+                                tagName='p'
+                                content={project.type === 'active'
+                                            ? project.description
+                                            : t('main.frontend.soon')}
+                            />         
                         </figcaption>
                     </figure>
                 ))}
