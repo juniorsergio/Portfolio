@@ -1,3 +1,4 @@
+import Cookies from "js-cookie";
 import { useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 
@@ -8,10 +9,12 @@ import { lightTheme, darkTheme } from './styles/theme'
 import { GlobalStyle, Wrapper } from './styles/global';
 
 export function App() {
-  const [ isDarkMode, setIsDarkMode ] = useState(true)
+	const darkModeCookie = Cookies.get('darkMode') ?? 'true'
+  const [ isDarkMode, setIsDarkMode ] = useState(darkModeCookie === 'true')
 
   function handleColorSchemeSelection(){
     setIsDarkMode(!isDarkMode)
+    Cookies.set('darkMode', (!isDarkMode).toString())
   }
   
   return (
