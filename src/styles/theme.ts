@@ -1,11 +1,11 @@
 export const lightTheme = {
-    mainColor: '#ECECEB',
-    mainColorDark: '#DCDCDB',
+    mainColor: 'white',
+    mainColorDark: '#ECECEB',
     purple: '#8079ab',
     blue: '#104f6b',
-    backgroundShadow : '#939393',
+    backgroundShadow : '#CDCDCC',
     textColor: 'black',
-    textShadow: 'var(--main-color-dark)'
+    textShadow: '#CDCDCC'
 }
 
 export const darkTheme = {
