@@ -1,4 +1,4 @@
-import { Envelope, FilePdf, GithubLogo, LinkedinLogo, MapPin } from 'phosphor-react'
+import { Envelope, FilePdf, GithubLogo, LinkedinLogo, MapPin, Moon, SunDim } from 'phosphor-react'
 import { useTranslation } from "react-i18next";
 import { useState } from 'react';
 
@@ -8,22 +8,37 @@ import ptBRCV from '../assets/files/SergioJunior_CV.pdf'
 
 import { List } from '../styles/lists';
 import { Container } from '../styles/Aside';
+import { Switch } from '../styles/switch';
 
-export function Aside(){
+interface AsideProps {
+    isDarkMode: boolean,
+    changeColorScheme: () => void
+}
+
+export function Aside({ isDarkMode, changeColorScheme }: AsideProps){
     const { t, i18n } = useTranslation()
     const [ isEnglish, setIsEnglish ] = useState(i18n.language === 'en')
   
-    const changeLanguage = (lng: string) => {
+    const handleChangeLanguage = (lng: string) => {
         i18n.changeLanguage(lng)
         setIsEnglish(lng === 'en')
     };
 
     return (
         <Container>
-            <List>
-                <li className={!isEnglish ? 'active' : ''} onClick={() => changeLanguage('ptBR')}>Português</li>
-                <li className={isEnglish ? 'active' : ''}  onClick={() => changeLanguage('en')}>English</li>
-            </List>
+            <div className='pageSelectors'>
+                <List>
+                    <li className={!isEnglish ? 'active' : ''} onClick={() => handleChangeLanguage('ptBR')}>Português</li>
+                    <li className={isEnglish ? 'active' : ''}  onClick={() => handleChangeLanguage('en')}>English</li>
+                </List>
+
+                <Switch>
+                    <SunDim size={'2rem'} />
+                        <input type="checkbox" checked={isDarkMode} onChange={changeColorScheme} />
+                        <span className="slider"></span>
+                    <Moon size={'2rem'} />
+                </Switch>
+            </div>
 
             <img src={photo} alt="Profile picture" />
             <h1> Sergio Junior </h1>

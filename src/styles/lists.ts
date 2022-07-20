@@ -30,7 +30,7 @@ export const List = styled.ul`
         }
 
         &:hover {
-            background: var(--green);
+            background: var(--main-color);
         }
 
         &.active {

@@ -1,11 +1,23 @@
 import styled, { createGlobalStyle } from 'styled-components'
 
-export const GlobalStyle = createGlobalStyle`
+interface Props {
+    theme: {
+        mainColor: string,
+        mainColorDark: string,
+        purple: string,
+        blue: string,
+        backgroundShadow: string,
+        textColor: string,
+        textShadow: string
+    }
+}
+
+export const GlobalStyle = createGlobalStyle<Props>`
     :root {
-        --green: #2F4F4F;
-        --green-dark: #2A4141;
-        --purple: #483D8B;
-        --blue: #26BCFF;
+        --main-color: ${props => props.theme.mainColor};
+        --main-color-dark: ${props => props.theme.mainColorDark};
+        --purple: ${props => props.theme.purple};
+        --blue: ${props => props.theme.blue};
     }
 
     * {  
@@ -15,14 +27,14 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        background-image: linear-gradient(330deg, var(--green), black 50%, var(--green));
+        background-image: linear-gradient(330deg, var(--main-color), ${props => props.theme.backgroundShadow} 50%, var(--main-color));
         background-attachment: fixed;
 
         font: 0.9rem/1.5 "Poppins", sans-serif;
         -webkit-font-smoothing: antialiased;
 
-        color: white;
-        text-shadow: 1px 1px black;
+        color: ${props => props.theme.textColor};
+        text-shadow: 0.5px 0px ${props => props.theme.textShadow};
 
         @media (max-width: 840px) {
             font-size: 0.80rem;
@@ -56,6 +68,7 @@ export const GlobalStyle = createGlobalStyle`
     a {
         color: var(--blue);
         text-decoration: none;
+        font-weight: bold;
 
         &:hover {
             filter: brightness(0.9)
@@ -68,7 +81,7 @@ export const Wrapper = styled.div`
     margin: 0 auto;
 
     aside, main {
-        background-color: var(--green-dark);
+        background-color: var(--main-color-dark);
         border: 3px solid var(--purple);
         border-radius: 50px;
         

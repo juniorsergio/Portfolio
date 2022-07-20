@@ -15,6 +15,11 @@ export const Container = styled.aside`
     align-items: center;
     
     gap: 0.625rem;
+
+    .pageSelectors {
+        display: grid;
+        gap: 0.625rem;
+    }
     
     img {
         height: 14rem;

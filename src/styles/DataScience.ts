@@ -16,7 +16,7 @@ export const Container = styled.div`
     }
 
     figure {
-        background: var(--green);
+        background: var(--main-color);
         margin: 0 auto;
         
         padding: 1rem 1.5rem;
