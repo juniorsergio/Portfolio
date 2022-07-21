@@ -284,7 +284,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                         cursor: auto;
 
                         span {
-                            background: var(--main-color-light);
+                            background: var(--main-color);
                             border-radius: 15px;
                             padding: 0.4rem;
                             
