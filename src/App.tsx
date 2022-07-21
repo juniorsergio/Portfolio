@@ -1,8 +1,8 @@
-import Cookies from "js-cookie";
 import { useState } from 'react';
 import { ThemeProvider } from 'styled-components';
+import Cookies from "js-cookie";
 
-import { Aside } from './components/Aside'
+import { Header } from './components/Header'
 import { Main } from './components/Main'
 
 import { lightTheme, darkTheme } from './styles/theme'
@@ -20,7 +20,7 @@ export function App() {
   return (
     <Wrapper>
         <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
-          <Aside isDarkMode={isDarkMode} changeColorScheme={handleColorSchemeSelection} />
+          <Header isDarkMode={isDarkMode} changeColorScheme={handleColorSchemeSelection} />
           <Main />
           <GlobalStyle />
         </ThemeProvider>

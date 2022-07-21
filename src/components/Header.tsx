@@ -7,15 +7,15 @@ import enCV from '../assets/files/SergioJunior_CV_English.pdf'
 import ptBRCV from '../assets/files/SergioJunior_CV.pdf'
 
 import { List } from '../styles/lists';
-import { Container } from '../styles/components/Aside';
+import { Container } from '../styles/components/Header';
 import { Switch } from '../styles/switch';
 
-interface AsideProps {
+interface HeaderProps {
     isDarkMode: boolean,
     changeColorScheme: () => void
 }
 
-export function Aside({ isDarkMode, changeColorScheme }: AsideProps){
+export function Header({ isDarkMode, changeColorScheme }: HeaderProps){
     const { t, i18n } = useTranslation()
     const [ isEnglish, setIsEnglish ] = useState(i18n.language === 'en')
   
@@ -41,8 +41,8 @@ export function Aside({ isDarkMode, changeColorScheme }: AsideProps){
             </div>
 
             <img src={photo} alt="Profile picture" />
-            <h1> Sergio Junior </h1>
-            <h1> {t('header.title')} </h1>
+            <h2> Sergio Junior </h2>
+            <h2> {t('header.title')} </h2>
 
             <div className='social'>
                 <a href={isEnglish ? enCV : ptBRCV} title='Curriculum'> <FilePdf size={'2.5rem'} /> </a>

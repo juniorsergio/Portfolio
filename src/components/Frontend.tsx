@@ -1,12 +1,12 @@
 import { Carousel } from 'react-responsive-carousel';
 import { useTranslation } from 'react-i18next';
+import { Markup } from 'interweave';
 
 import socialMediaFeed from '../assets/images/social-media-feed.png'
 import personalFinance from '../assets/images/personal-finance.png'
 
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Container } from "../styles/components/Frontend";
-import { Markup } from 'interweave';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 interface FrontendProject {
     id: string,

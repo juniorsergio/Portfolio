@@ -1,12 +1,12 @@
 import { useTranslation } from "react-i18next"
-
 import { useState } from 'react'
+
 import { AboutMe } from './AboutMe'
 import { DataScience } from "./DataScience"
+import { Frontend } from "./Frontend"
 
 import { List } from "../styles/lists"
 import { Container } from "../styles/components/Main"
-import { Frontend } from "./Frontend"
 
 export function Main(){
     const { t } = useTranslation()
