@@ -22,7 +22,7 @@ export const Container = styled.div`
         ul.slider {
             li {
                 figure {
-                    background: var(--main-color);
+                    background: var(--main-color-light);
 
                     img {                 
                         transition: all 0.2s;
@@ -52,7 +52,7 @@ export const Container = styled.div`
                         cursor: auto;
 
                         span {
-                            background: var(--main-color-dark);
+                            background: var(--main-color-light);
                             border-radius: 15px;
                             padding: 0.4rem;
                             
@@ -79,7 +79,7 @@ export const Container = styled.div`
                 cursor: pointer;
 
                 &:hover {
-                    border-color: var(--main-color);
+                    border-color: var(--main-color-light);
                 }
 
                 &.selected {

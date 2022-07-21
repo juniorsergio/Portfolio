@@ -3,21 +3,22 @@ import styled, { createGlobalStyle } from 'styled-components'
 interface Props {
     theme: {
         mainColor: string,
-        mainColorDark: string,
+        mainColorLight: string,
         purple: string,
         blue: string,
-        backgroundShadow: string,
-        textColor: string,
-        textShadow: string
+        shadow: string,
+        textColor: string
     }
 }
 
 export const GlobalStyle = createGlobalStyle<Props>`
     :root {
         --main-color: ${props => props.theme.mainColor};
-        --main-color-dark: ${props => props.theme.mainColorDark};
+        --main-color-light: ${props => props.theme.mainColorLight};
         --purple: ${props => props.theme.purple};
         --blue: ${props => props.theme.blue};
+        --shadow: ${props => props.theme.shadow};
+        --text-color: ${props => props.theme.textColor};
     }
 
     * {  
@@ -27,14 +28,14 @@ export const GlobalStyle = createGlobalStyle<Props>`
     }
 
     body {
-        background-image: linear-gradient(330deg, var(--main-color), ${props => props.theme.backgroundShadow}, var(--main-color));
+        background-image: linear-gradient(330deg, var(--main-color-light), var(--shadow), var(--main-color-light));
         background-attachment: fixed;
 
         font: 0.9rem/1.5 "Poppins", sans-serif;
         -webkit-font-smoothing: antialiased;
 
-        color: ${props => props.theme.textColor};
-        text-shadow: 0.5px 0px ${props => props.theme.textShadow};
+        color: var(--text-color);
+        text-shadow: 0.5px 0px var(--shadow);
 
         @media (max-width: 840px) {
             font-size: 0.80rem;
@@ -80,7 +81,7 @@ export const Wrapper = styled.div`
     margin: 0 auto;
 
     aside, main {
-        background-color: var(--main-color-dark);
+        background-color: var(--main-color);
         border: 3px solid var(--purple);
         border-radius: 50px;
         
