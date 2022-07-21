@@ -52,7 +52,7 @@ export const Container = styled.div`
                         cursor: auto;
 
                         span {
-                            background: var(--main-color-light);
+                            background: var(--main-color);
                             border-radius: 15px;
                             padding: 0.4rem;
                             
