@@ -7,7 +7,7 @@ import enCV from '../assets/files/SergioJunior_CV_English.pdf'
 import ptBRCV from '../assets/files/SergioJunior_CV.pdf'
 
 import { List } from '../styles/lists';
-import { Container } from '../styles/Aside';
+import { Container } from '../styles/components/Aside';
 import { Switch } from '../styles/switch';
 
 interface AsideProps {

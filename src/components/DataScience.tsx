@@ -6,7 +6,7 @@ import tesouro_direto from '../assets/images/tesouro_direto.png'
 import credit_risk from '../assets/images/credit_risk.png'
 import breaking_bad from '../assets/images/breaking_bad.png'
 
-import { Container } from '../styles/DataScience'
+import { Container } from '../styles/components/DataScience'
 
 interface DataScienceProjects {
     id: string,

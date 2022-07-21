@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next"
-import { Container } from "../styles/AboutMe"
+import { Container } from "../styles/components/AboutMe"
 
 export function AboutMe(){
     const { t } = useTranslation()

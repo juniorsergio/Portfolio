@@ -5,7 +5,7 @@ import socialMediaFeed from '../assets/images/social-media-feed.png'
 import personalFinance from '../assets/images/personal-finance.png'
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Container } from "../styles/Frontend";
+import { Container } from "../styles/components/Frontend";
 import { Markup } from 'interweave';
 
 interface FrontendProject {

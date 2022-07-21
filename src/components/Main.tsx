@@ -5,7 +5,7 @@ import { AboutMe } from './AboutMe'
 import { DataScience } from "./DataScience"
 
 import { List } from "../styles/lists"
-import { Container } from "../styles/Main"
+import { Container } from "../styles/components/Main"
 import { Frontend } from "./Frontend"
 
 export function Main(){
