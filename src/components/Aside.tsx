@@ -33,9 +33,9 @@ export function Aside({ isDarkMode, changeColorScheme }: AsideProps){
                 </List>
 
                 <Switch>
-                    <SunDim size={'2rem'} />
-                        <input type="checkbox" checked={isDarkMode} onChange={changeColorScheme} />
-                        <span className="slider"></span>
+                    <SunDim size={'2rem'} />                
+                    <input type="checkbox" checked={isDarkMode} onChange={changeColorScheme} />
+                    <span className="slider"></span>
                     <Moon size={'2rem'} />
                 </Switch>
             </div>

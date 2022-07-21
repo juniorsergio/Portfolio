@@ -17,7 +17,7 @@
 
         "frontend" : {
             "soon": "Em breve",
-            "opening": "As páginas web abaixo foram desenvolvidas a partir das aulas do programa de aceleração <a href='https://www.rocketseat.com.br/ignite'>Ignite</a> da Rocketseat. Para acessar a página, basta clicar em qualquer ponto do carrossel. O link para o respectivo repositório do GitHub se encontra no cabeçalho das páginas.",
+            "opening": "As páginas web abaixo foram desenvolvidas a partir das aulas do programa de aceleração <a href='https://www.rocketseat.com.br/ignite'>Ignite</a> da Rocketseat. Para acessar a página, basta clicar em qualquer ponto do carrossel. O link para o respectivo <strong>repositório do GitHub</strong> se encontra no <strong>cabeçalho</strong> das páginas.",
             "projects": [
                 {
                     "id": "social-media-feed",

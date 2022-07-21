@@ -17,7 +17,8 @@ export const Container = styled.aside`
     gap: 0.625rem;
 
     .pageSelectors {
-        display: grid;
+        display: flex;
+        flex-direction: column;
         gap: 0.625rem;
     }
     
