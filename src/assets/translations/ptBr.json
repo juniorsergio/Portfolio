@@ -8,6 +8,7 @@
     "main": {
         "tabs": {
             "aboutMe": "Sobre Mim",
+            "frontend": "Front-End",
             "dataScience": "Ciência de Dados"
         },
         "about": {

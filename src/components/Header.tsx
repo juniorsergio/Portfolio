@@ -19,9 +19,9 @@ export function Header({ isDarkMode, changeColorScheme }: HeaderProps){
     const { t, i18n } = useTranslation()
     const [ isEnglish, setIsEnglish ] = useState(i18n.language === 'en')
   
-    const handleChangeLanguage = (lng: string) => {
-        i18n.changeLanguage(lng)
-        setIsEnglish(lng === 'en')
+    function handleChangeLanguage(lang: string) {
+        i18n.changeLanguage(lang)
+        setIsEnglish(lang === 'en')
     };
 
     return (

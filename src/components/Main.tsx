@@ -8,8 +8,13 @@ import { Frontend } from "./Frontend"
 import { List } from "../styles/lists"
 import { Container } from "../styles/components/Main"
 
+type Tabs = {
+    [key: string]: string
+};
+
 export function Main(){
     const { t } = useTranslation()
+    const tabs: Tabs = t('main.tabs', {returnObjects: true})
     const [ activeTab, setActiveTab ] = useState('aboutMe')
 
     function handleNavigationTab (tab: string) {
@@ -29,15 +34,15 @@ export function Main(){
         <Container>
             <nav>
                 <List>
-                    <li className={activeTab === 'aboutMe' ? 'active' : ''} onClick={() => handleNavigationTab('aboutMe')}>
-                        <h2>{t('main.tabs.aboutMe')}</h2>
-                    </li>
-                    <li className={activeTab === 'frontend' ? 'active' : ''} onClick={() => handleNavigationTab('frontend')}>
-                        <h2>Front-End</h2>
-                    </li>
-                    <li className={activeTab === 'dataScience' ? 'active' : ''} onClick={() => handleNavigationTab('dataScience')}>
-                        <h2>{t('main.tabs.dataScience')}</h2>
-                    </li>
+                    {Object.keys(tabs).map((key) => (
+                        <li
+                            key={key}
+                            className={activeTab === key ? 'active' : ''}
+                            onClick={() => handleNavigationTab(key)}
+                        >
+                            <h2>{tabs[key]}</h2>
+                        </li>
+                    ))}
                 </List>
             </nav>
 
