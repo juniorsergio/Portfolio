@@ -341,7 +341,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     p {
         text-align: justify;
     }
-`,z2={aboutMe:m(vy,{}),frontend:m($2,{}),dataScience:m(Hy,{})};function W2(){const{t:e}=Fi(),t=e("main.tabs",{returnObjects:!0}),[n,r]=U.exports.useState("aboutMe");function i(o){r(o)}return I(D2,{children:[m("nav",{children:m(Gh,{children:Object.keys(t).map(o=>m("li",{className:n===o?"active":"",onClick:()=>i(o),children:m("h2",{children:t[o]})},o))})}),z2[n]]})}const F2={mainColor:"#ECECEB",mainColorLight:"white",purple:"#8079ab",blue:"#1f98cf",shadow:"#CDCDCC",textColor:"black"},H2={mainColor:"#2A4141",mainColorLight:"#2F4F4F",purple:"#483D8B",blue:"#26BCFF",shadow:"black",textColor:"white"},U2=Wv`
+`,z2={aboutMe:m(vy,{}),frontend:m($2,{}),dataScience:m(Hy,{})};function W2(){const{t:e}=Fi(),t=e("main.tabs",{returnObjects:!0}),[n,r]=U.exports.useState("aboutMe");function i(o){r(o)}return I(D2,{children:[m("nav",{children:m(Gh,{children:Object.keys(t).map(o=>m("li",{className:n===o?"active":"",onClick:()=>i(o),children:m("h2",{children:t[o]})},o))})}),z2[n]]})}const F2={mainColor:"#ECECEC",mainColorLight:"white",purple:"#8079AB",blue:"#1F98CF",shadow:"#CDCDCD",textColor:"black"},H2={mainColor:"#191919",mainColorLight:"#393939",purple:"#483D8B",blue:"#26BCFF",shadow:"black",textColor:"white"},U2=Wv`
     :root {
         --main-color: ${e=>e.theme.mainColor};
         --main-color-light: ${e=>e.theme.mainColorLight};
@@ -365,7 +365,6 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         -webkit-font-smoothing: antialiased;
 
         color: var(--text-color);
-        text-shadow: 0.5px 0px var(--shadow);
 
         @media (max-width: 840px) {
             font-size: 0.80rem;
