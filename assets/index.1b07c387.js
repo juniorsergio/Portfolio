@@ -408,6 +408,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     justify-content: center;
     overflow: hidden;
     height: 100vh;
+    animation: fadein 3s;
 `,V2=Bt.div`
     width: 80vmin;
     height: 80vmin;
@@ -416,7 +417,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     
     display: flex;
     align-items: center;
-    
+
     animation: rotate 2s linear infinite;
 
     @keyframes yinyang {
