@@ -18,8 +18,6 @@ interface DataScienceProjects {
 
 export function DataScience(){
     const { t } = useTranslation()
-
-    const projectImages = dataScienceImages
     const projects: DataScienceProjects[] = t('main.dataScience', {returnObjects: true})
 
     return (
@@ -41,7 +39,7 @@ export function DataScience(){
                     <Markup tagName='p' content={project.text} />
 
                     <figure>
-                        <img src={projectImages[project.id as keyof typeof projectImages]} alt={project.id} />
+                        <img src={dataScienceImages[project.id as keyof typeof dataScienceImages]} alt={project.id} />
                         <figcaption> {project.figcaption} </figcaption>
                     </figure>
                 </article>

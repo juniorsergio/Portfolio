@@ -7,3 +7,11 @@ export const dataScienceImages = {
     'credit-risk': credit_risk,
     'breaking-bad': breaking_bad
 }
+
+import socialMediaFeed from './social-media-feed.png'
+import personalFinance from './personal-finance.png'
+
+export const frontendImages = {
+    'social-media-feed': socialMediaFeed,
+    'personal-finance': personalFinance
+}

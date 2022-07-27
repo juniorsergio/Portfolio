@@ -22,7 +22,6 @@
             "projects": [
                 {
                     "id": "social-media-feed",
-                    "projectLink": "https://github.com/juniorsergio/social-media-feed",
                     "stacks": ["react", "typescript", "graphql"],
                     "title": "Social Media Feed",
                     "description": "Web page developed using ReactJS to simulate a social media feed. It's possible to create posts, write comments and react to them. In order to ensure the data persistence, an integration with <a href='https://hygraph.com/'>Hygraph (formerly GraphCMS)</a> was made, so the information created by the users could be recorded and retrieved. The profile created by the user to interact with the application has an expiration time of one day, and it's possible to change its information within this lifetime.",
@@ -30,7 +29,6 @@
                 },
                 {
                     "id": "personal-finance",
-                    "projectLink": "",
                     "stacks": ["react", "typescript"],
                     "title": "Personal Finance",
                     "description": "Personal Finance",

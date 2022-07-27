@@ -2,14 +2,12 @@ import { Carousel } from 'react-responsive-carousel';
 import { useTranslation } from 'react-i18next';
 import { Markup } from 'interweave';
 
-import socialMediaFeed from '../../assets/images/social-media-feed.png'
-import personalFinance from '../../assets/images/personal-finance.png'
+import { frontendImages } from '../../assets/images'
 
 import { Container } from "./styles";
 
 interface FrontendProject {
     id: string,
-    projectLink: string,
     stacks: string[],
     title: string,
     description: string,
@@ -18,9 +16,7 @@ interface FrontendProject {
 
 export function Frontend(){
     const { t } = useTranslation()
-
     const projects: FrontendProject[] = t('main.frontend.projects', {returnObjects: true})
-    const projectImages = [ socialMediaFeed, personalFinance ]
     
     function handleClickItem(index: number){
         if (projects[index].type === 'active'){       
@@ -41,9 +37,7 @@ export function Frontend(){
     
     return (
         <Container>
-            <p>
-                <Markup content={t('main.frontend.opening')} />
-            </p>
+            <Markup tagName='p' content={t('main.frontend.opening')} />
 
             <Carousel
                 swipeable
@@ -55,33 +49,30 @@ export function Frontend(){
                 showStatus={false}        
             >
 
-                {projects.map((project, index) => {
-                   const markupContent = project.type === 'active'
+                {projects.map((project) => {
+                    const markupContent = project.type === 'active'
                                             ? project.description
                                             : t('main.frontend.soon')
                    
-                   return (
-                    <figure id={project.id} className={project.type} key={project.id}>
-                        <figcaption>
-                            <div>
-                                {project.stacks.map((stack) => (
-                                    <span key={stack}>{stack}</span>
-                                ))}
-                            </div>
-                        </figcaption>
+                    return (
+                        <figure id={project.id} className={project.type} key={project.id}>
+                            <figcaption>
+                                <div>
+                                    {project.stacks.map((stack) => (
+                                        <span key={stack}>{stack}</span>
+                                    ))}
+                                </div>
+                            </figcaption>
 
-                        <img src={projectImages[index]} />
+                            <img src={frontendImages[project.id as keyof typeof frontendImages]} />
 
-                        <figcaption>
-                            <h2>{project.title}</h2>
-
-                            <Markup
-                                tagName='p'
-                                content={markupContent}
-                            />         
-                        </figcaption>
-                    </figure>
-                )})}
+                            <figcaption>
+                                <h2>{project.title}</h2>
+                                <Markup tagName='p' content={markupContent} />
+                            </figcaption>
+                        </figure>
+                    )
+                })}
             </Carousel>
         </Container>
     )
