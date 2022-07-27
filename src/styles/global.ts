@@ -1,6 +1,6 @@
 import styled, { createGlobalStyle } from 'styled-components'
 
-interface Props {
+interface ThemeProps {
     theme: {
         mainColor: string,
         mainColorLight: string,
@@ -11,7 +11,7 @@ interface Props {
     }
 }
 
-export const GlobalStyle = createGlobalStyle<Props>`
+export const GlobalStyle = createGlobalStyle<ThemeProps>`
     :root {
         --main-color: ${props => props.theme.mainColor};
         --main-color-light: ${props => props.theme.mainColorLight};
@@ -32,10 +32,8 @@ export const GlobalStyle = createGlobalStyle<Props>`
         background-attachment: fixed;
 
         font: 0.9rem/1.5 "Poppins", sans-serif;
-        -webkit-font-smoothing: antialiased;
-
         color: var(--text-color);
-        text-shadow: 0.5px 0px var(--shadow);
+        -webkit-font-smoothing: antialiased;
 
         @media (max-width: 840px) {
             font-size: 0.80rem;

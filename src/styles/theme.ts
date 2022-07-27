@@ -1,15 +1,15 @@
 export const lightTheme = {
-    mainColor: '#ECECEB',
+    mainColor: '#ECECEC',
     mainColorLight: 'white',
-    purple: '#8079ab',
-    blue: '#1f98cf',
-    shadow : '#CDCDCC',
+    purple: '#8079AB',
+    blue: '#1F98CF',
+    shadow : '#CDCDCD',
     textColor: 'black'
 }
 
 export const darkTheme = {
-    mainColor: '#2A4141',
-    mainColorLight: '#2F4F4F',
+    mainColor: '#191919',
+    mainColorLight: '#393939',
     purple: '#483D8B',
     blue: '#26BCFF',
     shadow : 'black',
