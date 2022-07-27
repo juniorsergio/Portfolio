@@ -74,6 +74,56 @@ export const GlobalStyle = createGlobalStyle<ThemeProps>`
     }
 `
 
+export const LoadingContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 100vh;
+    animation: fadein 3s;
+`
+
+export const YinYang = styled.div`
+    width: 80vmin;
+    height: 80vmin;
+    border-radius: 50%;
+    background: linear-gradient(black 50%, white 0);
+    
+    display: flex;
+    align-items: center;
+
+    animation: rotate 2s linear infinite;
+
+    @keyframes yinyang {
+        to { transform: scale(1.5) }
+    }
+
+    @keyframes rotate {
+        to { transform: rotate(1turn) }
+    }
+    
+    &:before, &:after {
+        flex: 1;
+        height: calc(80vmin/6);
+        border-radius: 50%;
+        background: black;
+        content: '';
+        border: solid calc(80vmin/6) white;
+
+        transform-origin: 0 50%;
+        transform: scale(0.5);
+        animation: yinyang 1s ease-in-out infinite alternate;
+    }
+
+    &:after {
+        background: white;
+        border-color: black;
+
+        transform-origin: 100% 50%;
+        animation-delay: -1s;
+    }
+`
+
 export const Wrapper = styled.div`
     width: 70vw;
     margin: 0 auto;

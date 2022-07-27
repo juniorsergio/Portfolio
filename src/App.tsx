@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 import Cookies from "js-cookie";
 
@@ -7,15 +7,33 @@ import { Main } from './components/Main/Main'
 
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import { lightTheme, darkTheme } from './styles/theme'
-import { GlobalStyle, Wrapper } from './styles/global';
+import { LoadingContainer, GlobalStyle, Wrapper, YinYang } from './styles/global';
 
 export function App() {
 	const darkModeCookie = Cookies.get('darkMode') ?? 'true'
   const [ isDarkMode, setIsDarkMode ] = useState(darkModeCookie === 'true')
+  const [ pageLoading, setPageLoading ] = useState(true)
 
   function handleColorSchemeSelection(){
     setIsDarkMode(!isDarkMode)
     Cookies.set('darkMode', (!isDarkMode).toString())
+  }
+
+  useEffect(() => {
+    setTimeout(() => {
+      setPageLoading(false)
+    }, 3000)
+  }, [])
+
+  if(pageLoading) {
+    return (
+      <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
+        <LoadingContainer>
+          <YinYang />
+        </LoadingContainer>  
+        <GlobalStyle />
+      </ThemeProvider>
+    )
   }
   
   return (
@@ -27,4 +45,6 @@ export function App() {
         </ThemeProvider>
     </Wrapper>
   )
+
+  
 }      
