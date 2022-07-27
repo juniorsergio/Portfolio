@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next"
 
-import { Container } from "../styles/components/AboutMe"
+import { Container } from "./styles"
 
 export function AboutMe(){
     const { t } = useTranslation()
@@ -11,7 +11,6 @@ export function AboutMe(){
                 <p>{t('main.about.text')}</p>
 
                 <img
-                    className="tabCoverImg"
                     alt="MBTI cover image"
                     src="https://static.neris-assets.com/images/personality-types/scenes/analysts_Architect_INTJ_strengths.svg"
                 />

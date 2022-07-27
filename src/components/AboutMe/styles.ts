@@ -10,7 +10,7 @@ export const Container = styled.div`
         justify-content: space-around;
         gap: 1.25rem;
 
-        .tabCoverImg {
+        img {
             margin: 0 auto;
             width: 90%;
             max-width: 500px;

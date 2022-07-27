@@ -1,14 +1,13 @@
 import { Envelope, FilePdf, GithubLogo, LinkedinLogo, MapPin, Moon, SunDim } from 'phosphor-react'
 import { useTranslation } from "react-i18next";
-import { useState } from 'react';
 
-import photo from '../assets/images/photo.jpg'
-import enCV from '../assets/files/SergioJunior_CV_English.pdf'
-import ptBRCV from '../assets/files/SergioJunior_CV.pdf'
+import photo from '../../assets/images/photo.jpg'
+import enCV from '../../assets/files/SergioJunior_CV_English.pdf'
+import ptBRCV from '../../assets/files/SergioJunior_CV.pdf'
 
-import { List } from '../styles/lists';
-import { Container } from '../styles/components/Header';
-import { Switch } from '../styles/switch';
+import { List } from '../../styles/lists';
+import { Container } from './styles';
+import { Switch } from '../../styles/switch';
 
 interface HeaderProps {
     isDarkMode: boolean,
@@ -17,12 +16,11 @@ interface HeaderProps {
 
 export function Header({ isDarkMode, changeColorScheme }: HeaderProps){
     const { t, i18n } = useTranslation()
-    const [ isEnglish, setIsEnglish ] = useState(i18n.language === 'en')
+    const isEnglish = (i18n.language === 'en')
   
     function handleChangeLanguage(lang: string) {
         i18n.changeLanguage(lang)
-        setIsEnglish(lang === 'en')
-    };
+    }
 
     return (
         <Container>

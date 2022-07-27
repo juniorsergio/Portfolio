@@ -10,6 +10,7 @@ export const Container = styled.div`
 
     .carousel-root {
         width: 90%;
+        transition: none;
 
         @media (max-width: 840px), (max-height: 580px) {
             width: 100%;

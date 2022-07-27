@@ -1,12 +1,10 @@
 import { Markup } from 'interweave'
-import { Link } from 'phosphor-react'
+import { Link as LinkIcon } from 'phosphor-react'
 import { useTranslation } from "react-i18next"
 
-import tesouro_direto from '../assets/images/tesouro_direto.png'
-import credit_risk from '../assets/images/credit_risk.png'
-import breaking_bad from '../assets/images/breaking_bad.png'
+import { dataScienceImages } from '../../assets/images'
 
-import { Container } from '../styles/components/DataScience'
+import { Container } from './styles'
 
 interface DataScienceProjects {
     id: string,
@@ -21,29 +19,29 @@ interface DataScienceProjects {
 export function DataScience(){
     const { t } = useTranslation()
 
-    const projectImages = [ tesouro_direto, credit_risk, breaking_bad ]
+    const projectImages = dataScienceImages
     const projects: DataScienceProjects[] = t('main.dataScience', {returnObjects: true})
 
     return (
         <Container>
-            {projects.map((project, index) => (
+            {projects.map((project) => (
                 <article key={project.id}>
                     <h2>
                         <a href={project.projectLink}>
-                            <Link /> {project.title}
+                            <LinkIcon /> {project.title}
                         </a>
                     </h2>
                     
                     <h3 hidden={!project.subtitle}>
                         <a href={project.subtitleLink}>
-                            <Link /> {project.subtitle}
+                            <LinkIcon /> {project.subtitle}
                         </a>
                     </h3>
 
                     <Markup tagName='p' content={project.text} />
 
                     <figure>
-                        <img src={projectImages[index]} alt={project.id} />
+                        <img src={projectImages[project.id as keyof typeof projectImages]} alt={project.id} />
                         <figcaption> {project.figcaption} </figcaption>
                     </figure>
                 </article>

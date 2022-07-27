@@ -2,11 +2,10 @@ import { Carousel } from 'react-responsive-carousel';
 import { useTranslation } from 'react-i18next';
 import { Markup } from 'interweave';
 
-import socialMediaFeed from '../assets/images/social-media-feed.png'
-import personalFinance from '../assets/images/personal-finance.png'
+import socialMediaFeed from '../../assets/images/social-media-feed.png'
+import personalFinance from '../../assets/images/personal-finance.png'
 
-import { Container } from "../styles/components/Frontend";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Container } from "./styles";
 
 interface FrontendProject {
     id: string,
@@ -14,19 +13,18 @@ interface FrontendProject {
     stacks: string[],
     title: string,
     description: string,
-    type: string
+    type: 'active' | 'disabled'
 }
 
 export function Frontend(){
     const { t } = useTranslation()
 
     const projects: FrontendProject[] = t('main.frontend.projects', {returnObjects: true})
-    const carouselSlugs = projects.map(project => project.id)
     const projectImages = [ socialMediaFeed, personalFinance ]
     
     function handleClickItem(index: number){
         if (projects[index].type === 'active'){       
-            const link = 'https://juniorsergio.github.io/' + carouselSlugs[index]
+            const link = 'https://juniorsergio.github.io/' + projects[index].id
             window.open(link, "_blank")
         }
     }
@@ -57,7 +55,12 @@ export function Frontend(){
                 showStatus={false}        
             >
 
-                {projects.map((project, index) => (
+                {projects.map((project, index) => {
+                   const markupContent = project.type === 'active'
+                                            ? project.description
+                                            : t('main.frontend.soon')
+                   
+                   return (
                     <figure id={project.id} className={project.type} key={project.id}>
                         <figcaption>
                             <div>
@@ -74,13 +77,11 @@ export function Frontend(){
 
                             <Markup
                                 tagName='p'
-                                content={project.type === 'active'
-                                            ? project.description
-                                            : t('main.frontend.soon')}
+                                content={markupContent}
                             />         
                         </figcaption>
                     </figure>
-                ))}
+                )})}
             </Carousel>
         </Container>
     )

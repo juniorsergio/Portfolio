@@ -1,16 +1,22 @@
 import { useTranslation } from "react-i18next"
 import { useState } from 'react'
 
-import { AboutMe } from './AboutMe'
-import { DataScience } from "./DataScience"
-import { Frontend } from "./Frontend"
+import { AboutMe } from '../AboutMe/AboutMe'
+import { DataScience } from "../DataScience/DataScience"
+import { Frontend } from "../Frontend/Frontend"
 
-import { List } from "../styles/lists"
-import { Container } from "../styles/components/Main"
+import { List } from "../../styles/lists"
+import { Container } from "./styles"
 
 type Tabs = {
     [key: string]: string
-};
+}
+
+const currentTab = {
+    'aboutMe': <AboutMe />,
+    'frontend': <Frontend />,
+    'dataScience': <DataScience />
+}
 
 export function Main(){
     const { t } = useTranslation()
@@ -19,15 +25,6 @@ export function Main(){
 
     function handleNavigationTab (tab: string) {
         setActiveTab(tab)
-    }
-
-    function renderSwitchTab() {
-        switch(activeTab){
-            case 'aboutMe': return <AboutMe />
-            case 'frontend': return <Frontend />
-            case 'dataScience': return <DataScience />
-            default: return <AboutMe />
-        }
     }
 
     return (
@@ -45,8 +42,8 @@ export function Main(){
                     ))}
                 </List>
             </nav>
-
-            {renderSwitchTab()}
+            
+            {currentTab[activeTab as keyof typeof currentTab]}
         </Container>
     )
 }

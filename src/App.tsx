@@ -2,9 +2,10 @@ import { useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 import Cookies from "js-cookie";
 
-import { Header } from './components/Header'
-import { Main } from './components/Main'
+import { Header } from './components/Header/Header'
+import { Main } from './components/Main/Main'
 
+import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import { lightTheme, darkTheme } from './styles/theme'
 import { GlobalStyle, Wrapper } from './styles/global';
 
