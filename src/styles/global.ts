@@ -78,14 +78,16 @@ export const LoadingContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+
     height: 100vh;
+
     animation: fadein 3s;
 `
+const size = '50vmin'
 
-export const YinYang = styled.div`
-    width: 80vmin;
-    height: 80vmin;
+export const YinYang = styled.div`   
+    width: ${size};
+    height: ${size};
     border-radius: 50%;
     background: linear-gradient(black 50%, white 0);
     
@@ -104,11 +106,11 @@ export const YinYang = styled.div`
     
     &:before, &:after {
         flex: 1;
-        height: calc(80vmin/6);
+        height: calc(${size}/6);
         border-radius: 50%;
         background: black;
         content: '';
-        border: solid calc(80vmin/6) white;
+        border: solid calc(${size}/6) white;
 
         transform-origin: 0 50%;
         transform: scale(0.5);

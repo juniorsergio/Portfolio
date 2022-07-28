@@ -7,7 +7,7 @@ export const Container = styled.div`
     article {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: center;
         gap: 1.25rem;
 
         img {

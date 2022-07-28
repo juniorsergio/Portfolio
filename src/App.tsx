@@ -12,7 +12,7 @@ import { LoadingContainer, GlobalStyle, Wrapper, YinYang } from './styles/global
 export function App() {
 	const darkModeCookie = Cookies.get('darkMode') ?? 'true'
   const [ isDarkMode, setIsDarkMode ] = useState(darkModeCookie === 'true')
-  const [ pageLoading, setPageLoading ] = useState(true)
+  const [ pageLoading, setPageLoading ] = useState(false)
 
   function handleColorSchemeSelection(){
     setIsDarkMode(!isDarkMode)

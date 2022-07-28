@@ -1,3 +1,4 @@
+import { Markup } from "interweave"
 import { useTranslation } from "react-i18next"
 
 import { Container } from "./styles"
@@ -8,7 +9,7 @@ export function AboutMe(){
     return (
         <Container>
             <article>
-                <p>{t('main.about.text')}</p>
+                <Markup noWrap content={t('main.about.text')} />
 
                 <img
                     alt="MBTI cover image"
