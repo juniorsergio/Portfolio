@@ -7,7 +7,7 @@ import ptBRCV from '../../assets/files/SergioJunior_CV.pdf'
 
 import { List } from '../../styles/lists';
 import { Container } from './styles';
-import { Switch } from '../../styles/switch';
+import { Switch } from './switch';
 
 interface HeaderProps {
     isDarkMode: boolean,
@@ -31,10 +31,10 @@ export function Header({ isDarkMode, changeColorScheme }: HeaderProps){
                 </List>
 
                 <Switch>
-                    <div className='yang'></div>
+                    <div className={`yang ${isDarkMode && 'active'}`}></div>
                     <input type="checkbox" checked={isDarkMode} onChange={changeColorScheme} />
                     <span className="slider"></span>
-                    <div className='yin'></div>
+                    <div className={`yin ${!isDarkMode && 'active'}`}></div>
                 </Switch>
             </div>
 

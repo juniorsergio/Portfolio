@@ -19,6 +19,20 @@ export const Switch = styled.label`
         }
     }
 
+    .yang, .yin {
+        transition: transform 0.2s;
+    }
+
+    &:hover {
+        .yang.active {
+            transform: rotate(-180deg);
+        }
+
+        .yin.active {
+            transform: rotate(0deg);
+        }
+    }
+
     .slider {
         width: 3rem;
         height: 1.5rem;
