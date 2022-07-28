@@ -20,6 +20,53 @@ export const Container = styled.header`
         display: flex;
         flex-direction: column;
         gap: 0.625rem;
+
+        .yin, .yang {      
+            width: 2rem;
+            height: 2rem;
+
+            border-radius: 50%;
+            border-top: 2px solid var(--text-color);
+
+            display: flex;
+            align-items: center;
+
+            &:before, &:after {
+                border-radius: 50%;
+                content: '';
+            }
+
+            &:before {
+                height: 5px;
+                width: 5px;
+            }
+
+            &:after {
+                height: 1rem;
+                width: 1rem;
+                background: var(--main-color);
+            }
+        }
+
+        .yin {
+            transform: rotate(90deg);
+            background: linear-gradient(black 50%, transparent 0);
+
+            &:before {
+                background: white;
+                border: 5px solid black;
+            }
+        }
+
+        .yang {
+            transform: rotate(-90deg);
+            background: linear-gradient(white 50%, transparent 0);
+
+            &:before {
+                background: black;
+                border: 5px solid white;
+            }
+        }
     }
     
     img {

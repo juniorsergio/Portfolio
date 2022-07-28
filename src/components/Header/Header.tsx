@@ -1,4 +1,4 @@
-import { Envelope, FilePdf, GithubLogo, LinkedinLogo, MapPin, Moon, SunDim } from 'phosphor-react'
+import { Envelope, FilePdf, GithubLogo, LinkedinLogo, MapPin } from 'phosphor-react'
 import { useTranslation } from "react-i18next";
 
 import photo from '../../assets/images/photo.jpg'
@@ -31,10 +31,10 @@ export function Header({ isDarkMode, changeColorScheme }: HeaderProps){
                 </List>
 
                 <Switch>
-                    <SunDim size={'2rem'} />                
+                    <div className='yang'></div>
                     <input type="checkbox" checked={isDarkMode} onChange={changeColorScheme} />
                     <span className="slider"></span>
-                    <Moon size={'2rem'} />
+                    <div className='yin'></div>
                 </Switch>
             </div>
 
