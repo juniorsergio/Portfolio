@@ -118,7 +118,9 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         .yin, .yang {      
             width: 2rem;
             height: 2rem;
+
             border-radius: 50%;
+            border-top: 2px solid var(--text-color);
 
             display: flex;
             align-items: center;
@@ -143,7 +145,6 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         .yin {
             transform: rotate(90deg);
             background: linear-gradient(black 50%, transparent 0);
-            border-top: 2px solid white;
 
             &:before {
                 background: white;
@@ -154,7 +155,6 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         .yang {
             transform: rotate(-90deg);
             background: linear-gradient(white 50%, transparent 0);
-            border-top: 2px solid black;
 
             &:before {
                 background: black;
