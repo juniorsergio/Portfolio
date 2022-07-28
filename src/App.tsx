@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, Component } from 'react';
 import { ThemeProvider } from 'styled-components';
 import Cookies from "js-cookie";
 
@@ -25,26 +25,24 @@ export function App() {
     }, 3000)
   }, [])
 
-  if(pageLoading) {
-    return (
-      <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
-        <LoadingContainer>
-          <YinYang />
-        </LoadingContainer>  
-        <GlobalStyle />
-      </ThemeProvider>
-    )
-  }
-  
   return (
     <Wrapper>
         <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
-          <Header isDarkMode={isDarkMode} changeColorScheme={handleColorSchemeSelection} />
-          <Main />
+          {!pageLoading
+            ? (
+              <>
+                <Header isDarkMode={isDarkMode} changeColorScheme={handleColorSchemeSelection} />
+                <Main />
+              </>
+            )
+            : (
+              <LoadingContainer>
+                <YinYang />
+              </LoadingContainer>
+            )
+          }
           <GlobalStyle />
         </ThemeProvider>
     </Wrapper>
   )
-
-  
 }      
