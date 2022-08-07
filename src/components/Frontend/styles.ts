@@ -41,7 +41,6 @@ export const Container = styled.div`
                         cursor: pointer;
                         
                         img {
-                            filter: brightness(1.2);
                             transform: scale(1.05);
                         }
                     }

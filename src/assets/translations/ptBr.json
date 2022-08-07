@@ -18,20 +18,27 @@
 
         "frontend" : {
             "soon": "Em breve",
-            "opening": "As páginas web abaixo foram desenvolvidas a partir das aulas do programa de aceleração <a href='https://www.rocketseat.com.br/ignite'>Ignite</a> da Rocketseat. Para acessar a página, basta clicar em qualquer ponto do carrossel. O link para o respectivo <strong>repositório do GitHub</strong> se encontra no <strong>cabeçalho</strong> das páginas.",
+            "opening": "Para aprimorar e divulgar meus conhecimentos em frontend, criei as páginas web a seguir a partir de cursos e testes técnicos realizados ao longo do tempo. Para acessar cada página, basta clicar em qualquer ponto do carrossel. O link para o respectivo <strong>repositório do GitHub</strong> se encontra no <strong>cabeçalho</strong> das páginas.",
             "projects": [
                 {
                     "id": "social-media-feed",
-                    "stacks": ["react", "typescript", "graphql"],
-                    "title": "Social Media Feed",
+                    "stacks": ["reactjs", "typescript", "styled-components", "graphql"],
+                    "title": "Feed de Rede Social",
                     "description": "Página web desenvolvida em ReactJS simulando o comportamento de uma rede social. É possível criar publicações, escrever comentários e reagir a eles. Para garantir a persistência dos dados, foi feita uma integração com o <a href='https://hygraph.com/'>Hygraph (antigo GraphCMS)</a> para registrar e ler as informações criadas pelos usuários no frontend da aplicação. O perfil criado pelo usuário para interagir com a aplicação tem duração de um dia, e é possível alterar as informações dele dentro desse período.",
                     "type": "active"
                 },
                 {
+                    "id": "number-guessing-game",
+                    "stacks": ["html", "css", "javascript"],
+                    "title": "Adivinhe o número!",
+                    "description": "Utilizando apenas o básico do desenvolvimento frontend, essa página web implementa um jogo de adivinhação, no qual uma API externa gera um número aleatório entre 1 e 300, e o jogador deve adivinhar que número é esse. Apesar de simples, essa página demonstra que embora as tecnologias mais modernas como Angular e React facilitem a criação de websites, a base disso (HTML e Javascript) segue sendo uma ferramenta poderosa de desenvolvimento.",
+                    "type": "active"
+                },
+                {
                     "id": "personal-finance",
-                    "stacks": ["react", "typescript"],
-                    "title": "Personal Finance",
-                    "description": "Personal Finance",
+                    "stacks": ["reactjs", "typescript"],
+                    "title": "Finanças Pessoais",
+                    "description": "Finanças pessoais",
                     "type": "disabled"
                 }
             ]

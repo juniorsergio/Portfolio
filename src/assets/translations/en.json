@@ -18,18 +18,25 @@
 
         "frontend" : {
             "soon": "Coming soon",
-            "opening": "The web pages below were developed from the lessons of the acceleration program <a href='https://www.rocketseat.com.br/ignite'>Ignite</a> by Rocketseat. In order to access the pages, click on any portion of the carousel. The respective <strong>Github repository</strong> link of each page can be found on their <strong>header.</strong>",
+            "opening": "To improve and showcase my frontend knowledge, the following web pages were developed based from online courses and technical tests. In order to access each page, click on any portion of the carousel. The respective <strong>Github repository</strong> link of each page can be found on their <strong>header.</strong>",
             "projects": [
                 {
                     "id": "social-media-feed",
-                    "stacks": ["react", "typescript", "graphql"],
+                    "stacks": ["reactjs", "typescript", "styled-components", "graphql"],
                     "title": "Social Media Feed",
                     "description": "Web page developed using ReactJS to simulate a social media feed. It's possible to create posts, write comments and react to them. In order to ensure the data persistence, an integration with <a href='https://hygraph.com/'>Hygraph (formerly GraphCMS)</a> was made, so the information created by the users could be recorded and retrieved. The profile created by the user to interact with the application has an expiration time of one day, and it's possible to change its information within this lifetime.",
                     "type": "active"
                 },
                 {
+                    "id": "number-guessing-game",
+                    "stacks": ["html", "css", "javascript"],
+                    "title": "Number Guessing Game",
+                    "description": "From just the basics of frontend development, this web page implements a guessing game, in which an external API generates a random number between 1 and 300, and the player must guess which number it is. Despite being simple, this page demonstrates that although the most modern technologies such as Angular and React facilitate the creation of websites, the basis of it (HTML and Javascript) remains a powerful development tool.",
+                    "type": "active"
+                },
+                {
                     "id": "personal-finance",
-                    "stacks": ["react", "typescript"],
+                    "stacks": ["reactjs", "typescript"],
                     "title": "Personal Finance",
                     "description": "Personal Finance",
                     "type": "disabled"
