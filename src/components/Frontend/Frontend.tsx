@@ -57,7 +57,7 @@ export function Frontend(){
                     return (
                         <figure id={project.id} className={project.type} key={project.id}>
                             <figcaption>
-                                <div>
+                                <div className='projectStacks'>
                                     {project.stacks.map((stack) => (
                                         <span key={stack}>{stack}</span>
                                     ))}

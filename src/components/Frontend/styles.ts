@@ -51,13 +51,16 @@ export const Container = styled.div`
                         gap: 0.625rem;
                         cursor: auto;
 
-                        span {
-                            background: var(--main-color);
-                            border-radius: 15px;
-                            padding: 0.4rem;
-                            
-                            & + span {
-                                margin-left: 0.625rem;
+                        .projectStacks {
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: center;
+                            gap: 0.625rem;
+
+                            span {
+                                background: var(--main-color);
+                                border-radius: 15px;
+                                padding: 0.4rem;
                             }
                         }
                     }
