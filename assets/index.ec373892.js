@@ -344,13 +344,16 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                         gap: 0.625rem;
                         cursor: auto;
 
-                        span {
-                            background: var(--main-color);
-                            border-radius: 15px;
-                            padding: 0.4rem;
-                            
-                            & + span {
-                                margin-left: 0.625rem;
+                        .projectStacks {
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: center;
+                            gap: 0.625rem;
+
+                            span {
+                                background: var(--main-color);
+                                border-radius: 15px;
+                                padding: 0.4rem;
                             }
                         }
                     }
@@ -382,7 +385,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
             }
         }
     }
-`;function T2(){const{t:e}=zi(),t=e("main.frontend.projects",{returnObjects:!0});function n(i){if(t[i].type==="active"){const o="https://juniorsergio.github.io/"+t[i].id;window.open(o,"_blank")}}function r(i){const o=document.getElementById(t[i].id),a=o==null?void 0:o.offsetHeight;if(a){const s=document.getElementsByClassName("carousel-slider");s[0].style.height=a.toString()+"px"}}return M(R2,{children:[v(ua,{tagName:"p",content:e("main.frontend.opening")}),v(Jh.Carousel,{swipeable:!0,emulateTouch:!0,infiniteLoop:!0,onClickItem:n,onChange:r,showIndicators:!1,showStatus:!1,children:t.map(i=>{const o=i.type==="active"?i.description:e("main.frontend.soon");return M("figure",{id:i.id,className:i.type,children:[v("figcaption",{children:v("div",{children:i.stacks.map(a=>v("span",{children:a},a))})}),v("img",{src:jy[i.id]}),M("figcaption",{children:[v("h2",{children:i.title}),v(ua,{tagName:"p",content:o})]})]},i.id)})})]})}const N2=Bt.main`
+`;function T2(){const{t:e}=zi(),t=e("main.frontend.projects",{returnObjects:!0});function n(i){if(t[i].type==="active"){const o="https://juniorsergio.github.io/"+t[i].id;window.open(o,"_blank")}}function r(i){const o=document.getElementById(t[i].id),a=o==null?void 0:o.offsetHeight;if(a){const s=document.getElementsByClassName("carousel-slider");s[0].style.height=a.toString()+"px"}}return M(R2,{children:[v(ua,{tagName:"p",content:e("main.frontend.opening")}),v(Jh.Carousel,{swipeable:!0,emulateTouch:!0,infiniteLoop:!0,onClickItem:n,onChange:r,showIndicators:!1,showStatus:!1,children:t.map(i=>{const o=i.type==="active"?i.description:e("main.frontend.soon");return M("figure",{id:i.id,className:i.type,children:[v("figcaption",{children:v("div",{className:"projectStacks",children:i.stacks.map(a=>v("span",{children:a},a))})}),v("img",{src:jy[i.id]}),M("figcaption",{children:[v("h2",{children:i.title}),v(ua,{tagName:"p",content:o})]})]},i.id)})})]})}const N2=Bt.main`
     animation: fadein-scale 2s;
     transform-origin: center top;
 
@@ -547,4 +550,4 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
             margin: 0.625rem;
         }
     }
-`;function W2(){var a;const e=(a=Vf.get("darkMode"))!=null?a:"true",[t,n]=H.exports.useState(e==="true"),[r,i]=H.exports.useState(!0);function o(){n(!t),Vf.set("darkMode",(!t).toString())}return H.exports.useEffect(()=>{setTimeout(()=>{i(!1)},3e3)},[]),v(F2,{children:M(M1,{theme:t?A2:M2,children:[r?v(D2,{children:v(z2,{})}):M(K,{children:[v(ly,{isDarkMode:t,changeColorScheme:o}),v(j2,{})]}),v($2,{})]})})}js.createRoot(document.getElementById("root")).render(v(qe.StrictMode,{children:v(Hv,{i18n:Ue,children:v(W2,{})})}));
+`;function W2(){var a;const e=(a=Vf.get("darkMode"))!=null?a:"true",[t,n]=H.exports.useState(e==="true"),[r,i]=H.exports.useState(!0);function o(){n(!t),Vf.set("darkMode",(!t).toString())}return H.exports.useEffect(()=>{setTimeout(()=>{i(!1)},2e3)},[]),v(F2,{children:M(M1,{theme:t?A2:M2,children:[r?v(D2,{children:v(z2,{})}):M(K,{children:[v(ly,{isDarkMode:t,changeColorScheme:o}),v(j2,{})]}),v($2,{})]})})}js.createRoot(document.getElementById("root")).render(v(qe.StrictMode,{children:v(Hv,{i18n:Ue,children:v(W2,{})})}));
