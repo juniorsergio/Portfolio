@@ -10,10 +10,10 @@ export const dataScienceImages = {
 
 import socialMediaFeed from './social-media-feed.png'
 import numberGuessingGame from './number-guessing-game.png'
-import personalFinance from './personal-finance.png'
+import universoPalavras from './universo-palavras.png'
 
 export const frontendImages = {
     'social-media-feed': socialMediaFeed,
     'number-guessing-game': numberGuessingGame,
-    'personal-finance': personalFinance
+    'universo-palavras': universoPalavras
 }

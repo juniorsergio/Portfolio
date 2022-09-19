@@ -35,11 +35,11 @@
                     "type": "active"
                 },
                 {
-                    "id": "personal-finance",
-                    "stacks": ["reactjs", "typescript"],
-                    "title": "Finanças Pessoais",
-                    "description": "Finanças pessoais",
-                    "type": "disabled"
+                    "id": "universo-palavras",
+                    "stacks": ["reactjs", "python", "typescript", "styled-components"],
+                    "title": "Universo de Palavras",
+                    "description": "Projeto Fullstack com o desenvolvimento do backend em Python e o frontend em React com Typescript. A ideia é extrair informações de dois sites com definições de palavras (<a href='https://dicionariocriativo.com.br/'>Dicionário Critivo</a> e <a href='https://www.dicio.com.br/'>Dicio</a>) para exibí-las de uma forma mais amigável e de fácil associação para o usuário. Há também a possibilidade de exportar as informações em formato .pptx para usar em apresentações.",
+                    "type": "active"
                 }
             ]
         },

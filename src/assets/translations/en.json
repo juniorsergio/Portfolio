@@ -35,11 +35,11 @@
                     "type": "active"
                 },
                 {
-                    "id": "personal-finance",
-                    "stacks": ["reactjs", "typescript"],
-                    "title": "Personal Finance",
-                    "description": "Personal Finance",
-                    "type": "disabled"
+                    "id": "universo-palavras",
+                    "stacks": ["reactjs", "python", "typescript", "styled-components"],
+                    "title": "Words Universe (pt-BR only)",
+                    "description": "Fullstack project with the development of the backend in Python and the frontend in React with Typescript. The idea is to extract information from two websites with word definitions (<a href='https://dicionariocriativo.com.br/'>Dicionário Critivo</a> and <a href='https://www.dicio.com.br/'>Dicio</a>) to display them in a more user-friendly and intuitive way. There is also the possibility to export the information for the .pptx format to use in presentations.",
+                    "type": "active"
                 }
             ]
         },
