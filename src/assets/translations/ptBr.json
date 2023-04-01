@@ -22,7 +22,7 @@
             "projects": [
                 {
                     "id": "social-media-feed",
-                    "stacks": ["reactjs", "typescript", "styled-components", "graphql"],
+                    "stacks": ["react", "typescript", "styled-components", "graphql"],
                     "title": "Feed de Rede Social",
                     "description": "Página web desenvolvida em ReactJS simulando o comportamento de uma rede social. É possível criar publicações, escrever comentários e reagir a eles. Para garantir a persistência dos dados, foi feita uma integração com o <a href='https://hygraph.com/'>Hygraph (antigo GraphCMS)</a> para registrar e ler as informações criadas pelos usuários no frontend da aplicação. O perfil criado pelo usuário para interagir com a aplicação tem duração de um dia, e é possível alterar as informações dele dentro desse período.",
                     "type": "active"
@@ -36,9 +36,17 @@
                 },
                 {
                     "id": "universo-palavras",
-                    "stacks": ["reactjs", "python", "typescript", "styled-components"],
+                    "stacks": ["react", "python", "typescript", "styled-components"],
                     "title": "Universo de Palavras",
                     "description": "Projeto Fullstack com o desenvolvimento do backend em Python e o frontend em React com Typescript. A ideia é extrair informações de dois sites com definições de palavras (<a href='https://dicionariocriativo.com.br/'>Dicionário Critivo</a> e <a href='https://www.dicio.com.br/'>Dicio</a>) para exibí-las de uma forma mais amigável e de fácil associação para o usuário. Há também a possibilidade de exportar as informações em formato .pptx para usar em apresentações.",
+                    "type": "active"
+                },
+                {
+                    "id": "simulador-prev",
+                    "stacks": ["react", "nextjs", "typescript", "chakra-ui", "mongodb"],
+                    "title": "Simulador de Previdência",
+                    "description": "",
+                    "url": "https://simuladordeprev.com.br",
                     "type": "active"
                 }
             ]

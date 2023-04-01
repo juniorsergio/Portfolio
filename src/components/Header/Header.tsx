@@ -17,17 +17,13 @@ interface HeaderProps {
 export function Header({ isDarkMode, changeColorScheme }: HeaderProps){
     const { t, i18n } = useTranslation()
     const isEnglish = (i18n.language === 'en')
-  
-    function handleChangeLanguage(lang: string) {
-        i18n.changeLanguage(lang)
-    }
 
     return (
         <Container>
             <div className='pageSelectors'>
                 <List>
-                    <li className={!isEnglish ? 'active' : ''} onClick={() => handleChangeLanguage('ptBR')}>Português</li>
-                    <li className={isEnglish ? 'active' : ''}  onClick={() => handleChangeLanguage('en')}>English</li>
+                    <li className={!isEnglish ? 'active' : ''} onClick={() => i18n.changeLanguage('ptBR')}>Português</li>
+                    <li className={isEnglish ? 'active' : ''}  onClick={() => i18n.changeLanguage('en')}>English</li>
                 </List>
 
                 <Switch>
@@ -43,9 +39,9 @@ export function Header({ isDarkMode, changeColorScheme }: HeaderProps){
             <h2> {t('header.title')} </h2>
 
             <div className='social'>
-                <a href={isEnglish ? enCV : ptBRCV} title='Curriculum'> <FilePdf size={'2.5rem'} /> </a>
-                <a href={t('header.linkedin')} title='LinkedIn'> <LinkedinLogo size={'2.5rem'} /></a>
-                <a href="https://github.com/juniorsergio/" title='GitHub'> <GithubLogo size={'2.5rem'} /> </a>
+                <a href={isEnglish ? enCV : ptBRCV} title='Curriculum'> <FilePdf size={'2rem'} /> </a>
+                <a href={t('header.linkedin')} title='LinkedIn'> <LinkedinLogo size={'2rem'} /></a>
+                <a href="https://github.com/juniorsergio/" title='GitHub'> <GithubLogo size={'2rem'} /> </a>
             </div>
 
             <div className='localization'>

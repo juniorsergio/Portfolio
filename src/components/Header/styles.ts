@@ -70,8 +70,9 @@ export const Container = styled.header`
     }
     
     img {
-        height: 14rem;
-        width: 14rem;
+        margin: 1rem 0;
+        height: 10rem;
+        width: 10rem;
         
         border: 3px solid var(--purple);
         border-radius: 100%;
