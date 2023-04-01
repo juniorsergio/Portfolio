@@ -1,49 +1,44 @@
-import { useTranslation } from "react-i18next"
+import { useTranslation } from 'react-i18next'
 import { useState } from 'react'
 
 import { AboutMe } from '../AboutMe/AboutMe'
-import { DataScience } from "../DataScience/DataScience"
-import { Frontend } from "../Frontend/Frontend"
+import { DataScience } from '../DataScience/DataScience'
+import { Frontend } from '../Frontend/Frontend'
 
-import { List } from "../../styles/lists"
-import { Container } from "./styles"
-
-type Tabs = {
-    [key: string]: string
-}
+import { List } from '../../styles/lists'
+import { Container } from './styles'
 
 const currentTab = {
-    'aboutMe': <AboutMe />,
-    'frontend': <Frontend />,
-    'dataScience': <DataScience />
+    aboutMe: <AboutMe />,
+    frontend: <Frontend />,
+    dataScience: <DataScience />
 }
+
+type TabsNames = keyof typeof currentTab
+
+type Tabs = Record<TabsNames, string>
 
 export function Main(){
     const { t } = useTranslation()
     const tabs: Tabs = t('main.tabs', {returnObjects: true})
-    const [ activeTab, setActiveTab ] = useState('aboutMe')
-
-    function handleNavigationTab (tab: string) {
-        setActiveTab(tab)
-    }
+    const [ activeTab, setActiveTab ] = useState<TabsNames>('aboutMe')
 
     return (
         <Container>
             <nav>
                 <List>
-                    {Object.keys(tabs).map((key) => (
+                    {Object.entries(tabs).map(([key, value]) => (
                         <li
                             key={key}
                             className={activeTab === key ? 'active' : ''}
-                            onClick={() => handleNavigationTab(key)}
+                            onClick={() => setActiveTab(key as TabsNames)}
                         >
-                            <h2>{tabs[key]}</h2>
+                            <h2>{value}</h2>
                         </li>
                     ))}
                 </List>
             </nav>
-            
-            {currentTab[activeTab as keyof typeof currentTab]}
+            {currentTab[activeTab]}
         </Container>
     )
 }
