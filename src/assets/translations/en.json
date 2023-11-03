@@ -13,7 +13,7 @@
         },
         "about": {
             "title": "About Me",
-            "text": "<p>Having a degree in Computer Engineering from CEFET-MG, I worked as a chatbot developer for a large part of my professional career. Being an interdisciplinary field, it allowed me to explore related fields, such as UI/UX, data analysis, product management, and agile methodologies. During the three years that I worked as a software developer (internship and CLT), I improved soft skills such as self-management, teamwork, and resilience which allowed me to have the confidence to migrate to a new area.</p><p>On this journey, I started my studies with Data Science, since I already had a familiarity due to projects developed in college. Although it's an area that I really enjoy, I feel more comfortable having a more technical profile. By taking online courses, I rediscovered the frontend area and my passion for software that allows me to get closer to design areas.</p><p>So, I started to create this portfolio, with some projects that I developed using technologies like React, Javascript, Python, HTML, and CSS. The goal is not only to attract the attention of recruiters but also to put into practice everything I've been learning lately.</p>"
+            "text": "<p>Having a degree in Computer Engineering from CEFET-MG, I started my career in technology as a chatbot developer. I worked with it for just over 2 years until I migrated to front-end development, mainly focused on responsive web applications. I've been working in this area for one year and in that time I've worked with several technologies such as React, Typescript, Next.js, Chakra-UI, Cloudflare, MongoDB, and Git.</p><p>In all these years as a developer, I had the opportunity to work with teams, companies, and products which allowed me to gain experience in areas related to programming, such as UX/UI, data analysis, product management, and agile methodologies. This was instrumental in developing and improving my self-management, teamwork, and resilience skills which allow me to have the confidence to face any challenges.</p>"
         },
 
         "frontend" : {
@@ -45,7 +45,7 @@
                     "id": "simulador-prev",
                     "stacks": ["reactjs", "nextjs", "typescript", "chakra-ui"],
                     "title": "Pension Simulator",
-                    "description": "",
+                    "description": "Web application built with React, Typescript, Next.js and Chakra-UI, aiming to capture leads from a conversational form and simulate user retirement. There is also an integration with Salesforce embedded chat, offering a direct communication channel with an investment advisor.",
                     "url": "https://simuladordeprev.com.br",
                     "type": "active"
                 }
