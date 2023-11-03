@@ -13,7 +13,7 @@
         },
         "about": {
             "title": "Sobre Mim",
-            "text": "<p>Formado em Engenharia de Computação pelo CEFET-MG, trabalhei como desenvolvedor de chatbots em boa parte da minha carreira. Por ser uma área interdisciplinar, tive a oportunidade de explorar áreas tangentes à programação, como UX/UI, análise de dados, gestão de produto e metodologias ágeis. Nos 3 anos que trabalhei como desenvolvedor de software (estágio e CLT), desenvolvi softskills de autogestão, trabalho em equipe e resiliência que me permitiram ter a confiança de migrar para uma área nova.</p><p>Nessa jornada, iniciei meus estudos na área de Ciência de Dados, por já possuir uma familiaridade devido à projetos desenvolvidos na faculdade. Embora seja uma área que eu goste muito, me sinto mais confortável tendo um perfil mais técnico. Ao fazer cursos online, redescobri a área de frontend e a minha paixão por softwares que permitem eu me aproximar de áreas de design.</p><p> Assim, iniciei a criação desse portfolio, com alguns projetos que desenvolvi utilizando tecnologias como React, Javascript, Python, HTML e CSS. O objetivo é não apenas atrair a atenção de recrutadores, como também colocar em prática tudo o que eu venho aprendendo nos últimos tempos.</p>"
+            "text": "<p>Graduado em Engenharia de Computação pelo CEFET-MG, iniciei minha carreira em tecnologia como desenvolvedor de chatbots. Trabalhei com isso por pouco mais de 2 anos até migrar para o desenvolvimento front-end, principalmente focado em aplicações web responsivas. Atuo nessa área há 1 ano e nesse tempo já trabalhei com diversas tecnologias como React, Typescript, Next.js, Chakra-UI, Cloudflare, MongoDB e Git.</p><p>Em todos esses anos como desenvolvedor, tive a oportunidade de trabalhar com times, empresas e produtos que me permitiram explorar áreas tangentes à programação, como UX/UI, análise de dados, gestão de produto e metodologias ágeis. Isso foi fundamental no desenvolvimento e aperfeiçoamento das minhas habilidades de autogestão, trabalho em equipe e resiliência que me permitem ter a confiança de encarar quaisquer desafios.</p>"
         },
 
         "frontend" : {
@@ -45,7 +45,7 @@
                     "id": "simulador-prev",
                     "stacks": ["react", "nextjs", "typescript", "chakra-ui", "mongodb"],
                     "title": "Simulador de Previdência",
-                    "description": "",
+                    "description": "Aplicação web construída com React, Typescript, Next.js e Chakra-UI, visando a captação de leads a partir de um formulário conversacional e a simulação de aposentadoria do usuário. Há também uma integração com o chat do Salesforce, oferecendo um canal de comunicação direto com um assessor de investimentos.",
                     "url": "https://simuladordeprev.com.br",
                     "type": "active"
                 }
