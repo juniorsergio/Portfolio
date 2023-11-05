@@ -1,45 +1,33 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { ThemeProvider } from 'styled-components';
-import Cookies from "js-cookie";
 
 import { Header } from './components/Header/Header'
 import { Main } from './components/Main/Main'
 
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import { lightTheme, darkTheme } from './styles/theme'
-import { LoadingContainer, GlobalStyle, Wrapper, YinYang } from './styles/global';
+import { GlobalStyle, Wrapper } from './styles/global';
+import { TranslationProvider } from './hooks/useTranslation';
+import { useCookies } from 'react-cookie';
 
 export function App() {
-	const darkModeCookie = Cookies.get('darkMode') ?? 'true'
-  const [ isDarkMode, setIsDarkMode ] = useState(darkModeCookie === 'true')
-  const [ pageLoading, setPageLoading ] = useState(true)
+  const [ { darkMode }, setCookie ] = useCookies(['darkMode']);
+  const [ isDarkMode, setIsDarkMode ] = useState(darkMode ?? true)
 
   function handleColorSchemeSelection(){
     setIsDarkMode(!isDarkMode)
-    Cookies.set('darkMode', (!isDarkMode).toString())
+    setCookie('darkMode', !isDarkMode)
   }
-
-  useEffect(() => {
-    setTimeout(() => {
-      setPageLoading(false)
-    }, 2000)
-  }, [])
 
   return (
     <Wrapper>
-        <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
-            {!pageLoading ? (
-                <>
-                    <Header isDarkMode={isDarkMode} changeColorScheme={handleColorSchemeSelection} />
-                    <Main />
-                </>
-            ) : (
-                <LoadingContainer>
-                    <YinYang />
-                </LoadingContainer>
-            )}
+      <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
+        <TranslationProvider>
+          <Header isDarkMode={isDarkMode} changeColorScheme={handleColorSchemeSelection} />
+          <Main />
           <GlobalStyle />
-        </ThemeProvider>
+        </TranslationProvider>
+      </ThemeProvider>
     </Wrapper>
   )
 }      

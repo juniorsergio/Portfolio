@@ -1,15 +1,15 @@
 import { Markup } from "interweave"
-import { useTranslation } from "react-i18next"
+import { useTranslation } from "@app/hooks/useTranslation"
 
 import { Container } from "./styles"
 
 export function AboutMe(){
-    const { t } = useTranslation()
+    const { translation: { main } } = useTranslation()
 
     return (
         <Container>
             <article>
-                <Markup noWrap content={t('main.about.text')} />
+                <Markup noWrap content={main.about.text} />
 
                 <img
                     alt="MBTI cover image"

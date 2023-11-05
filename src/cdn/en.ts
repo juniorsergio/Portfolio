@@ -1,4 +1,6 @@
-{
+import { CdnData } from '@app/interfaces/CdnData';
+
+export const enTranslation: CdnData = {
     "header": {
         "title": "Portfolio",
         "linkedin": "https://www.linkedin.com/in/juniorsergio/?locale=en_US",

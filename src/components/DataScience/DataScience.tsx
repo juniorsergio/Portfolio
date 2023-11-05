@@ -1,24 +1,14 @@
 import { Markup } from 'interweave'
-import { Link as LinkIcon } from 'phosphor-react'
-import { useTranslation } from 'react-i18next'
 
+import { BiLink } from 'react-icons/bi'
 import { Container } from './styles'
 import { useState, useEffect } from 'react'
-
-interface DataScienceProject {
-    id: string
-    title: string
-    projectLink: string
-    subtitle: string
-    subtitleLink: string
-    text: string
-    image: string
-    figcaption: string
-}
+import { useTranslation } from '@app/hooks/useTranslation'
+import { DataScienceProject } from '@app/interfaces/Projects'
 
 export function DataScience(){
-    const { t } = useTranslation()
-    const [projects, setProjects] = useState<DataScienceProject[]>(t('main.dataScience', {returnObjects: true}))
+    const { translation: { main: { dataScience } } } = useTranslation()
+    const [projects, setProjects] = useState<DataScienceProject[]>(dataScience)
     
     useEffect(() => {
         const promises = projects.map(async (project) => {
@@ -35,12 +25,12 @@ export function DataScience(){
                 <article key={project.id}>
                     <h2>
                         <a href={project.projectLink}>
-                            <LinkIcon /> {project.title}
+                            <BiLink /> {project.title}
                         </a>
                     </h2>
                     <h3 hidden={!project.subtitle}>
                         <a href={project.subtitleLink}>
-                            <LinkIcon /> {project.subtitle}
+                            <BiLink /> {project.subtitle}
                         </a>
                     </h3>
                     <Markup tagName='p' content={project.text} />
