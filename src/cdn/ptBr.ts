@@ -1,4 +1,6 @@
-{
+import { CdnData } from "../interfaces/CdnData";
+
+export const ptBrTranslation: CdnData = {
     "header": {
         "title": "Portfólio",
         "linkedin": "https://www.linkedin.com/in/juniorsergio/",

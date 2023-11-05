@@ -1,24 +1,14 @@
 import { Markup } from 'interweave'
-import { useTranslation } from 'react-i18next'
 
 import { BiLink } from 'react-icons/bi'
 import { Container } from './styles'
 import { useState, useEffect } from 'react'
-
-interface DataScienceProject {
-    id: string
-    title: string
-    projectLink: string
-    subtitle: string
-    subtitleLink: string
-    text: string
-    image: string
-    figcaption: string
-}
+import { useTranslation } from '../../hooks/useTranslation'
+import { DataScienceProject } from '../../interfaces/Projects'
 
 export function DataScience(){
-    const { t } = useTranslation()
-    const [projects, setProjects] = useState<DataScienceProject[]>(t('main.dataScience', {returnObjects: true}))
+    const { translation: { main: { dataScience } } } = useTranslation()
+    const [projects, setProjects] = useState<DataScienceProject[]>(dataScience)
     
     useEffect(() => {
         const promises = projects.map(async (project) => {

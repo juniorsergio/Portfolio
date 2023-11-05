@@ -1,23 +1,14 @@
 import { Carousel } from 'react-responsive-carousel';
-import { useTranslation } from 'react-i18next';
 import { Markup } from 'interweave';
 
 import { Container } from "./styles";
 import { useEffect, useState } from 'react';
-
-interface FrontendProject {
-    id: string
-    stacks: string[]
-    title: string
-    description: string
-    image: string
-    type: 'active' | 'disabled'
-    url?: string
-}
+import { useTranslation } from '../../hooks/useTranslation';
+import { FrontendProject } from '../../interfaces/Projects';
 
 export function Frontend(){
-    const { t } = useTranslation()
-    const [projects, setProjects] = useState<FrontendProject[]>(t('main.frontend.projects', {returnObjects: true}))
+    const { translation: { main } } = useTranslation()
+    const [projects, setProjects] = useState<FrontendProject[]>(main.frontend.projects)
 
     const handleClickItem = (index: number) => {
         if (projects[index].type !== 'active') return
@@ -45,7 +36,7 @@ export function Frontend(){
     
     return (
         <Container>
-            <Markup tagName='p' content={t('main.frontend.opening')} />
+            <Markup tagName='p' content={main.frontend.opening} />
             <Carousel
                 swipeable
                 emulateTouch
@@ -69,7 +60,7 @@ export function Frontend(){
                             <h2>{project.title}</h2>
                             <Markup
                                 tagName='p'
-                                content={project.type === 'active' ? project.description : t('main.frontend.soon')}
+                                content={project.type === 'active' ? project.description : main.frontend.soon}
                             />
                         </figcaption>
                     </figure>

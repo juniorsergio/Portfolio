@@ -1,6 +1,5 @@
 import { FaRegFilePdf, FaLinkedin, FaGithub } from 'react-icons/fa6'
 import { BiMap, BiEnvelope } from 'react-icons/bi'
-import { useTranslation } from "react-i18next";
 
 import photo from '../../assets/images/photo.jpg'
 import enCV from '../../assets/files/SergioJunior_CV_English.pdf'
@@ -9,6 +8,7 @@ import ptBRCV from '../../assets/files/SergioJunior_CV.pdf'
 import { List } from '../../styles/lists';
 import { Container } from './styles';
 import { Switch } from './switch';
+import { useTranslation } from '../../hooks/useTranslation'
 
 interface HeaderProps {
     isDarkMode: boolean,
@@ -16,15 +16,15 @@ interface HeaderProps {
 }
 
 export function Header({ isDarkMode, changeColorScheme }: HeaderProps){
-    const { t, i18n } = useTranslation()
-    const isEnglish = (i18n.language === 'en')
+    const { translation: { header }, language, setLanguage } = useTranslation()
+    const isEnglish = (language === 'en')
 
     return (
         <Container>
             <div className='pageSelectors'>
                 <List>
-                    <li className={!isEnglish ? 'active' : ''} onClick={() => i18n.changeLanguage('ptBR')}>Português</li>
-                    <li className={isEnglish ? 'active' : ''}  onClick={() => i18n.changeLanguage('en')}>English</li>
+                    <li className={!isEnglish ? 'active' : ''} onClick={() => setLanguage('pt-BR')}>Português</li>
+                    <li className={isEnglish ? 'active' : ''}  onClick={() => setLanguage('en')}>English</li>
                 </List>
 
                 <Switch>
@@ -37,17 +37,17 @@ export function Header({ isDarkMode, changeColorScheme }: HeaderProps){
 
             <img src={photo} alt="Profile picture" />
             <h2> Sergio Junior </h2>
-            <h2> {t('header.title')} </h2>
+            <h2> {header.title} </h2>
 
             <div className='social'>
                 <a href={isEnglish ? enCV : ptBRCV} title='Curriculum'> <FaRegFilePdf size={24} /> </a>
-                <a href={t('header.linkedin')} title='LinkedIn'> <FaLinkedin size={24} /></a>
+                <a href={header.linkedin} title='LinkedIn'> <FaLinkedin size={24} /></a>
                 <a href="https://github.com/juniorsergio/" title='GitHub'> <FaGithub size={24} /> </a>
             </div>
 
             <div className='localization'>
                 <BiMap size={20} />
-                {t('header.localization')}
+                {header.localization}
             </div>
 
             <div className='email'>                   

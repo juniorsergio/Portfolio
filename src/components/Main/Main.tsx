@@ -1,4 +1,3 @@
-import { useTranslation } from 'react-i18next'
 import { useState } from 'react'
 
 import { AboutMe } from '../AboutMe/AboutMe'
@@ -7,6 +6,8 @@ import { Frontend } from '../Frontend/Frontend'
 
 import { List } from '../../styles/lists'
 import { Container } from './styles'
+import { useTranslation } from '../../hooks/useTranslation'
+import { TabsNames } from '../../interfaces/CdnData'
 
 const currentTab = {
     aboutMe: <AboutMe />,
@@ -14,13 +15,8 @@ const currentTab = {
     dataScience: <DataScience />
 }
 
-type TabsNames = keyof typeof currentTab
-
-type Tabs = Record<TabsNames, string>
-
 export function Main(){
-    const { t } = useTranslation()
-    const tabs: Tabs = t('main.tabs', {returnObjects: true})
+    const { translation: { main: { tabs } } } = useTranslation()
     const [ activeTab, setActiveTab ] = useState<TabsNames>('aboutMe')
 
     return (

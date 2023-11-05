@@ -2,14 +2,16 @@ import { createContext, useContext, useState } from 'react';
 import type { ReactNode, Dispatch, SetStateAction } from 'react';
 import { enTranslation } from '../cdn/en';
 import { ptBrTranslation } from '../cdn/ptBr';
+import { CdnData } from '../interfaces/CdnData';
 
 interface TranslationProviderProps {
     children: ReactNode;
 }
 
 interface TranslationContextData {
+    language: string;
     setLanguage: Dispatch<SetStateAction<string>>;
-    translation: typeof enTranslation;
+    translation: CdnData;
 };
 
 const TranslationContext = createContext({} as TranslationContextData);
@@ -17,14 +19,13 @@ export const useTranslation = () => useContext(TranslationContext);
 
 export const TranslationProvider = ({ children }: TranslationProviderProps) => {
     const [language, setLanguage] = useState(navigator.language);
-    console.log(language)
-    const translation = {
+    const translation: Record<string, CdnData> = {
         en: enTranslation,
         'pt-BR': ptBrTranslation,
     };
 
     return (
-        <TranslationContext.Provider value={{ setLanguage, translation: translation[language] }} >
+        <TranslationContext.Provider value={{ language, setLanguage, translation: translation[language] ?? {} as CdnData }} >
             {children}
         </TranslationContext.Provider>
     )
