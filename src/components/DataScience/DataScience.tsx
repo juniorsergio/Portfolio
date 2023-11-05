@@ -1,7 +1,7 @@
 import { Markup } from 'interweave'
-import { Link as LinkIcon } from 'phosphor-react'
 import { useTranslation } from 'react-i18next'
 
+import { BiLink } from 'react-icons/bi'
 import { Container } from './styles'
 import { useState, useEffect } from 'react'
 
@@ -35,12 +35,12 @@ export function DataScience(){
                 <article key={project.id}>
                     <h2>
                         <a href={project.projectLink}>
-                            <LinkIcon /> {project.title}
+                            <BiLink /> {project.title}
                         </a>
                     </h2>
                     <h3 hidden={!project.subtitle}>
                         <a href={project.subtitleLink}>
-                            <LinkIcon /> {project.subtitle}
+                            <BiLink /> {project.subtitle}
                         </a>
                     </h3>
                     <Markup tagName='p' content={project.text} />

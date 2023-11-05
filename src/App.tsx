@@ -12,32 +12,17 @@ import { LoadingContainer, GlobalStyle, Wrapper, YinYang } from './styles/global
 export function App() {
 	const darkModeCookie = Cookies.get('darkMode') ?? 'true'
   const [ isDarkMode, setIsDarkMode ] = useState(darkModeCookie === 'true')
-  const [ pageLoading, setPageLoading ] = useState(true)
 
   function handleColorSchemeSelection(){
     setIsDarkMode(!isDarkMode)
     Cookies.set('darkMode', (!isDarkMode).toString())
   }
 
-  useEffect(() => {
-    setTimeout(() => {
-      setPageLoading(false)
-    }, 2000)
-  }, [])
-
   return (
     <Wrapper>
         <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
-            {!pageLoading ? (
-                <>
-                    <Header isDarkMode={isDarkMode} changeColorScheme={handleColorSchemeSelection} />
-                    <Main />
-                </>
-            ) : (
-                <LoadingContainer>
-                    <YinYang />
-                </LoadingContainer>
-            )}
+          <Header isDarkMode={isDarkMode} changeColorScheme={handleColorSchemeSelection} />
+          <Main />
           <GlobalStyle />
         </ThemeProvider>
     </Wrapper>

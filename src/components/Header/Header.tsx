@@ -1,4 +1,5 @@
-import { Envelope, FilePdf, GithubLogo, LinkedinLogo, MapPin } from 'phosphor-react'
+import { FaRegFilePdf, FaLinkedin, FaGithub } from 'react-icons/fa6'
+import { BiMap, BiEnvelope } from 'react-icons/bi'
 import { useTranslation } from "react-i18next";
 
 import photo from '../../assets/images/photo.jpg'
@@ -39,18 +40,18 @@ export function Header({ isDarkMode, changeColorScheme }: HeaderProps){
             <h2> {t('header.title')} </h2>
 
             <div className='social'>
-                <a href={isEnglish ? enCV : ptBRCV} title='Curriculum'> <FilePdf size={'2rem'} /> </a>
-                <a href={t('header.linkedin')} title='LinkedIn'> <LinkedinLogo size={'2rem'} /></a>
-                <a href="https://github.com/juniorsergio/" title='GitHub'> <GithubLogo size={'2rem'} /> </a>
+                <a href={isEnglish ? enCV : ptBRCV} title='Curriculum'> <FaRegFilePdf size={24} /> </a>
+                <a href={t('header.linkedin')} title='LinkedIn'> <FaLinkedin size={24} /></a>
+                <a href="https://github.com/juniorsergio/" title='GitHub'> <FaGithub size={24} /> </a>
             </div>
 
             <div className='localization'>
-                <MapPin size={20} />
+                <BiMap size={20} />
                 {t('header.localization')}
             </div>
 
             <div className='email'>                   
-                <Envelope size={20} />
+                <BiEnvelope size={20} />
                 <a href='mailto:sergio.junior55@hotmail.com'>
                     sergio.junior55@hotmail.com
                 </a>
