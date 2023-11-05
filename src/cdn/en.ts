@@ -1,4 +1,4 @@
-import { CdnData } from '../interfaces/CdnData';
+import { CdnData } from 'interfaces/CdnData';
 
 export const enTranslation: CdnData = {
     "header": {

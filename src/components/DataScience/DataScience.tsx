@@ -3,8 +3,8 @@ import { Markup } from 'interweave'
 import { BiLink } from 'react-icons/bi'
 import { Container } from './styles'
 import { useState, useEffect } from 'react'
-import { useTranslation } from '../../hooks/useTranslation'
-import { DataScienceProject } from '../../interfaces/Projects'
+import { useTranslation } from 'hooks/useTranslation'
+import { DataScienceProject } from 'interfaces/Projects'
 
 export function DataScience(){
     const { translation: { main: { dataScience } } } = useTranslation()

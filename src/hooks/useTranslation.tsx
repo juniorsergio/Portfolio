@@ -1,8 +1,8 @@
 import { createContext, useContext, useState } from 'react';
 import type { ReactNode, Dispatch, SetStateAction } from 'react';
-import { enTranslation } from '../cdn/en';
-import { ptBrTranslation } from '../cdn/ptBr';
-import { CdnData } from '../interfaces/CdnData';
+import { enTranslation } from 'cdn/en';
+import { ptBrTranslation } from 'cdn/ptBr';
+import { CdnData } from 'interfaces/CdnData';
 
 interface TranslationProviderProps {
     children: ReactNode;
