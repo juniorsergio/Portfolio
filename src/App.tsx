@@ -12,7 +12,7 @@ import { useCookies } from 'react-cookie';
 
 export function App() {
   const [ { darkMode }, setCookie ] = useCookies(['darkMode']);
-  const [ isDarkMode, setIsDarkMode ] = useState(darkMode)
+  const [ isDarkMode, setIsDarkMode ] = useState(darkMode ?? true)
 
   function handleColorSchemeSelection(){
     setIsDarkMode(!isDarkMode)
