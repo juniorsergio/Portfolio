@@ -1,5 +1,5 @@
 import { Markup } from "interweave"
-import { useTranslation } from "hooks/useTranslation"
+import { useTranslation } from "@app/hooks/useTranslation"
 
 import { Container } from "./styles"
 

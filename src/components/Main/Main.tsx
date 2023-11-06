@@ -1,13 +1,13 @@
 import { useState } from 'react'
 
-import { AboutMe } from '../AboutMe/AboutMe'
-import { DataScience } from '../DataScience/DataScience'
-import { Frontend } from '../Frontend/Frontend'
+import { AboutMe } from '@app/components/AboutMe/AboutMe'
+import { DataScience } from '@app/components/DataScience/DataScience'
+import { Frontend } from '@app/components/Frontend/Frontend'
 
-import { List } from 'styles/lists'
+import { List } from '@app/styles/lists'
 import { Container } from './styles'
-import { useTranslation } from 'hooks/useTranslation'
-import { TabsNames } from 'interfaces/CdnData'
+import { useTranslation } from '@app/hooks/useTranslation'
+import { TabsNames } from '@app/interfaces/CdnData'
 
 const currentTab = {
     aboutMe: <AboutMe />,

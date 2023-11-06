@@ -1,14 +1,14 @@
 import { FaRegFilePdf, FaLinkedin, FaGithub } from 'react-icons/fa6'
 import { BiMap, BiEnvelope } from 'react-icons/bi'
 
-import photo from 'assets/images/photo.jpg'
-import enCV from 'assets/files/SergioJunior_CV_English.pdf'
-import ptBRCV from 'assets/files/SergioJunior_CV.pdf'
+import photo from '@app/assets/images/photo.jpg'
+import enCV from '@app/assets/files/SergioJunior_CV_English.pdf'
+import ptBRCV from '@app/assets/files/SergioJunior_CV.pdf'
 
-import { List } from 'styles/lists';
+import { List } from '@app/styles/lists';
 import { Container } from './styles';
 import { Switch } from './switch';
-import { useTranslation } from 'hooks/useTranslation'
+import { useTranslation } from '@app/hooks/useTranslation'
 
 interface HeaderProps {
     isDarkMode: boolean,

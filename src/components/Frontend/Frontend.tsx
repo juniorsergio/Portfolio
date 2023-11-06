@@ -3,8 +3,8 @@ import { Markup } from 'interweave';
 
 import { Container } from "./styles";
 import { useEffect, useState } from 'react';
-import { useTranslation } from 'hooks/useTranslation';
-import { FrontendProject } from 'interfaces/Projects';
+import { useTranslation } from '@app/hooks/useTranslation';
+import { FrontendProject } from '@app/interfaces/Projects';
 
 export function Frontend(){
     const { translation: { main } } = useTranslation()

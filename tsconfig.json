@@ -16,7 +16,10 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "composite": true,
-    "baseUrl": "src"
+    "baseUrl": ".",
+    "paths": {
+      "@app/*": ["src/*"]
+    },
   },
   "include": [
     "src",
