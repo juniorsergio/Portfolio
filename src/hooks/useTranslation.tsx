@@ -25,7 +25,7 @@ export const TranslationProvider = ({ children }: TranslationProviderProps) => {
     };
 
     return (
-        <TranslationContext.Provider value={{ language, setLanguage, translation: translation[language] ?? {} as CdnData }} >
+        <TranslationContext.Provider value={{ language, setLanguage, translation: translation[language] ?? translation.en }} >
             {children}
         </TranslationContext.Provider>
     )
