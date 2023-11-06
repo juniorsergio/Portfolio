@@ -15,7 +15,10 @@ export const ptBrTranslation: CdnData = {
         },
         "about": {
             "title": "Sobre Mim",
-            "text": "<p>Graduado em Engenharia de Computação pelo CEFET-MG, iniciei minha carreira em tecnologia como desenvolvedor de chatbots. Trabalhei com isso por pouco mais de 2 anos até migrar para o desenvolvimento front-end, principalmente focado em aplicações web responsivas. Atuo nessa área há 1 ano e nesse tempo já trabalhei com diversas tecnologias como React, Typescript, Next.js, Chakra-UI, Cloudflare, MongoDB e Git.</p><p>Em todos esses anos como desenvolvedor, tive a oportunidade de trabalhar com times, empresas e produtos que me permitiram explorar áreas tangentes à programação, como UX/UI, análise de dados, gestão de produto e metodologias ágeis. Isso foi fundamental no desenvolvimento e aperfeiçoamento das minhas habilidades de autogestão, trabalho em equipe e resiliência que me permitem ter a confiança de encarar quaisquer desafios.</p>"
+            "text": [
+                "Graduado em Engenharia de Computação pelo CEFET-MG, iniciei minha carreira em tecnologia como desenvolvedor de chatbots. Trabalhei com isso por pouco mais de 2 anos até migrar para o desenvolvimento front-end, principalmente focado em aplicações web responsivas. Atuo nessa área há 1 ano e nesse tempo já trabalhei com diversas tecnologias como React, Typescript, Next.js, Chakra-UI, Cloudflare, MongoDB e Git.",
+                "Em todos esses anos como desenvolvedor, tive a oportunidade de trabalhar com times, empresas e produtos que me permitiram explorar áreas tangentes à programação, como UX/UI, análise de dados, gestão de produto e metodologias ágeis. Isso foi fundamental no desenvolvimento e aperfeiçoamento das minhas habilidades de autogestão, trabalho em equipe e resiliência que me permitem ter a confiança de encarar quaisquer desafios."
+            ]
         },
 
         "frontend" : {
@@ -26,7 +29,7 @@ export const ptBrTranslation: CdnData = {
                     "id": "social-media-feed",
                     "stacks": ["react", "typescript", "styled-components", "graphql"],
                     "title": "Feed de Rede Social",
-                    "description": "Página web desenvolvida em ReactJS simulando o comportamento de uma rede social. É possível criar publicações, escrever comentários e reagir a eles. Para garantir a persistência dos dados, foi feita uma integração com o <a href='https://hygraph.com/'>Hygraph (antigo GraphCMS)</a> para registrar e ler as informações criadas pelos usuários no frontend da aplicação. O perfil criado pelo usuário para interagir com a aplicação tem duração de um dia, e é possível alterar as informações dele dentro desse período.",
+                    "description": "Página web desenvolvida em React simulando o comportamento de uma rede social. É possível criar publicações, escrever comentários e reagir a eles. Para garantir a persistência dos dados, foi feita uma integração com o <a href='https://hygraph.com/'>Hygraph (antigo GraphCMS)</a> para registrar e ler as informações criadas pelos usuários no frontend da aplicação. O perfil criado pelo usuário para interagir com a aplicação tem duração de um dia, e é possível alterar as informações dele dentro desse período.",
                     "type": "active"
                 },
                 {

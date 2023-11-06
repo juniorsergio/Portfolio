@@ -15,7 +15,10 @@ export const enTranslation: CdnData = {
         },
         "about": {
             "title": "About Me",
-            "text": "<p>Having a degree in Computer Engineering from CEFET-MG, I started my career in technology as a chatbot developer. I worked with it for just over 2 years until I migrated to front-end development, mainly focused on responsive web applications. I've been working in this area for one year and in that time I've worked with several technologies such as React, Typescript, Next.js, Chakra-UI, Cloudflare, MongoDB, and Git.</p><p>In all these years as a developer, I had the opportunity to work with teams, companies, and products which allowed me to gain experience in areas related to programming, such as UX/UI, data analysis, product management, and agile methodologies. This was instrumental in developing and improving my self-management, teamwork, and resilience skills which allow me to have the confidence to face any challenges.</p>"
+            "text": [
+                "Having a degree in Computer Engineering from CEFET-MG, I started my career in technology as a chatbot developer. I worked with it for just over 2 years until I migrated to front-end development, mainly focused on responsive web applications. I've been working in this area for one year and in that time I've worked with several technologies such as React, Typescript, Next.js, Chakra-UI, Cloudflare, MongoDB, and Git.",
+                "In all these years as a developer, I had the opportunity to work with teams, companies, and products which allowed me to gain experience in areas related to programming, such as UX/UI, data analysis, product management, and agile methodologies. This was instrumental in developing and improving my self-management, teamwork, and resilience skills which allow me to have the confidence to face any challenges."
+            ]
         },
 
         "frontend" : {
@@ -24,9 +27,9 @@ export const enTranslation: CdnData = {
             "projects": [
                 {
                     "id": "social-media-feed",
-                    "stacks": ["reactjs", "typescript", "styled-components", "graphql"],
+                    "stacks": ["react", "typescript", "styled-components", "graphql"],
                     "title": "Social Media Feed",
-                    "description": "Web page developed using ReactJS to simulate a social media feed. It's possible to create posts, write comments and react to them. In order to ensure the data persistence, an integration with <a href='https://hygraph.com/'>Hygraph (formerly GraphCMS)</a> was made, so the information created by the users could be recorded and retrieved. The profile created by the user to interact with the application has an expiration time of one day, and it's possible to change its information within this lifetime.",
+                    "description": "Web page developed using React to simulate a social media feed. It's possible to create posts, write comments and react to them. In order to ensure the data persistence, an integration with <a href='https://hygraph.com/'>Hygraph (formerly GraphCMS)</a> was made, so the information created by the users could be recorded and retrieved. The profile created by the user to interact with the application has an expiration time of one day, and it's possible to change its information within this lifetime.",
                     "type": "active"
                 },
                 {
@@ -38,14 +41,14 @@ export const enTranslation: CdnData = {
                 },
                 {
                     "id": "universo-palavras",
-                    "stacks": ["reactjs", "python", "typescript", "styled-components"],
+                    "stacks": ["react", "python", "typescript", "styled-components"],
                     "title": "Words Universe (pt-BR only)",
                     "description": "Fullstack project with the development of the backend in Python and the frontend in React with Typescript. The idea is to extract information from two websites with word definitions (<a href='https://dicionariocriativo.com.br/'>Dicionário Critivo</a> and <a href='https://www.dicio.com.br/'>Dicio</a>) to display them in a more user-friendly and intuitive way. There is also the possibility to export the information for the .pptx format to use in presentations.",
                     "type": "active"
                 },
                 {
                     "id": "simulador-prev",
-                    "stacks": ["reactjs", "nextjs", "typescript", "chakra-ui"],
+                    "stacks": ["react", "nextjs", "typescript", "chakra-ui"],
                     "title": "Pension Simulator",
                     "description": "Web application built with React, Typescript, Next.js and Chakra-UI, aiming to capture leads from a conversational form and simulate user retirement. There is also an integration with Salesforce embedded chat, offering a direct communication channel with an investment advisor.",
                     "url": "https://simuladordeprev.com.br",

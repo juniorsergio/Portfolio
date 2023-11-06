@@ -12,7 +12,7 @@ export type CdnData = {
         tabs: Record<TabsNames, string>;
         about: {
             title: string;
-            text: string;
+            text: string[];
         };
         frontend: {
             soon: string;
